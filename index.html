@@ -4,11 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>HomePage</title>
 </head>
 
 <body>
-
+    <header class="header">
+        <!-- Top bar -->
+        <div class="header__top-bar bg-[#141414] h-[67px] flex justify-center items-center">
+            <p class="text-[#98989A] font-sans font-normal text-[18px]">
+                Subscribe to our Newsletter For New & latest Blogs and Resources
+            </p>
+            <span class="inline-block w-6 h-6 bg-[url('/assets/icons/Icon.png')] bg-contain bg-no-repeat ml-[10px]">
+            </span>
+        </div>
+        <!-- Main header -->
+        <div
+            class=" header__main h-[103px] bg-[#1A1A1A] flex justify-between items-center border border-[#333333] px-[162px] py-6 ">
+            <div class="header__logo cursor-pointer">
+                <img class="h-[50px]" src="./assets/images/logo/Logo.png" alt="logo">
+            </div>
+            <nav class="header__nav">
+                <ul class=" text-[#7E7E81] font-sans text-[18px] flex gap-10  ">
+                    <li
+                        class="px-6 py-[14px] bg-[#141414] border border-[#333333] rounded-[10px] font-medium text-[#FFFFFF]">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="px-6 py-[14px] font-normal"><a href="#">News</a></li>
+                    <li class="px-6 py-[14px] font-normal"><a href="#">Podcasts</a></li>
+                    <li class="px-6 py-[14px] font-normal"><a href="#">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="header__button bg-[#FFD11A] boder rounded-[10px]">
+                <button
+                    class="text-[#141414] px-5 py-[14px] boder rounded-[10px] font-sans text-[18px] font-medium cursor-pointer">Contact
+                    Us</button>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
