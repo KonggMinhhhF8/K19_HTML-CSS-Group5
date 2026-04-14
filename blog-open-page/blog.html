@@ -9,16 +9,20 @@
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="icon">
 </head>
-<body class="m-0">
+<body class="m-0 overflow-x-hidden">
 <div class="container">
-    <div class="top-banner">
-        <p class="text-banner">Subscribe to our Newsletter For New & latest Blogs and Resources</p>
+    <div class="top-banner
+    px-[24px] pt-[40px] pb-[14px]
+    md:px-[40px] md:pt-[24px] md:pb-[24px]
+    xl:px-[162px] xl:py-[24px]">
+        <p class="text-banner text-[12px] md:text-[14px] xl:text-[18px]">Subscribe to our Newsletter For New & latest Blogs and Resources</p>
     </div>
-    <div class="header flex items-center
-    justify-between
-    border-b border-b-[#454549] bg-[#1A1A1A]
-    xl:px-[20px] py-[24px]
-    ">
+    <div class="header
+     px-[16px] py-[20px]
+     md:px-[80px] py-[20px]
+     xl:px-[162px] py-[40px]
+     flex items-center justify-between
+     border-b border-b-[#454549] bg-[#1A1A1A]">
         <div class="logo-group">
             <img class="logo" src="icon/Group.png" alt="logo">
             <p class="text-logo text-[#FFFFFF]">FutureTech</p>
@@ -67,81 +71,111 @@
                 relative
                 items-center
                 justify-center">
-        <img src="icon/a7da2200f6c37edcb06722e854c1bd926a092148.png" alt="" class="image-main">
+        <img src="icon/a7da2200f6c37edcb06722e854c1bd926a092148.png" alt="" class="image-main
+                w-full h-auto object-cover
+                md:h-[400px]
+                xl:h-[600px]">
+        <div class="absolute inset-0
+                bg-[linear-gradient(to_bottom,rgba(20,20,20,0)_60%,rgba(20,20,20,0.8)_80%,#141414_100%)]">
+        </div>
         <h1 class="
-                w-[1335px]
-                h-[96px]
+                z-1 left-1/2 -translate-x-1/2 bottom-[20px]
+                text-[28px] text-center w-full max-w-[390px] leading-[150%]
+                md:text-[44px] md:w-full md:max-w-none
+                xl:text-[64px]
                 font-[600]
-                text-[62px]
                 text-[#FFFFFF]
                 absolute
-                bottom-[65px]
-                z-1
-                left-1/2
-                -translate-x-1/2">
+              ">
             The Rise of Artificial Intelligence in Healthcare</h1>
     </div>
-    <div class="sub-container grid grid-cols-[2fr_1fr] w-full items-stretch">
+    <div class="sub-container grid grid-cols-1 md:grid-cols-[2fr_1fr] w-full items-stretch">
         <div class="left">
-            <div class="text-container
-            w-full
-                pt-[80px]
-                pr-[80px]
-                pb-[80px]
-                pl-[162px]
-                flex
-                flex-col
-                gap-[14px]
-                bg-[#1A1A1A]
-                border-t
-                border-t-[#454549]
-                border-b
-                border-b-[#454549]">
+<!--            icon mobie-->
+            <div class="icon-mobie
+            flex gap-[14px] justify-center p-[20px]
+            border-t border-t-[#454549] bg-[#1A1A1A]
+            md:hidden">
+                <div class="heart-mobie
+                flex items-center justify-center gap-[4px]
+                border border-[#454549] rounded-[100px]
+                px-[14px] py-[8px] bg-[#1A1A1A]">
+                    <img src="icon/Icon.png" alt="">
+                    <p class="text-[#98989A] text-[14px] font-[400]">24.5k</p>
+                </div>
+                <div class="heart-mobie
+                flex items-center justify-center gap-[4px]
+                border border-[#454549] rounded-[100px]
+                px-[14px] py-[8px] bg-[#1A1A1A]">
+                    <img src="icon/Icon%20eye.png" alt="">
+                    <p class="text-[#98989A] text-[14px] font-[400]">50k</p>
+                </div>
+                <div class="heart-mobie
+                flex items-center justify-center gap-[4px]
+                border border-[#454549] rounded-[100px]
+                px-[14px] py-[8px] bg-[#1A1A1A]">
+                    <img src="icon/Icon%20(3).png" alt="">
+                    <p class="text-[#98989A] text-[14px] font-[400]">206</p>
+                </div>
+            </div>
+<!--Info mobie-->
+            <div class="infor-mobie flex flex-col gap-[30px] px-[24px] py-[40px] bg-[#1A1A1A] border-t border-t-[#454549] md:hidden">
+                <div class="grid grid-cols-2 gap-[30px] text-[18px]">
+                    <div>
+                        <p class="text-[#98989A] font-[400]">Publication Date</p>
+                        <p class="text-white font-[500]">October 15, 2023</p>
+                    </div>
+                    <div>
+                        <p class="text-[#98989A] font-[400]">Category</p>
+                        <p class="text-white font-[500]" >Healthcare</p>
+                    </div>
+                    <div>
+                        <p class="text-[#98989A] font-[400]">Reading Time</p>
+                        <p class="text-white font-[500]">10 Min</p>
+                    </div>
+                    <div>
+                        <p class="text-[#98989A] font-[400]">Author Name</p>
+                        <p class="text-white font-[500]">Dr. Emily Walker</p>
+                    </div>
+                </div>
+                <div class="contents flex flex-col gap-[10px]">
+                    <p class="text-[#98989A] font-[400] text-[18px] tracking-[-3%] leading-[27px]">Table of Contents</p>
+                    <ul class="flex flex-col gap-[12px] bg-[#262626] p-[20px] rounded-[12px] text-[#FFFFFF] text-[14px] leading-[27px] list-disc list-inside">
+                        <li>Introduction</li>
+                        <li>AI in Diagnostic Imaging</li>
+                        <li>Predictive Analytics and Disease Prevention</li>
+                        <li>Personalized Treatment Plans</li>
+                        <li>Drug Discovery and Research</li>
+                        <li>AI in Telemedicine</li>
+                        <li>Ethical Considerations</li>
+                        <li>The Future of AI in Healthcare</li>
+                        <li>Conclusion</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-container flex flex-col gap-[6px] bg-[#1A1A1A]
+            border-t border-t-[#454549] border-b border-b-[#454549]
+            w-full px-[24px] py-[40px]
+            md:px-[60px] py-[60px]
+            xl:px-[162px] py-[80px]">
                 <h3 class="
-                h-[30px]
-                font-[500]
-                text-[20px]
-                text-[#FFFFFF]
-                leading-[150%]
-                tracking-[-3%]
-              ">Introduction</h3>
+                font-[400] text-[18px] text-[#FFFFFF] leading-[150%] tracking-[-3%]">Introduction</h3>
                 <p class="
-                text-[#98989A]
-                ">Artificial Intelligence (AI) has emerged as a transformative force in the healthcare industry,
-                    reshaping
+                text-[#98989A] text-[14px] font-[400]">Artificial Intelligence (AI) has emerged as a transformative force in the healthcare industry,reshaping
                     patient care, diagnostics, and research. In this blog post, we explore the profound impact of AI in
                     healthcare, from revolutionizing diagnostic accuracy to enhancing patient outcomes.</p>
             </div>
             <div class="para-2
-            w-full
-                relative
-                pt-[80px]
-                pr-[80px]
-                pb-[80px]
-                pl-[162px]
-                flex
-                flex-col
-                gap-[30px]
-                bg-[#1A1A1A]
-                border-b
-                border-b-[#454549]">
-                <div class="ai
-                flex
-                flex-col
-                gap-[24px]">
-                    <h2 class="
-                 text-[28px]
-                 text-[#FFFFFF]
-                 font-[500]
-                 tracking-[-3%]
-                 leading-[42px]
-                ">Artificial Intelligence (AI)</h2>
-                    <p class="
-                text-[#98989A]
-                font-[400]
-                text-[18px]
-                tracking-[-3%]
-                leading-[150%]
+                w-full relative
+                px-[24px] py-[40px] gap-[24px]
+                md:px-[60px]
+                xl:pt-[80px] xl:pr-[80px] xl:pb-[80px] xl:pl-[162px]
+                flex flex-col bg-[#1A1A1A] border-b border-b-[#454549]">
+
+                <div class="ai flex flex-col gap-[24px]">
+                    <h2 class="text-[18px] text-[#FFFFFF] font-[500] tracking-[-3%] leading-[42px]
+                    ">Artificial Intelligence (AI)</h2>
+                    <p class="text-[#98989A] text-[14px] font-[400] tracking-[-3%] leading-[150%]
                     ">Artificial Intelligence (AI) has permeated virtually every aspect of our lives, and healthcare is
                         no
                         exception. The integration of AI in healthcare is ushering in a new era of medical practice,
@@ -153,11 +187,7 @@
                         address
                         the ethical considerations surrounding this revolutionary technology.</p>
                     <p class="
-                text-[#98989A]
-                font-[400]
-                text-[18px]
-                tracking-[-3%]
-                leading-[150%]
+                text-[#98989A] font-[400] text-[18px] tracking-[-3%] leading-[150%] hidden sm:block
                     ">Artificial Intelligence (AI) has permeated virtually every aspect of our lives, and healthcare is
                         no
                         exception. The integration of AI in healthcare is ushering in a new era of medical practice,
@@ -172,17 +202,11 @@
                 flex
                 flex-col
                 gap-[14px]">
-                    <h2 class="
-                font-[500]
-                text-[28px]
-                text-[#FFFFFF]
-                leading-[42px]
-                tracking-[-3%]
-                ">Predictive Analytics and Disease Prevention</h2>
+                    <h2 class="font-[500] text-[18px] text-[#FFFFFF] ">Predictive Analytics and Disease Prevention</h2>
                     <p class="
                 text-[#98989A]
                 font-[400]
-                text-[18px]
+                text-[14px]
                 tracking-[-3%]
                 leading-[150%]
                     ">One of the most prominent applications of AI in healthcare is in diagnostic imaging. AI algorithms
@@ -197,87 +221,44 @@
             </div>
         </div>
         <!--        Sidebar right-->
-        <div class="right flex flex-col border-t border-t-[#454549]">
+
+        <div class="right hidden md:flex flex flex-col border-t border-t-[#454549]">
             <div class="icons flex gap-[14px] border-l border-[#454549] bg-[#1A1A1A] pt-[50px] pr-[162px] pb-[50px] pl-[80px]">
                 <div class="heart
-                    flex
-                    items-center
-                    justify-center
-                    gap-[4px]
-                    bg-[#1A1A1A]
-                    border
-                    border-[#454549]
-                    rounded-[100px]
+                    flex items-center justify-center gap-[4px]
+                    bg-[#1A1A1A] border border-[#454549] rounded-[100px]
                     pt-[10px] pr-[24px] pb-[10px] pl-[24px]
                     ">
                     <img src="icon/Icon.png" alt="heart">
-                    <p class="text-#98989A
-                    font-[400]
-                    text-[18px]
-                    text-[#98989A]
-                    leading-[27px]
-                    tracking-[-3%]">
+                    <p class="text-[#98989A]
+                    font-[400] text-[18px] leading-[27px] tracking-[-3%]">
                         24.5k</p>
                 </div>
 
                 <div class="eye
-                    flex
-                    items-center
-                    justify-center
-                    gap-[4px]
-                    bg-[#1A1A1A]
-                    border
-                    border-[#454549]
-                    rounded-[100px]
+                    flex items-center justify-center gap-[4px]
+                    bg-[#1A1A1A] border border-[#454549] rounded-[100px]
                     pt-[10px] pr-[24px] pb-[10px] pl-[24px]
                     ">
                     <img src="icon/Icon%20eye.png" alt="heart">
-                    <p class="text-#98989A
-                    font-[400]
-                    text-[18px]
-                    text-[#98989A]
-                    leading-[27px]
-                    tracking-[-3%]">
-                        50k</p>
+                    <p class="text-[#98989A] font-[400] text-[18px] leading-[27px] tracking-[-3%]">50k</p>
                 </div>
 
-                <div class="share
-                    flex
-                    items-center
-                    justify-center
-                    gap-[4px]
-                    bg-[#1A1A1A]
-                    border
-                    border-[#454549]
-                    rounded-[100px]
-                    pt-[10px] pr-[24px] pb-[10px] pl-[24px]
-                    ">
+                <div class="share flex items-center justify-center gap-[4px] bg-[#1A1A1A]
+                   border border-[#454549] rounded-[100px]
+                    pt-[10px] pr-[24px] pb-[10px] pl-[24px]">
                     <img src="icon/Icon%20(3).png" alt="heart">
-                    <p class="text-#98989A
-                    font-[400]
-                    text-[18px]
-                    text-[#98989A]
-                    leading-[27px]
-                    tracking-[-3%]">
-                        206</p>
+                    <p class="font-[400] text-[18px] text-[#98989A]">206</p>
                 </div>
             </div>
 
             <div class="infor
-                    w-full
-                    flex
-                    flex-1
-                    flex-col
-                    gap-[50px]
-                    bg-[#1A1A1A]
-                    pt-[80px]
-                    pr-[162px]
-                    pb-[80px]
-                    pl-[80px]
-                    border
-                    border-[#454549]">
-                <div class="grid grid-cols-2 gap-[20px]">
-
+                    w-full flex flex-1 flex-col gap-[50px] bg-[#1A1A1A]
+                    pt-[80px] pr-[162px] pr-[162px] pl-[80px]
+                    border border-[#454549]
+                    md:grid-cols-2">
+                <div class="grid grid-cols-2 gap-[20px]
+                            xl:grid-cols-2 gap-[30px]">
                     <div>
                         <p class="text-[#98989A] text-[14px]">Publication Date</p>
                         <p class="text-white text-[16px]">October 15, 2023</p>
@@ -316,15 +297,20 @@
             </div>
         </div>
     </div>
-    <div class="similar-news flex flex-col gap-[60px] pt-[80px] pr-[162px] pb-[80px] pl-[162px] bg-[#1A1A1A]">
-        <div class="similar-header flex items-center justify-between gap-[80px] leading-[36px] text-[28px] font-[500] text-[#CCCCCC]">
-            <h2>Similar News</h2>
+    <div class="similar-news flex flex-col gap-[40px] bg-[#1A1A1A]
+                pt-[40px]">
+        <div class="similar-header flex items-center gap-[80px]
+        px-[16px]
+        md:flex flex-col gap-[40px] px-[80px] py-[60px]">
+            <h2 class="text-[28px] font-[500] text-[#CCCCCC]">Similar News</h2>
             <div class="btn-view flex items-center justify-center gap-[10px] pt-[18px] pr-[24px] pb-[18px] pl-[24px] border border-[#454549] rounded-[12px]">
                 <p class="font-[400] text-[18px] text-[#98989A] leading-[27px] ">View All News</p>
                 <img src="icon/Icon%20(4).png" alt="">
             </div>
         </div>
-        <div class="news-img flex gap-[50px]">
+        <div class="news-img flex flex-col gap-[30px]
+        px-[16px] py-[40px]
+        md:flex gap-[30px]         ">
             <!--            New-1-->
             <div class="news-1 flex flex-col gap-[20px]">
                 <img src="icon/Image.png" alt="">
@@ -342,7 +328,6 @@
                             <img src="icon/Icon%20(5).png" alt="">
                             <p class="text-[#98989A] font-[400] text-[18px] ">2.2k</p>
                         </div>
-
                         <div class="share
                         flex items-center justify-center gap-[4px]
                         pt-[8px] pr-[16px] pb-[8px] pl-[16px]

@@ -9,15 +9,12 @@ width: 100%;
     justify-content: center;
     gap: 10px;
     width: 100%;
-    height: 67px;
     background: #141414;
-    padding: 20px 24px;
     border-bottom: 1px solid #262626;
 }
 .text-banner {
     color: #98989A;
     font-weight: 400;
-    font-size: 18px;
     line-height: 150%;
     letter-spacing: -3%;
 }
@@ -31,19 +28,7 @@ width: 100%;
     width: 50px;
     height: 50px;
 }
-.image-main {
-    width: 100%;
-    object-fit: cover;
-    height: 598px;
-}
-.img-container::after {
-    content: "";
-    color: #454549;
-    position: absolute;
-    height: 598px;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(20,20,20,0) 60%, rgba(20,20,20,0.8) 80%, #141414);
-}
+
 .para-2::after {
     content: "";
     position: absolute;
