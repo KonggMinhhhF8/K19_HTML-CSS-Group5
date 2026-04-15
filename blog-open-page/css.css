@@ -3,15 +3,6 @@ width: 100%;
     max-width: 1920px;
     margin: 0 auto;
 }
-.top-banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    background: #141414;
-    border-bottom: 1px solid #262626;
-}
 .text-banner {
     color: #98989A;
     font-weight: 400;
