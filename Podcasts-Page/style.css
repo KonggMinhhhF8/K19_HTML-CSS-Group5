@@ -61,6 +61,27 @@ body {
     transform: translate(3px, -3px);
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger .line {
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger .line:nth-child(1) { width: 100%; }
+.hamburger .line:nth-child(2) { width: 75%; align-self: flex-end; }
+.hamburger .line:nth-child(3) { width: 100%; }
+
 .navbar {
     width: 100%;
     height: 103px;
@@ -71,6 +92,38 @@ body {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* NÚT HAMBURGER */
+.hamburger {
+    display: none; /* Mặc định ẩn ở máy tính */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger .line {
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.hamburger .line:nth-child(1) { width: 100%; }
+.hamburger .line:nth-child(2) { width: 75%; align-self: flex-end; }
+.hamburger .line:nth-child(3) { width: 100%; }
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .logo {
@@ -338,7 +391,7 @@ body {
     width: 917px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
 }
 
 .thumbnail img {
@@ -557,7 +610,7 @@ body {
     width: 917px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
 }
 
 .conv-thumbnail-box img {
@@ -571,7 +624,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 107px;
-    gap: 14px;
+    gap: 40px;
 }
 
 .conv-article-heading {
@@ -585,7 +638,7 @@ body {
 
 .conv-article-paragraph {
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     height: 54px;
     line-height: 1.5;
     color: #98989A;
@@ -627,7 +680,7 @@ body {
 /* Latest Podcast Episodes */
 .latest-episodes {
     width: 100%;
-    height: 1721px;
+    height: auto;
     background-color: #141414;
     border-top: 1px solid #262626;
     display: flex;
@@ -710,7 +763,7 @@ body {
     background-color: #262626;
 }
 
-/* --- Khung Card --- */
+/* Khung Card */
 .episode-card {
     width: 100%;
     height: 674px;
@@ -743,7 +796,7 @@ body {
     object-fit: cover;
 }
 
-/* --- Khối Nội Dung Chữ --- */
+/* Khối Nội Dung Chữ */
 .card-content {
     display: flex;
     flex-direction: column;
@@ -768,9 +821,7 @@ body {
 }
 
 
-/* =========================================
-   FUTURE TECH REVOLUTION SECTION
-========================================= */
+/* FUTURE TECH REVOLUTION SECTION */
 
 .revolution-section {
     width: 100%;
@@ -791,7 +842,7 @@ body {
     gap: 120px;
 }
 
-/* --- Khối Header (Logo + Chữ) --- */
+/* Khối Header (Logo + Chữ) */
 .rev-header {
     display: flex;
     align-items: center;
@@ -860,13 +911,13 @@ body {
     color: #7E7E81;
 }
 
-/* --- Khối Lưới 3 Thẻ --- */
+/* Khối Lưới 3 Thẻ */
 .rev-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 20px;
     padding: 20px;
     width: 100%;
+    min-width: 720px;
     height: 246px;
     box-sizing: border-box;
     border: 1px solid #262626;
@@ -874,15 +925,14 @@ body {
     background-color: #141414;
 }
 
-/* --- Khung của từng Thẻ Tính năng (Card) --- */
+/* Khung của từng Thẻ Tính năng (Card) */
 .rev-card {
+    flex: 1;
     background-color: #1A1A1A;
     border: 1px solid #262626;
     border-radius: 12px;
-
     padding: 35px 40px;
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -910,7 +960,7 @@ body {
     align-items: center;
 }
 
-/* --- Nút tròn màu vàng --- */
+/* Nút tròn màu vàng */
 .rev-icon-btn {
     width: 52px;
     height: 52px;
@@ -944,7 +994,6 @@ body {
     transform: scale(1.1);
 }
 
-/* --- Đoạn văn bản mô tả --- */
 .rev-card-desc {
     width: 100%;
     height: 54px;
@@ -957,9 +1006,7 @@ body {
     margin: 0;
 }
 
-/* =========================================
-   FOOTER SECTION
-========================================= */
+/* FOOTER SECTION */
 
 .footer {
     width: 100%;
@@ -978,7 +1025,7 @@ body {
     flex-direction: column;
 }
 
-/* --- Lưới 5 Cột --- */
+/* Lưới 5 Cột */
 .footer-links-grid {
     display: flex;
     gap: 80px;
@@ -1041,7 +1088,7 @@ body {
     background: linear-gradient(#141414, #141414) padding-box, linear-gradient(70.33deg, #262626 61.2%, #FFD11A 216.15%) border-box;
 }
 
-/* --- Các nút bấm cột Resources --- */
+/* Các nút bấm cột Resources */
 .footer-resources {
     display: flex;
     flex-direction: column;
@@ -1099,7 +1146,7 @@ body {
     background-color: #1A1A1A;
 }
 
-/* --- Phần Bản quyền và Mạng xã hội (Đáy Footer) --- */
+/* Phần Bản quyền và Mạng xã hội (Đáy Footer) */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -1149,4 +1196,887 @@ body {
 }
 
 
+@media screen and (min-width: 1921px) {
+    .navbar,
+    .top-banner,
+    .featured-podcast,
+    .podcast-conversations,
+    .episodes-header,
+    .revolution-section,
+    .footer {
+        padding-left: calc((100% - 1596px) / 2);
+        padding-right: calc((100% - 1596px) / 2);
+    }
 
+    .hero-section {
+        padding-left: calc((100% - 1596px) / 2);
+        padding-right: calc((100% - 1596px) / 2);
+    }
+}
+
+/* BREAKPOINT 2: Màn hình Laptop (Từ 1366px đến 1920px) */
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+
+    .navbar,
+    .featured-podcast,
+    .podcast-conversations,
+    .revolution-section,
+    .footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .episodes-header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .featured-podcast,
+    .podcast-conversations {
+        gap: 40px;
+    }
+
+    /* Phần Hero Section */
+    .hero-section {
+        padding: 100px 5%;
+    }
+
+    .main-title {
+        font-size: 57px;
+        width: 90%;
+    }
+
+    .description {
+        width: 60%;
+        position: absolute;
+        font-size: 15px;
+        top: 80px;
+    }
+
+    /* AI Conversations & Featured Podcast (Left/Right Panels) */
+    .left-panel,
+    .conv-left-panel {
+        width: 35%;
+    }
+
+    .right-panel,
+    .conv-right-panel {
+        width: 65%;
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+
+    .title-row,
+    .host-card,
+    .conv-title-row,
+    .conv-host-card {
+        width: 100%;
+    }
+
+    .panel-title,
+    .conv-panel-title {
+        width: auto;
+        font-size: 27px;
+    }
+
+    .thumbnail,
+    .conv-thumbnail-box {
+        width: 100%;
+    }
+
+    .card-thumbnail img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Latest Podcast Episodes */
+    .episodes-grid {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+
+    .episode-card {
+        width: 33.3333%;
+        padding: 60px 20px;
+    }
+
+    .episodes-title {
+        width: 100%;
+        font-size: 42px;
+    }
+
+    /* Future Tech Revolution */
+    .revolution-container {
+        gap: 60px;
+    }
+
+    .rev-header {
+        gap: 40px;
+    }
+
+    .rev-info {
+        width: 100%;
+    }
+
+    .rev-title {
+        font-size: 44px;
+        height: auto;
+    }
+
+    /* 6. Phần Footer */
+    .footer-links-grid {
+        gap: 30px;
+    }
+
+    .resource-btn {
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    .resource-text {
+        font-size: 14px;
+    }
+}
+
+/* BREAKPOINT 3: Màn hình Tablet Ngang / Laptop nhỏ (Từ 1024px đến 1365px) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+
+    /* Căn lề chung */
+    .navbar, .hero-section, .featured-podcast, .podcast-conversations,
+    .episodes-header, .revolution-section, .footer {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .main-title { font-size: 50px; width: 100%; }
+    .description { position: relative; width: 80%; top: 0; margin-top: 20px; font-size: 16px; }
+
+    /* (AI Revolution/Conversations) */
+
+    .featured-podcast, .podcast-conversations {
+        padding: 0 3%;
+        gap: 40px;
+        height: auto;
+        min-height: unset;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+
+    .left-panel, .conv-left-panel {
+        width: 35%;
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .right-panel, .conv-right-panel {
+        width: 65%;
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 40px;
+        border-left: 1px solid #262626;
+    }
+
+    /* Tiêu đề & Ngôi sao */
+    .title-row, .conv-title-row {
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+        gap: 10px;
+    }
+
+    .panel-title, .conv-panel-title {
+        width: auto;
+        font-size: 20px;
+        height: auto;
+    }
+    .stars-badge, .conv-stars-badge {
+        width: 130px;
+        height: 38px;
+    }
+    .stars-badge img, .conv-stars-badge img {
+        width: 80%;
+    }
+
+    /* Thẻ Host */
+    .host-card, .conv-host-card {
+        width: 100%;
+        height: auto;
+        min-height: 90px;
+        padding: 15px;
+    }
+    .host-label, .conv-host-label { font-size: 14px; }
+    .host-name, .conv-host-name { font-size: 15px; }
+
+    /* Nút Listen Podcast */
+    .podcast-info, .conv-action-btn {
+        width: 50%;
+        padding: 10px 20px;
+        height: auto;
+        gap: 10px;
+    }
+    .btn-listen-small, .conv-btn-text { font-size: 14px; }
+
+    .thumbnail, .conv-thumbnail-box {
+        width: 100%;
+        gap: 20px;
+    }
+    .thumbnail img, .conv-thumbnail-box img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 1; /* MẸO: Ép tỷ lệ ảnh là 2:1 để luôn giữ dáng chữ nhật ngang giống Desktop */
+        object-fit: cover;
+    }
+
+    .article, .conv-article {
+        width: 100%;
+        height: auto;
+        gap: 10px;
+    }
+    .article-heading, .conv-article-heading {
+        width: 100%;
+        height: auto;
+        font-size: 22px;
+    }
+    .article-paragraph, .conv-article-paragraph {
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+    }
+
+    .stats-row, .conv-stats-row {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+    .stat-card, .conv-stat-card {
+        flex: 1;
+        width: auto;
+        height: auto;
+        padding: 20px 15px;
+    }
+    .stat-title, .conv-stat-title { font-size: 13px; }
+    .stat-number, .conv-stat-number { font-size: 16px; }
+
+    .episodes-grid {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 3%;
+        height: auto;
+    }
+
+    .episodes-grid::after {
+        display: none;
+    }
+
+    .episode-card:nth-child(n) {
+        border-right: 1px solid #262626;
+        border-bottom: 1px solid #262626;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .episode-card {
+        width: 50%;
+        border-right: 1px solid #262626;
+        border-bottom: 1px solid #262626;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .episode-card:nth-child(2n) {
+        border-right: none;
+    }
+
+    .episode-card:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+
+    .rev-badge {
+        font-size: 18px;
+    }
+
+    .rev-title {
+        font-size: 30px;
+    }
+
+    .rev-card-title {
+        font-size: 16px;
+    }
+
+    .rev-card-desc {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-links-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    .footer-column {
+        flex: 1;
+        min-width: 0;
+    }
+    .footer-col-title {
+        font-size: 18px;
+    }
+    .footer-list a {
+        font-size: 14px;
+    }
+
+    .resource-btn {
+        padding: 0 10px;
+        height: 40px;
+        gap: 8px;
+        width: 60%;
+    }
+    .resource-text {
+        font-size: 11px;
+    }
+}
+
+/* BREAKPOINT 4: Màn hình Tablet Dọc (Từ 769px đến 1023px) */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .navbar, .hero-section, .featured-podcast, .podcast-conversations,
+    .episodes-header, .revolution-section, .footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .main-title { font-size: 42px; width: 100%; }
+    .description { position: relative; width: 100%; top: 0; margin-top: 20px; font-size: 16px; }
+
+    /* Xếp chồng cột Featured & Conversations */
+    .featured-podcast, .podcast-conversations {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+        padding-top: 60px; padding-bottom: 60px;
+    }
+    .left-panel, .conv-left-panel {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .host-card, .conv-host-card {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 20px;
+    }
+    .right-panel, .conv-right-panel { width: 100%; padding: 0; border-left: none; height: auto; }
+    .title-row, .conv-title-row { width: 100%; }
+
+    .conv-article {
+        gap: 40px;
+    }
+
+    .thumbnail, .conv-thumbnail-box {
+        width: 100%;
+        gap: 60px;
+    }
+    .card-thumbnail img { height: auto; }
+
+    .episodes-grid {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        height: auto;
+    }
+
+    .episodes-title { font-size: 40px; }
+
+    .episodes-grid::after { display: none; }
+
+    .episode-card:nth-child(n) {
+        width: 50%;
+        border-right: 1px solid #262626;
+        border-bottom: 1px solid #262626;
+        padding: 50px 30px;
+        height: auto;
+    }
+
+    .episode-card:nth-child(2n) {
+        border-right: none;
+    }
+
+    /* Revolution Section */
+    .rev-header {
+        height: auto;
+        gap: 20px;
+    }
+
+    .rev-info {
+        width: 100%;
+    }
+
+    .rev-title {
+        font-size: 40px;
+        height: auto;
+        text-align: left;
+    }
+
+    .rev-card-top {
+        gap: 12px;
+    }
+
+    .rev-card-title {
+        font-size: 15px;
+    }
+
+    .rev-card-desc {
+        font-size: 12px;
+    }
+
+    /* Footer */
+    .footer-links-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+
+    .footer-column {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .footer-col-title {
+        font-size: 15px;
+    }
+    .footer-list a {
+        font-size: 13px;
+    }
+
+    .badge-new {
+        width: 40px;
+        height: 22px;
+        font-size: 10px;
+    }
+
+    .resource-btn {
+        padding: 0 12px;
+        height: 38px;
+        gap: 5px;
+        width: 90%;
+    }
+    .resource-text {
+        font-size: 12px;
+    }
+    .resource-icon img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .footer-legal, .footer-copyright {
+        font-size: 14px;
+    }
+}
+
+/* BREAKPOINT 5: Màn hình Mobile (Tối đa 768px) */
+@media screen and (max-width: 768px) {
+    /* Navbar & Hero */
+    .navbar, .hero-section, .featured-podcast, .podcast-conversations,
+    .episodes-header, .revolution-section, .footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+    .banner-text {
+        font-size: 10px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .filter {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Hiện icon Hamburger */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hiệu ứng gạch ngang biến thành chữ X khi Checkbox được tích */
+    .menu-toggle:checked ~ .hamburger .line:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+
+    .menu-toggle:checked ~ .hamburger .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked ~ .hamburger .line:nth-child(3) {
+        transform: translateY(-8.5px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #1A1A1A;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 5%;
+        transition: right 0.4s ease-in-out;
+        z-index: 999;
+        border-top: 1px solid #262626;
+        gap: 0;
+    }
+
+    /* kéo Menu trượt ra KHI CHECKBOX ĐƯỢC TÍCH */
+    .menu-toggle:checked ~ .nav-menu {
+        right: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        gap: 30px;
+    }
+
+    .nav-button {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .btn-contact {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .main-title {
+        font-size: 34px;
+        width: 100%;
+        line-height: 1.2;
+    }
+
+    .description {
+        position: relative;
+        width: 100%;
+        top: 0;
+        margin-top: 20px;
+        font-size: 16px;
+        height: auto;
+    }
+
+    /* Featured & Conversations */
+
+    .featured-podcast, .podcast-conversations {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .left-panel, .conv-left-panel, .right-panel, .conv-right-panel {
+        width: 100%;
+        height: auto;
+        border: none;
+        padding: 0;
+    }
+
+    .host-label, .conv-host-label {
+        font-size: 14px;
+    }
+
+    .host-name, .conv-host-name {
+        font-size: 15px;
+    }
+
+    .btn-listen-small, .conv-btn-text {
+        font-size: 13px;
+    }
+
+    .stars-badge img, .conv-stars-badge img {
+        width: 90%;
+    }
+
+    .title-row, .conv-title-row {
+        width: 100%;
+        height: auto;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .panel-title, .conv-panel-title {
+        font-size: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    .host-card, .conv-host-card {
+        width: 100%;
+        height: auto;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .host-info, .conv-host-info {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .podcast-info, .conv-action-btn {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    /* Nút bấm dàn giữa */
+
+    .thumbnail, .conv-thumbnail-box {
+        width: 100%;
+    }
+
+    .thumbnail img, .conv-thumbnail-box img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .article, .conv-article {
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .article-heading, .conv-article-heading {
+        font-size: 24px;
+        height: auto;
+    }
+
+    .article-paragraph, .conv-article-paragraph {
+        font-size: 16px;
+        height: auto;
+    }
+
+    /* Thống kê xếp dọc */
+
+    .stats-row, .conv-stats-row {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .stat-card, .conv-stat-card {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Latest Episodes */
+    .latest-episodes { height: auto; }
+    .episodes-header { height: auto; padding-top: 40px; padding-bottom: 30px; text-align: left; }
+    .episodes-header-title { align-items: flex-start; }
+    .episodes-badge { width: max-content; padding: 8px 12px; font-size: 14px; height: auto; }
+    .episodes-title { font-size: 30px; height: auto; width: 100%; line-height: 1.2; }
+
+    .episodes-grid {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        height: auto;
+    }
+    .episodes-grid::after { display: none; }
+
+    .episode-card:nth-child(n) {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #262626;
+        padding: 40px 0;
+        height: auto;
+    }
+
+    .episode-card:last-child {
+        border-bottom: none;
+    }
+
+
+
+    .card-thumbnail img { height: auto; max-height: 220px; }
+
+    .card-content {
+        gap: 10px;
+    }
+
+    .card-heading {
+        font-size: 18px;
+    }
+
+    .card-desc {
+        font-size: 14px;
+    }
+
+    /* Revolution Section */
+    .revolution-section {
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .revolution-container {
+        gap: 40px;
+    }
+
+    .rev-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        gap: 15px;
+    }
+
+    .rev-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .rev-info {
+        display: contents;
+    }
+
+    .rev-badge {
+        width: max-content;
+        padding: 8px 12px;
+        font-size: 14px;
+        height: auto;
+        margin: 0;
+    }
+
+    .rev-title {
+        width: 100%;
+        font-size: 32px;
+        height: auto;
+        text-align: left;
+        line-height: 1.3;
+        margin-top: 10px;
+    }
+
+    .rev-desc {
+        width: 100%;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .rev-grid {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: #141414;
+        border: 1px solid #262626;
+        padding: 15px;
+        gap: 20px;
+        min-width: unset;
+        box-sizing: border-box;
+    }
+
+    .rev-card {
+        width: 100%;
+        flex: none;
+        height: auto;
+        padding: 25px;
+    }
+
+    .rev-card-desc {
+        font-size: 15px;
+    }
+
+    .rev-card-title {
+        font-size: 20px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .footer-list a {
+        font-size: 14px;
+    }
+
+    .badge-new {
+        font-size: 14px;
+    }
+
+    .footer-links-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 20px;
+        border-bottom: none;
+    }
+
+
+    .footer-column:last-child {
+        grid-column: span 2;
+    }
+
+    .footer-resources {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .resource-text {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        border-top: 1px solid #262626;
+        padding-top: 30px;
+    }
+
+    .footer-social {
+        order: -1;
+        margin-bottom: 5px;
+    }
+
+    .footer-legal {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .legal-separator {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+
+}
