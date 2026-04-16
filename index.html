@@ -1,3 +1,4 @@
+<!-- tailwindcss -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -44,8 +50,8 @@
             border-y border-[#262626]
             ">
             <div class="header__logo cursor-pointer">
-                <img class="h-[35px] md:min-w-[144px] md:h-[40px] lg:h-[50px]" src="./assets/images/logo/Logo.png"
-                    alt="logo">
+                <img class="h-[35px] md:max-w-[144px] md:h-[40px] lg:max-w-[179px] lg:h-[50px]"
+                    src="./assets/images/logo/Logo.png" alt="logo">
             </div>
 
             <nav class="header__nav 
@@ -114,7 +120,251 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero__container bg-[#141414]">
+                <!-- WARPPER -->
+                <div class="hero__wrapper
+                md:pr-20
+                md:flex
+                lg:pr-[162px]">
+
+                    <!-- LEFT -->
+                    <div class="hero__content 
+                    flex flex-col 
+                    md:flex-[3]
+                    ">
+                        <!-- Hero__text -->
+                        <div class="hero__text 
+                            pt-10 
+                            px-4
+                            pb-[30px]
+                            flex
+                            flex-col 
+                            gap-[14px]
+                            md:pl-20 md:pr-10 md:py-25
+                            lg:pl-[162px] lg:pr-[50px] lg:pt-[150px] lg:pb-25
+                        ">
+                            <p class="hero__eyebrow 
+                                font-['Kumbh_Sans'] font-medium text-[18px] leading-[120%] tracking-[-0.03em] text-[#666666]
+                                md:text-[22px] lg:text-[30px]">
+                                Your Journey to Tomorrow Begins Here</p>
+                            <h1 class="hero__title 
+                                font-['Kumbh_Sans'] font-medium text-[30px] leading-[120%] tracking-[-0.03em] text-[#FFFFFF]
+                                md:text-[55px] lg:text-[70px]">
+                                Explore the Frontiers of Artificial Intelligence
+                            </h1>
+                            <p class="hero__description 
+                                font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#7E7E81]
+                                md:text-[16px] lg:text-[18px]">
+                                Welcome to the epicenter of AI innovation. FutureTech AI News
+                                is your passport to a world where machines think, learn,
+                                and reshape the future.</p>
+                        </div>
+                        <!-- hero__stats -->
+                        <div class="hero__stats
+                        border-t-[1px] border-[#262626]
+                        pl-4
+                        flex
+                        justify-between
+                        md:pl-20
+                        lg:pl-[162px]
+                        ">
+                            <div class="hero__stat flex-1 py-5 pr-[10px] md:py-[30px] md:pr-5 lg:pr-6 lg:py-[50px]">
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#ffffff] md:text-[30px] lg:text-10">300</span>
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFD11A] md:text-[30px] lg:text-10">+</span>
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[18px]">
+                                    Resources available</p>
+                            </div>
+                            <div
+                                class="hero__stat flex-1 py-5 md:py-[30px] px-[10px] md:px-5 lg:px-6 lg:py-[50px] border-x border-[#262626]">
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#ffffff] md:text-[30px] lg:text-10">12K</span>
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFD11A] md:text-[30px] lg:text-10">+</span>
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[18px]">
+                                    Total Downloads</p>
+                            </div>
+                            <div class="hero__stat flex-1 py-5 pl-[10px] md:py-[30px] md:pl-5 lg:pl-6 lg:py-[50px]">
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#ffffff] md:text-[30px] lg:text-10">10K</span>
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFD11A] md:text-[30px] lg:text-10">+</span>
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[18px]">
+                                    Active Users</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT -->
+                    <div class="hero__card 
+                    pt-25 pb-10 px-10
+                    flex flex-col 
+                    gap-5
+                    md:flex-[2]
+                    md:border-l border-[#262626]
+                    md:pt-[150px] md:pb-[50px] md:pl-[50px] md:pr-0
+                    md:justify-center
+                    lg:pb-[80px] lg:pl-[80px]
+                    lg:gap-[30px]
+                    ">
+                        <div class="hero__avatars 
+                            w-[134px] h-14
+                            md:w-[174px] md:h-[66px]
+                            lg:w-[218px] lg:h-20
+                            border-[1px] border-[#262626] 
+                            rounded-full
+                            bg-[#1A1A1A]
+                            p-2
+                            flex items-center
+                            ">
+                            <img class="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-15 lg:h-15"
+                                src="./assets/images/avatar/avt1.png" alt="avt1">
+                            <img class="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-15 lg:h-15 -ml-[14px]"
+                                src="./assets/images/avatar/avt2.png" alt="avt2">
+                            <img class="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-15 lg:h-15 -ml-[14px]"
+                                src="./assets/images/avatar/avt3.png" alt="avt3">
+                            <img class="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-15 lg:h-15 -ml-[14px]"
+                                src="./assets/images/avatar/avt4.png" alt="avt4">
+                        </div>
+
+                        <div class="hero__card-content">
+                            <h1 class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#ffffff]
+                                    md:text-[20px] lg:text-6">
+                                Explore 1000+ resources</h1>
+                            <p class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]
+                                    md:text-[16px] lg:text-[18px] lg:mt-[14px]">
+                                Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                        </div>
+
+                        <button class="hero__button
+                                    h-[49px] w-full max-w-[310px] 
+                                    md:max-w-[180px]
+                                    mx-auto  
+                                    md:mx-0
+                                    border border-[#262626] rounded-[8px]
+                                    py-[14px] px-5
+                                    font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] 
+                                    flex gap-1 justify-center items-center
+                                    cursor-pointer
+                                    lg:text-[18px]
+                                    lg:max-w-[231px]
+                                    lg:px-6 lg:py-[18px]">
+                            <span class="whitespace-nowrap">Explore Resources</span>
+                            <img class="w-5 h-5 lg:w-6 lg:h-6" src="./assets/icons/Icon.png" alt="icon">
+                        </button>
+
+                    </div>
+                </div>
+                <!-- FEATURES -->
+                <div class="hero__features 
+                border-t border-[#262626]
+                px-4
+                md:flex
+                md:px-20
+                md:justify-center
+                lg:px-[162px]
+                ">
+                    <div class="hero__feature py-[30px] flex-1 md:pr-6">
+                        <div class="hero__feature__content">
+                            <div class="hero__feature__icon">
+                                <img class="w-[30px] h-[30px] md:w-10 md:h-10 lg:w-[50px] lg:h-[50px]"
+                                    src="./assets/icons/hero-feature-1.svg" alt="hero-feature-1">
+                            </div>
+                            <div class="hero__feature__title flex justify-between items-center
+                            mt-4 mb-[10px]">
+                                <div>
+                                    <h1
+                                        class="font-['Inter'] font-medium text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[18px] lg:text-5">
+                                        Latest News Updates</h1>
+                                    <p
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#7E7E81] md:text-[16px] lg:text-[18px]">
+                                        Stay Current</p>
+                                </div>
+                                <button
+                                    class="w-10 h-10 bg-[#FFD11A] rounded-full p-[10px] lg:w-[52px] lg:h-[52px] lg:p-[14px]">
+                                    <img class="" src="./assets/icons/Icon-arrow-up-right.svg" alt="icon">
+                                </button>
+                            </div>
+
+                        </div>
+                        <p
+                            class="hero__feature__desc 
+                        font-['Kumbh_Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[20px]">
+                            Over 1,000 articles published monthly</p>
+                    </div>
+
+                    <div class="hero__feature
+                                        py-[30px] flex-1
+                                        border-y md:border-y-[0px] md:border-x border-[#262626] md:px-6">
+                        <div class="hero__feature__content">
+                            <div class="hero__feature__icon">
+                                <img class="w-[30px] h-[30px] md:w-10 md:h-10" src="./assets/icons/hero-feature-2.svg"
+                                    alt="hero-feature-1">
+                            </div>
+                            <div class="hero__feature__title flex justify-between items-center
+                                                mt-4 mb-[10px]">
+                                <div>
+                                    <h1
+                                        class="font-['Inter'] font-medium text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[18px] lg:text-5">
+                                        Expert Contributors</h1>
+                                    <p
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#7E7E81] md:text-[16px] lg:text-[18px]">
+                                        Trusted Insights</p>
+                                </div>
+                                <button
+                                    class="w-10 h-10 bg-[#FFD11A] rounded-full p-[10px] lg:w-[52px] lg:h-[52px] lg:p-[14px]">
+                                    <img class="lg:w-6 lg:h-6" src="./assets/icons/Icon-arrow-up-right.svg" alt="icon">
+                                </button>
+                            </div>
+
+                        </div>
+                        <p
+                            class="hero__feature__desc 
+                                            font-['Kumbh_Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[20px]">
+                            50+ renowned AI experts on our team</p>
+                    </div>
+
+                    <div class="hero__feature
+                                        py-[30px] flex-1 md:pl-6">
+                        <div class="hero__feature__content">
+                            <div class="hero__feature__icon">
+                                <img class="w-[30px] h-[30px] md:w-10 md:h-10" src="./assets/icons/hero-feature-3.svg"
+                                    alt="hero-feature-1">
+                            </div>
+                            <div class="hero__feature__title flex justify-between items-center
+                                                mt-4 mb-[10px]">
+                                <div>
+                                    <h1
+                                        class="font-['Inter'] font-medium text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[18px] lg:text-5">
+                                        Global Readership</h1>
+                                    <p
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#7E7E81] md:text-[16px] lg:text-[18px]">
+                                        Worldwide Impact</p>
+                                </div>
+                                <button
+                                    class="w-10 h-10 bg-[#FFD11A] rounded-full p-[10px] lg:w-[52px] lg:h-[52px] lg:p-[14px]">
+                                    <img class="lg:w-6 lg:h-6" src="./assets/icons/Icon-arrow-up-right.svg" alt="icon">
+                                </button>
+                            </div>
+
+                        </div>
+                        <p
+                            class="hero__feature__desc 
+                                            font-['Kumbh_Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[20px]">
+                            2 million monthly readers</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
     <footer></footer>
 </body>
 
