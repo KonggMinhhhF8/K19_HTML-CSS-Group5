@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Top bar -->
+        <div class="header__top-bar 
+        bg-[#141414] 
+        h-[74px] md:h-[45px] lg:h-[67px]
+        flex justify-center items-center
+        pt-10 px-6 pb-[14px] 
+        md:py-3 
+        lg:py-5     
+        gap-[10px]
+        border-b-[1px] border-[#262626]
+        ">
+            <p class="text-[#98989A] 
+            font-sans 
+            font-normal 
+            text-[12px] md:text-[14px] lg:text-[18px]
+            ">
+                Subscribe to our Newsletter For New & latest Blogs and Resources
+            </p>
+            <img class="inline-block 
+            w-5 lg:w-6
+            h-5 lg:h-6" src="/assets/icons/Icon.png" alt="icon-top-bar">
+        </div>
+
+        <!-- Main header -->
+        <div class=" header__main 
+            h-[75px] md:h-[81px] lg:h-[103px]
+            bg-[#1A1A1A] 
+            py-5 px-4 
+            md:px-20 
+            lg:py-6 lg:px-[162px]
+            flex justify-between items-center 
+            border-y border-[#262626]
+            ">
+            <div class="header__logo cursor-pointer">
+                <img class="h-[35px] md:max-w-[144px] md:h-[40px] lg:max-w-[179px] lg:h-[50px]"
+                    src="./assets/images/logo/Logo.png" alt="logo">
+            </div>
+
+            <nav class="header__nav 
+            hidden md:block
+            ">
+                <ul class="md:flex md:gap-6">
+                    <li class=""><a href="#" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81] 
+                            md:py-[10px] md:px-[18px] 
+                            lg:py-[14px] lg:px-6 
+                            md:hover:bg-[#141414]
+                            md:hover:border-[1px] 
+                            md:hover:border-[#333333]
+                            md:hover:rounded-[6px]
+                            md:hover:font-bold
+                            md:hover:text-[#ffffff]
+                            ">Home</a>
+                    </li>
+                    <li class=""><a href="#" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81]
+                            md:py-[10px] md:px-[18px]
+                            lg:py-[14px] lg:px-6 
+                            md:hover:bg-[#141414]
+                            md:hover:border-[1px] 
+                            md:hover:border-[#333333]
+                            md:hover:rounded-[6px]
+                            md:hover:font-bold
+                            md:hover:text-[#ffffff]
+                            ">News</a></li>
+                    <li class=""><a href="#" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81]
+                            md:py-[10px] md:px-[18px]
+                            lg:py-[14px] lg:px-6 
+                            md:hover:bg-[#141414]
+                            md:hover:border-[1px] 
+                            md:hover:border-[#333333]
+                            md:hover:rounded-[6px]
+                            md:hover:font-bold
+                            md:hover:text-[#ffffff]
+                            ">Podcasts</a></li>
+                    <li class=""><a href="#" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81]
+                            md:py-[10px] md:px-[18px]
+                            lg:py-[14px] lg:px-6 
+                            md:hover:bg-[#141414]
+                            md:hover:border-[1px] 
+                            md:hover:border-[#333333]
+                            md:hover:rounded-[6px]
+                            md:hover:font-bold
+                            md:hover:text-[#ffffff]
+                            ">Resources</a></li>
+                </ul>
+            </nav>
+            <img class="inline-block w-[34px] h-[34px] md:hidden" src="/assets/icons/Icon-menu.png" alt="icon-menu">
+
+            <div class="header__button 
+            hidden md:block
+            ">
+                <button class="md:font-sans md:text-[14px] lg:text-[18px]
+                md:min-w-[103px] md:h-[41px]
+                lg:min-w-[137px] lg:min-h-[55px]
+                md:font-medium 
+                md:text-[#141414] 
+                md:bg-[#FFD11A] 
+                md:py-[10px] md:px-[14px]
+                lg:py-[14px] lg:px-5
+                md:rounded-[6px]
+                md:cursor-pointer
+                ">Contact Us</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="hero__container bg-[#141414]">
+                <!-- WARPPER -->
+                <div class="hero__wrapper
+                md:pr-20
+                md:flex
+                lg:pr-[162px]">
+
+                    <!-- LEFT -->
+                    <div class="hero__content 
+                    flex flex-col 
+                    md:flex-[3]
+                    ">
+                        <!-- Hero__text -->
+                        <div class="hero__text 
+                            pt-10 
+                            px-4
+                            pb-[30px]
+                            flex
+                            flex-col 
+                            gap-[14px]
+                            md:pl-20 md:pr-10 md:py-25
+                            lg:pl-[162px] lg:pr-[50px] lg:pt-[150px] lg:pb-25
+                        ">
+                            <p class="hero__eyebrow 
+                                font-['Kumbh_Sans'] font-medium text-[18px] leading-[120%] tracking-[-0.03em] text-[#666666]
+                                md:text-[22px] lg:text-[30px]">
+                                Your Journey to Tomorrow Begins Here</p>
+                            <h1 class="hero__title 
+                                font-['Kumbh_Sans'] font-medium text-[30px] leading-[120%] tracking-[-0.03em] text-[#FFFFFF]
+                                md:text-[55px] lg:text-[70px]">
+                                Explore the Frontiers of Artificial Intelligence
+                            </h1>
+                            <p class="hero__description 
+                                font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#7E7E81]
+                                md:text-[16px] lg:text-[18px]">
+                                Welcome to the epicenter of AI innovation. FutureTech AI News
+                                is your passport to a world where machines think, learn,
+                                and reshape the future.</p>
+                        </div>
+                        <!-- hero__stats -->
+                        <div class="hero__stats
+                        border-t-[1px] border-[#262626]
+                        pl-4
+                        flex
+                        justify-between
+                        md:pl-20
+                        lg:pl-[162px]
+                        ">
+                            <div class="hero__stat flex-1 py-5 pr-[10px] md:py-[30px] md:pr-5 lg:pr-6 lg:py-[50px]">
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#ffffff] md:text-[30px] lg:text-10">300</span>
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFD11A] md:text-[30px] lg:text-10">+</span>
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[18px]">
+                                    Resources available</p>
+                            </div>
+                            <div
+                                class="hero__stat flex-1 py-5 md:py-[30px] px-[10px] md:px-5 lg:px-6 lg:py-[50px] border-x border-[#262626]">
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#ffffff] md:text-[30px] lg:text-10">12K</span>
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFD11A] md:text-[30px] lg:text-10">+</span>
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[18px]">
+                                    Total Downloads</p>
+                            </div>
+                            <div class="hero__stat flex-1 py-5 pl-[10px] md:py-[30px] md:pl-5 lg:pl-6 lg:py-[50px]">
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#ffffff] md:text-[30px] lg:text-10">10K</span>
+                                <span
+                                    class="font-['Inter'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFD11A] md:text-[30px] lg:text-10">+</span>
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[18px]">
+                                    Active Users</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT -->
+                    <div class="hero__card 
+                    pt-25 pb-10 px-10
+                    flex flex-col 
+                    gap-5
+                    md:flex-[2]
+                    md:border-l border-[#262626]
+                    md:pt-[150px] md:pb-[50px] md:pl-[50px] md:pr-0
+                    md:justify-center
+                    lg:pb-[80px] lg:pl-[80px]
+                    lg:gap-[30px]
+                    ">
+                        <div class="hero__avatars 
+                            w-[134px] h-14
+                            md:w-[174px] md:h-[66px]
+                            lg:w-[218px] lg:h-20
+                            border-[1px] border-[#262626] 
+                            rounded-full
+                            bg-[#1A1A1A]
+                            p-2
+                            flex items-center
+                            ">
+                            <img class="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-15 lg:h-15"
+                                src="./assets/images/avatar/avt1.png" alt="avt1">
+                            <img class="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-15 lg:h-15 -ml-[14px]"
+                                src="./assets/images/avatar/avt2.png" alt="avt2">
+                            <img class="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-15 lg:h-15 -ml-[14px]"
+                                src="./assets/images/avatar/avt3.png" alt="avt3">
+                            <img class="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-15 lg:h-15 -ml-[14px]"
+                                src="./assets/images/avatar/avt4.png" alt="avt4">
+                        </div>
+
+                        <div class="hero__card-content">
+                            <h1 class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#ffffff]
+                                    md:text-[20px] lg:text-6">
+                                Explore 1000+ resources</h1>
+                            <p class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]
+                                    md:text-[16px] lg:text-[18px] lg:mt-[14px]">
+                                Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                        </div>
+
+                        <button class="hero__button
+                                    h-[49px] w-full max-w-[310px] 
+                                    md:max-w-[180px]
+                                    mx-auto  
+                                    md:mx-0
+                                    border border-[#262626] rounded-[8px]
+                                    py-[14px] px-5
+                                    font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] 
+                                    flex gap-1 justify-center items-center
+                                    cursor-pointer
+                                    lg:text-[18px]
+                                    lg:max-w-[231px]
+                                    lg:px-6 lg:py-[18px]">
+                            <span class="whitespace-nowrap">Explore Resources</span>
+                            <img class="w-5 h-5 lg:w-6 lg:h-6" src="./assets/icons/Icon.png" alt="icon">
+                        </button>
+
+                    </div>
+                </div>
+                <!-- FEATURES -->
+                <div class="hero__features 
+                border-t border-[#262626]
+                px-4
+                md:flex
+                md:px-20
+                md:justify-center
+                lg:px-[162px]
+                ">
+                    <div class="hero__feature py-[30px] flex-1 md:pr-6">
+                        <div class="hero__feature__content">
+                            <div class="hero__feature__icon">
+                                <img class="w-[30px] h-[30px] md:w-10 md:h-10 lg:w-[50px] lg:h-[50px]"
+                                    src="./assets/icons/hero-feature-1.svg" alt="hero-feature-1">
+                            </div>
+                            <div class="hero__feature__title flex justify-between items-center
+                            mt-4 mb-[10px]">
+                                <div>
+                                    <h1
+                                        class="font-['Inter'] font-medium text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[18px] lg:text-5">
+                                        Latest News Updates</h1>
+                                    <p
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#7E7E81] md:text-[16px] lg:text-[18px]">
+                                        Stay Current</p>
+                                </div>
+                                <button
+                                    class="w-10 h-10 bg-[#FFD11A] rounded-full p-[10px] lg:w-[52px] lg:h-[52px] lg:p-[14px]">
+                                    <img class="" src="./assets/icons/Icon-arrow-up-right.svg" alt="icon">
+                                </button>
+                            </div>
+
+                        </div>
+                        <p
+                            class="hero__feature__desc 
+                        font-['Kumbh_Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[20px]">
+                            Over 1,000 articles published monthly</p>
+                    </div>
+
+                    <div class="hero__feature
+                                        py-[30px] flex-1
+                                        border-y md:border-y-[0px] md:border-x border-[#262626] md:px-6">
+                        <div class="hero__feature__content">
+                            <div class="hero__feature__icon">
+                                <img class="w-[30px] h-[30px] md:w-10 md:h-10" src="./assets/icons/hero-feature-2.svg"
+                                    alt="hero-feature-1">
+                            </div>
+                            <div class="hero__feature__title flex justify-between items-center
+                                                mt-4 mb-[10px]">
+                                <div>
+                                    <h1
+                                        class="font-['Inter'] font-medium text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[18px] lg:text-5">
+                                        Expert Contributors</h1>
+                                    <p
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#7E7E81] md:text-[16px] lg:text-[18px]">
+                                        Trusted Insights</p>
+                                </div>
+                                <button
+                                    class="w-10 h-10 bg-[#FFD11A] rounded-full p-[10px] lg:w-[52px] lg:h-[52px] lg:p-[14px]">
+                                    <img class="lg:w-6 lg:h-6" src="./assets/icons/Icon-arrow-up-right.svg" alt="icon">
+                                </button>
+                            </div>
+
+                        </div>
+                        <p
+                            class="hero__feature__desc 
+                                            font-['Kumbh_Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[20px]">
+                            50+ renowned AI experts on our team</p>
+                    </div>
+
+                    <div class="hero__feature
+                                        py-[30px] flex-1 md:pl-6">
+                        <div class="hero__feature__content">
+                            <div class="hero__feature__icon">
+                                <img class="w-[30px] h-[30px] md:w-10 md:h-10" src="./assets/icons/hero-feature-3.svg"
+                                    alt="hero-feature-1">
+                            </div>
+                            <div class="hero__feature__title flex justify-between items-center
+                                                mt-4 mb-[10px]">
+                                <div>
+                                    <h1
+                                        class="font-['Inter'] font-medium text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[18px] lg:text-5">
+                                        Global Readership</h1>
+                                    <p
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#7E7E81] md:text-[16px] lg:text-[18px]">
+                                        Worldwide Impact</p>
+                                </div>
+                                <button
+                                    class="w-10 h-10 bg-[#FFD11A] rounded-full p-[10px] lg:w-[52px] lg:h-[52px] lg:p-[14px]">
+                                    <img class="lg:w-6 lg:h-6" src="./assets/icons/Icon-arrow-up-right.svg" alt="icon">
+                                </button>
+                            </div>
+
+                        </div>
+                        <p
+                            class="hero__feature__desc 
+                                            font-['Kumbh_Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.03em] text-[#98989A] lg:text-[20px]">
+                            2 million monthly readers</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- feature-showcase -->
+        <section class="showcase">
+            <div class="header__showcase 
+            h-[155px] 
+            md:h-[259px]
+            border-t border-b border-[#262626] 
+            bg-[#1A1A1A] 
+            py-10 px-4
+            md:px-20 md:py-20
+            ">
+                <button
+                    class="header__badge bg-[#333333] rounded-[4px] py-1 px-2 font-['Inter'] font-medium text-[14px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[16px]">Unlock
+                    the Power
+                    of
+                </button>
+                <div
+                    class="header__title font-['Kumbh_Sans'] font-medium text-[28px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] mt-[10px] md:text-[44px]">
+                    FutureTech Features</div>
+            </div>
+            <!-- Content -->
+            <div class="content__showcase bg-[#141414] md:grid md:grid-cols-[minmax(400px,1fr)_2fr]">
+                <div
+                    class="item-1 px-4 py-[50px] border-[#262626] md:pl-20 md:pr-15 md:flex md:flex-col md:justify-center">
+                    <img class="w-[50px] h-[50px] mb-5" src="./assets/icons/IconFureTech1.svg" alt="IconFureTech1">
+                    <h1
+                        class="font-['Kumbh_Sans'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[30px]">
+                        Future Technology Blog
+                    </h1>
+                    <p
+                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] md:text-[16px]">
+                        Stay informed with our blog section dedicated to future technology.</p>
+                </div>
+
+                <div
+                    class="item-2 border-t border-[#262626] mx-4 py-[30px] px-4 md:border-t-0 md:mx-0 md:border-l md:grid md:grid-cols-2 md:gap-5 md:py-15 md:pl-15 md:pr-20">
+                    <div class="p-6 rounded-[10px] bg-[#1A1A1A] border border-[#262626] ">
+                        <h1
+                            class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[20px]">
+                            Quantity</h1>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] mt-1  md:text-[16px]">
+                            Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    </div>
+
+                    <div class="p-6 rounded-[10px] bg-[#1A1A1A] border border-[#262626] mt-[10px] md:mt-0">
+                        <h1
+                            class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[20px]">
+                            Variety</h1>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] mt-1 md:text-[16px]">
+                            Articles cover fields like AI, robotics, biotechnology, and more.</p>
+                    </div>
+
+                    <div class="p-6 rounded-[10px] bg-[#1A1A1A] border border-[#262626] mt-[10px] md:mt-0">
+                        <h1
+                            class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[20px]">
+                            Frequency</h1>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] mt-1 md:text-[16px]">
+                            Fresh content added daily to keep you up to date.</p>
+                    </div>
+
+                    <div class="p-6 rounded-[10px] bg-[#1A1A1A] border border-[#262626] mt-[10px] md:mt-0">
+                        <h1
+                            class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[20px]">
+                            Authoritative</h1>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] mt-1 md:text-[16px]">
+                            Written by our team of tech experts and industry professionals.</p>
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="item-1 px-4 py-[50px] border-t border-[#262626] md:pl-20 md:pr-15 md:flex md:flex-col md:justify-center">
+                    <img class="w-[50px] h-[50px] mb-5" src="./assets/icons/IconFureTech2.svg" alt="IconFureTech1">
+                    <h1
+                        class="font-['Kumbh_Sans'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[30px]">
+                        Research Insights Blogs
+                    </h1>
+                    <p
+                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] md:text-[16px]">
+                        Dive deep into future technology concepts with our research section.</p>
+                </div>
+
+                <div
+                    class="item-2 border-t border-[#262626] mx-4 py-[30px] px-4 md:mx-0 md:border-l md:grid md:grid-cols-2 md:gap-5 md:py-15 md:pl-15 md:pr-20">
+                    <div class="p-6 rounded-[10px] bg-[#1A1A1A] border border-[#262626] ">
+                        <h1
+                            class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[20px]">
+                            Depth</h1>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] mt-1 md:text-[16px]">
+                            500+ research articles for in-depth understanding.</p>
+                    </div>
+
+                    <div class="p-6 rounded-[10px] bg-[#1A1A1A] border border-[#262626] mt-[10px] md:mt-0">
+                        <h1
+                            class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[20px]">
+                            Graphics</h1>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] mt-1 md:text-[16px]">
+                            Visual aids and infographics to enhance comprehension.</p>
+                    </div>
+
+                    <div class="p-6 rounded-[10px] bg-[#1A1A1A] border border-[#262626] mt-[10px] md:mt-0">
+                        <h1
+                            class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[20px]">
+                            Trends</h1>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] mt-1 md:text-[16px]">
+                            Explore emerging trends in future technology research.</p>
+                    </div>
+
+                    <div class="p-6 rounded-[10px] bg-[#1A1A1A] border border-[#262626] mt-[10px] md:mt-0">
+                        <h1
+                            class="font-['Inter'] font-medium text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[20px]">
+                            Contributors</h1>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] mt-1 md:text-[16px]">
+                            Contributions from tech researchers and academics.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG -->
+        <section class="blog">
+            <!-- Header -->
+            <div class="blog__header h-[270px] 
+            md:h-[259px]
+            border-t border-b border-[#262626] 
+            bg-[#1A1A1A] 
+            py-10 px-4
+            md:px-20 md:py-20
+            md:flex md:justify-between
+            ">
+                <div>
+                    <button
+                        class="header__badge bg-[#333333] rounded-[4px] py-1 px-2 font-['Inter'] font-medium text-[14px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[16px]">A
+                        Knowledge Treasure Trove
+                    </button>
+                    <h2
+                        class="blog__title font-['Kumbh_Sans'] font-medium text-[28px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] mt-[10px] md:text-[44px]">
+                        Explore FutureTech's In-Depth Blog Posts
+                    </h2>
+                </div>
+                <button class="blog__action bg-[#141414] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] 
+                rounded-[8px] 
+                px-[20px] py-[8px] 
+                border border-[#262626] 
+                w-full mt-[30px] cursor-pointer
+                    flex items-center justify-center gap-2 
+                    md:w-auto md:mt-0 md:px-[14px] md:self-center
+                    ">View All Blogs
+                    <img class="w-5 h-5" src="./assets/icons/Icon.png" alt="Icon">
+                </button>
+            </div>
+
+            <!-- Filter -->
+            <div
+                class="blog__filter h-[97px] bg-[#141414] px-5 py-4 flex gap-3 overflow-x-auto whitespace-nowrap border-b border-[#262626] md:justify-center ">
+                <button class=" w-[150px] flex items-center justify-center border border-[#262626] rounded-[7px] px-4 py-[18px] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] shrink-0 cursor-pointer
+                    hover:font-medium hover:bg-[#1A1A1A]">All</button>
+                <button
+                    class="w-[150px] flex items-center justify-center border border-[#262626] rounded-[7px] px-4 py-[18px] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] shrink-0 cursor-pointer">Quantum
+                    Computing</button>
+                <button class="w-[150px] flex items-center justify-center border border-[#262626] rounded-[7px] px-4 py-[18px] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] 
+                    shrink-0 cursor-pointer">AI
+                    Ethics</button>
+                <button
+                    class="w-[150px] flex items-center justify-center border border-[#262626] rounded-[7px] px-4 py-[18px] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] shrink-0 cursor-pointer">Space
+                    Exploration</button>
+                <button
+                    class="w-[150px] flex items-center justify-center border border-[#262626] rounded-[7px] px-4 py-[18px] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] shrink-0 cursor-pointer">Biotechnology</button>
+                <button
+                    class="w-[150px] flex items-center justify-center border border-[#262626] rounded-[7px] px-4 py-[18px] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] shrink-0 cursor-pointer">Renewable
+                    Energy</button>
+            </div>
+
+            <!-- Blog List -->
+            <div class="blog__list border-b-[#262626] px-4 bg-[#141414] md:px-20">
+
+                <!-- Item -->
+                <article class="py-10 flex flex-col gap-[30px] border-b border-[#262626]
+                md:grid md:grid-cols-[250px_1fr_150px] md:items-start
+                ">
+
+                    <!-- Top Row -->
+                    <div class="blog__top flex justify-between items-center md:contents">
+                        <!-- author -->
+                        <div class="blog__author flex items-center">
+                            <img class="w-15 h-15" src="./assets/images/avatar/JohnTechson.png" />
+                            <div class="ml-2">
+                                <p
+                                    class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                    John Techson</p>
+                                <span
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">Quantum
+                                    Computing</span>
+                            </div>
+                        </div>
+
+                        <!-- button -->
+                        <div class="blog__action md:col-start-3 md:justify-self-end md:self-center">
+                            <button class="bg-[#141414] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] rounded-[8px] px-[20px] py-[14px] border border-[#262626] cursor-pointer
+                                                            flex items-center justify-center gap-2">View Blog
+                                <img class="w-5 h-5" src="./assets/icons/Icon.png" alt="Icon">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- content -->
+                    <div class="blog__content flex flex-col gap-[30px] md:col-start-2 md:row-start-1">
+                        <div
+                            class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                            October
+                            15, 2023
+                        </div>
+
+                        <div>
+                            <h3
+                                class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                The Quantum Leap in Computing
+                            </h3>
+                            <p
+                                class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                Explore the revolution in quantum computing, its applications, and its potential impact
+                                on
+                                various industries.
+                            </p>
+                        </div>
+
+                        <div class="blog__meta flex gap-3 mt-4">
+                            <!-- Like -->
+                            <div
+                                class="flex items-center gap-2 px-[12px] py-[6px] rounded-full border border-[#262626] bg-[#141414] font-['Kumbh_Sans'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                <img class="w-4 h-4" src="./assets/icons/Union.svg" alt="Union">
+                                <span>24.5K</span>
+                            </div>
+                            <!-- Comment -->
+                            <div
+                                class="flex items-center gap-2 px-[12px] py-[6px] rounded-full border border-[#262626] bg-[#141414] font-['Kumbh_Sans'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                <img class="w-4 h-4" src="./assets/icons/comment.svg" alt="comment">
+                                <span>50</span>
+                            </div>
+                            <!-- Share -->
+                            <div
+                                class="flex items-center gap-2 px-[12px] py-[6px] rounded-full border border-[#262626] bg-[#141414] font-['Kumbh_Sans'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                <img class="w-4 h-4" src="./assets/icons/send.svg" alt="send">
+                                <span>20</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="py-10 flex flex-col gap-[30px] border-b border-[#262626]
+                md:grid md:grid-cols-[250px_1fr_150px] md:items-start">
+
+                    <!-- Top Row -->
+                    <div class="blog__top flex justify-between items-center md:contents">
+                        <!-- author -->
+                        <div class="blog__author flex items-center">
+                            <img class="w-15 h-15" src="./assets/images/avatar/SarahEthicist.png" />
+                            <div class="ml-2">
+                                <p
+                                    class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                    Sarah Ethicist</p>
+                                <span
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">AI
+                                    Ethics</span>
+                            </div>
+                        </div>
+
+                        <!-- button -->
+                        <div class="blog__action md:col-start-3 md:justify-self-end md:self-center">
+                            <button
+                                class="bg-[#141414] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] rounded-[8px] px-[20px] py-[14px] border border-[#262626] cursor-pointer
+                                                                            flex items-center justify-center gap-2">View
+                                Blog
+                                <img class="w-5 h-5" src="./assets/icons/Icon.png" alt="Icon">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- content -->
+                    <div class="blog__content flex flex-col gap-[30px] md:col-start-2 md:row-start-1">
+                        <div
+                            class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                            November 5, 2023
+                        </div>
+
+                        <div>
+                            <h3
+                                class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                The Ethical Dilemmas of AI
+                            </h3>
+                            <p
+                                class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                A deep dive into ethical challenges posed by AI, including bias, privacy, and
+                                transparency.
+                            </p>
+                        </div>
+
+                        <div class="blog__meta flex gap-3 mt-4">
+                            <!-- Like -->
+                            <div
+                                class="flex items-center gap-2 px-[12px] py-[6px] rounded-full border border-[#262626] bg-[#141414] font-['Kumbh_Sans'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                <img class="w-4 h-4" src="./assets/icons/heart.svg" alt="heart">
+                                <span>32K</span>
+                            </div>
+                            <!-- Comment -->
+                            <div
+                                class="flex items-center gap-2 px-[12px] py-[6px] rounded-full border border-[#262626] bg-[#141414] font-['Kumbh_Sans'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                <img class="w-4 h-4" src="./assets/icons/comment.svg" alt="comment">
+                                <span>72</span>
+                            </div>
+                            <!-- Share -->
+                            <div
+                                class="flex items-center gap-2 px-[12px] py-[6px] rounded-full border border-[#262626] bg-[#141414] font-['Kumbh_Sans'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                <img class="w-4 h-4" src="./assets/icons/send.svg" alt="send">
+                                <span>18</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="py-10 flex flex-col gap-[30px] border-b border-[#262626]
+                md:grid md:grid-cols-[250px_1fr_150px] md:items-start">
+
+                    <!-- Top Row -->
+                    <div class="blog__top flex justify-between items-center md:contents">
+                        <!-- author -->
+                        <div class="blog__author flex items-center">
+                            <img class="w-15 h-15" src="./assets/images/avatar/AstronomerX.png" />
+                            <div class="ml-2">
+                                <p
+                                    class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                    Astronomer X</p>
+                                <span
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">Space
+                                    Exploration</span>
+                            </div>
+                        </div>
+
+                        <!-- button -->
+                        <div class="blog__action md:col-start-3 md:justify-self-end md:self-center">
+                            <button
+                                class="bg-[#141414] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] rounded-[8px] px-[20px] py-[14px] border border-[#262626] cursor-pointer
+                                                                            flex items-center justify-center gap-2">View
+                                Blog
+                                <img class="w-5 h-5" src="./assets/icons/Icon.png" alt="Icon">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- content -->
+                    <div class="blog__content flex flex-col gap-[30px] md:col-start-2 md:row-start-1">
+                        <div
+                            class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                            December 10, 2023
+                        </div>
+
+                        <div>
+                            <h3
+                                class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                The Mars Colonization Challenge
+                            </h3>
+                            <p
+                                class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                Exploring the technical and logistical challenges of human colonization on Mars.
+                            </p>
+                        </div>
+
+                        <div class="blog__meta flex gap-3 mt-4">
+                            <!-- Like -->
+                            <div
+                                class="flex items-center gap-2 px-[12px] py-[6px] rounded-full border border-[#262626] bg-[#141414] font-['Kumbh_Sans'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                <img class="w-4 h-4" src="./assets/icons/heart.svg" alt="heart">
+                                <span>20K</span>
+                            </div>
+                            <!-- Comment -->
+                            <div
+                                class="flex items-center gap-2 px-[12px] py-[6px] rounded-full border border-[#262626] bg-[#141414] font-['Kumbh_Sans'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                <img class="w-4 h-4" src="./assets/icons/comment.svg" alt="comment">
+                                <span>31</span>
+                            </div>
+                            <!-- Share -->
+                            <div
+                                class="flex items-center gap-2 px-[12px] py-[6px] rounded-full border border-[#262626] bg-[#141414] font-['Kumbh_Sans'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                <img class="w-4 h-4" src="./assets/icons/send.svg" alt="send">
+                                <span>12</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- resources -->
+        <section class="resources">
+            <!-- HEADER -->
+            <div class="h-[270px] 
+                                    md:h-[259px]
+                                    border-t border-b border-[#262626] 
+                                    bg-[#1A1A1A] 
+                                    py-10 px-4
+                                    md:px-20 md:py-20
+                                    md:flex md:justify-between
+                                    ">
+                <div>
+                    <button
+                        class="header__badge bg-[#333333] rounded-[4px] py-1 px-2 font-['Inter'] font-medium text-[14px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[16px]">Your
+                        Gateway to In-Depth Information
+                    </button>
+                    <h2
+                        class="blog__title font-['Kumbh_Sans'] font-medium text-[28px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] mt-[10px] md:text-[44px]">
+                        Unlock Valuable Knowledge with FutureTech's Resources
+                    </h2>
+                </div>
+                <button class="blog__action bg-[#141414] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] 
+                                        rounded-[8px] 
+                                        px-[20px] py-[8px] 
+                                        border border-[#262626] 
+                                        w-full mt-[30px] cursor-pointer
+                                            flex items-center justify-center gap-2 
+                                            md:w-auto md:mt-0 md:px-[14px] md:self-center
+                                            ">View All Resources
+                    <img class="w-5 h-5" src="./assets/icons/Icon.png" alt="Icon">
+                </button>
+            </div>
+            <!-- CONTENT -->
+            <div class="">
+                <div class="md:grid md:grid-cols-[1fr_2fr] ">
+                    <div class="bg-[#141414] px-4 py-10 flex flex-col gap-6 md:pl-20 md:justify-center">
+                        <img class="w-[50px] h-[50px]" src="./assets/icons/Ebook.svg" alt="Ebook">
+                        <div>
+                            <h3
+                                class="font-['Kumbh_Sans'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                Ebooks
+                            </h3>
+                            <p
+                                class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                Explore our collection of ebooks covering a wide spectrum of future technology topics.
+                            </p>
+                        </div>
+
+                        <button class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]
+                            flex gap-1 justify-center items-center cursor-pointer
+                            bg-[#1A1A1A] py-[18px] px-[20px] border border-[#262626] rounded-[6px] ">
+                            <span>Download Ebooks Now</span>
+                            <img class="w-5 h-5" src="./assets/icons/Icon.png" alt="icon">
+                        </button>
+
+                        <div
+                            class="border border-[#262626] rounded-[8px] py-5 px-[30px] bg-[#1A1A1A] flex justify-center items-center gap-[30px]">
+                            <div>
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                    Downloaded By
+                                </p>
+                                <span
+                                    class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                    10k + Users
+                                </span>
+                            </div>
+                            <div class="w-[134px] h-14 rounded-[12px] bg-[#141414] p-2 flex items-center
+                                md:w-auto md:h-[56px]">
+                                <img class="w-10 h-10 md:w-[40px] md:h-[40px]" src="./assets/images/avatar/avt1.png"
+                                    alt="avt1">
+                                <img class="w-10 h-10 md:w-[40px] md:h-[40px] -ml-[14px]"
+                                    src="./assets/images/avatar/avt2.png" alt="avt2">
+                                <img class="w-10 h-10 md:w-[40px] md:h-[40px] -ml-[14px]"
+                                    src="./assets/images/avatar/avt3.png" alt="avt3">
+                                <img class="w-10 h-10 md:w-[40px] md:h-[40px] -ml-[14px]"
+                                    src="./assets/images/avatar/avt4.png" alt="avt4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#141414] px-4 md:pr-20 ">
+                        <div class="border-t border-[#262626] py-10 flex flex-col gap-6 
+                            md:border-t-0 md:border-l
+                            md:grid md:grid-cols-[200px_1fr]
+                            md:py-15 md:pl-15">
+                            <div
+                                class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                Variety of Topics
+                            </div>
+                            <div
+                                class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                Topics include AI in education (25%), renewable energy (20%), healthcare (15%), space
+                                exploration (25%), andbiotechnology (15%).
+                            </div>
+                            <div class="md:col-start-1 md:col-end-3 md:row-start-2">
+                                <img class="w-full h-auto md:w-full md:h-[275px]" src="./assets/images/banner/Ebook.png"
+                                    alt="banner">
+                            </div>
+                            <!-- <div class="flex flex-col gap-4"> -->
+                            <div class="border border-[#262626] rounded-[8px] p-5 bg-[#1A1A1A]">
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                    Total Ebooks
+                                </p>
+                                <h3
+                                    class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                    Over 100 ebooks
+                                </h3>
+                            </div>
+                            <div
+                                class="border border-[#262626] rounded-[8px] p-5 bg-[#1A1A1A] flex items-center justify-between gap-5">
+                                <div>
+                                    <p
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                        Download Formats</p>
+                                    <h3
+                                        class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                        PDF format for access.</h3>
+                                </div>
+                                <button
+                                    class="flex items-center gap-1 border border-[#262626] py-[14px] px-5 rounded-[8px] bg-[#141414] cursor-pointer">
+                                    <span
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">Preview
+                                    </span>
+                                    <img class="w-5 h-5" src="./assets/icons/Eye.svg" alt="icon">
+                                </button>
+                            </div>
+                            <div
+                                class="border border-[#262626] rounded-[8px] p-5 bg-[#1A1A1A] md:col-start-1 md:col-end-3 md:row-start-4">
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                    Average Author Expertise</p>
+                                <h3
+                                    class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                    Ebooks are authored by renowned experts with an average of 15 years of
+                                    experience
+                                </h3>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-[#262626] md:grid md:grid-cols-[1fr_2fr] ">
+                    <div class="bg-[#141414] px-4 py-10 flex flex-col gap-6 md:pl-20 md:justify-center">
+                        <img class="w-[50px] h-[50px]" src="./assets/icons/Whitepapers.svg" alt="Ebook">
+                        <div>
+                            <h3
+                                class="font-['Kumbh_Sans'] font-semibold text-[24px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                Whitepapers
+                            </h3>
+                            <p
+                                class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                Dive into comprehensive reports and analyses with our collection of whitepapers.
+                            </p>
+                        </div>
+
+                        <button class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]
+                                            flex gap-1 justify-center items-center cursor-pointer
+                                            bg-[#1A1A1A] py-[18px] px-[20px] border border-[#262626] rounded-[6px] ">
+                            <span>Download Whitepapers Now</span>
+                            <img class="w-5 h-5" src="./assets/icons/Icon.png" alt="icon">
+                        </button>
+
+                        <div
+                            class="border border-[#262626] rounded-[8px] py-5 px-[30px] bg-[#1A1A1A] flex justify-center items-center gap-[30px]">
+                            <div>
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                    Downloaded By
+                                </p>
+                                <span
+                                    class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                    10k + Users
+                                </span>
+                            </div>
+                            <div class="w-[134px] h-14 rounded-[12px] bg-[#141414] p-2 flex items-center
+                                                md:w-auto md:h-[56px]">
+                                <img class="w-10 h-10 md:w-[40px] md:h-[40px]" src="./assets/images/avatar/avt01.png"
+                                    alt="avt01">
+                                <img class="w-10 h-10 md:w-[40px] md:h-[40px] -ml-[14px]"
+                                    src="./assets/images/avatar/avt02.png" alt="avt02">
+                                <img class="w-10 h-10 md:w-[40px] md:h-[40px] -ml-[14px]"
+                                    src="./assets/images/avatar/avt03.png" alt="avt03">
+                                <img class="w-10 h-10 md:w-[40px] md:h-[40px] -ml-[14px]"
+                                    src="./assets/images/avatar/avt04.png" alt="avt04">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#141414] px-4 md:pr-20 ">
+                        <div class="border-t border-[#262626] py-10 flex flex-col gap-6 
+                                            md:border-t-0 md:border-l
+                                            md:grid md:grid-cols-[200px_1fr]
+                                            md:py-15 md:pl-15">
+                            <div
+                                class="font-['Inter'] font-semibold text-[18px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                Topics Coverage
+                            </div>
+                            <div
+                                class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                Whitepapers cover quantum computing (20%), AI ethics (15%), space mining prospects
+                                (20%), AI in healthcare (15%), and
+                                renewable energy strategies (30%).
+                            </div>
+                            <div class="md:col-start-1 md:col-end-3 md:row-start-2">
+                                <img class="w-full h-auto md:w-full md:h-[275px]"
+                                    src="./assets/images/banner/Whitepaper.png" alt="banner">
+                            </div>
+                            <!-- <div class="flex flex-col gap-4"> -->
+                            <div class="border border-[#262626] rounded-[8px] p-5 bg-[#1A1A1A]">
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                    Total Whitepapers
+                                </p>
+                                <h3
+                                    class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                    Over 50 whitepapers
+                                </h3>
+                            </div>
+                            <div
+                                class="border border-[#262626] rounded-[8px] p-5 bg-[#1A1A1A] flex items-center justify-between gap-5">
+                                <div>
+                                    <p
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                        Download Formats</p>
+                                    <h3
+                                        class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                        PDF format for access.</h3>
+                                </div>
+                                <button
+                                    class="flex items-center gap-1 border border-[#262626] py-[14px] px-5 rounded-[8px] bg-[#141414] cursor-pointer">
+                                    <span
+                                        class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">Preview
+                                    </span>
+                                    <img class="w-5 h-5" src="./assets/icons/Eye.svg" alt="icon">
+                                </button>
+                            </div>
+                            <div
+                                class="border border-[#262626] rounded-[8px] p-5 bg-[#1A1A1A] md:col-start-1 md:col-end-3 md:row-start-4">
+                                <p
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                                    Average Author Expertise</p>
+                                <h3
+                                    class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                    Whitepapers are authored by subject matter experts with an average of 20 years of
+                                    experience.
+                                </h3>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonial -->
+        <section class="testimonial">
+            <!-- HEADER -->
+            <div class="h-[270px] 
+                                                md:h-[259px]
+                                                border-t border-b border-[#262626] 
+                                                bg-[#1A1A1A] 
+                                                py-10 px-4
+                                                md:px-20 md:py-20
+                                                md:flex md:justify-between
+                                                ">
+                <div>
+                    <button
+                        class="header__badge bg-[#333333] rounded-[4px] py-1 px-2 font-['Inter'] font-medium text-[14px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] md:text-[16px]">What
+                        Our Readers Say
+                    </button>
+                    <h2
+                        class="blog__title font-['Kumbh_Sans'] font-medium text-[28px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] mt-[10px] md:text-[44px]">
+                        Real Words from Real Readers
+                    </h2>
+                </div>
+                <button class="blog__action bg-[#141414] font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] 
+                                                    rounded-[8px] 
+                                                    px-[20px] py-[8px] 
+                                                    border border-[#262626] 
+                                                    w-full mt-[30px] cursor-pointer
+                                                        flex items-center justify-center gap-2 
+                                                        md:w-auto md:mt-0 md:px-[14px] md:self-center
+                                                        ">View All Testimonials
+                    <img class="w-5 h-5" src="./assets/icons/Icon.png" alt="Icon">
+                </button>
+            </div>
+
+            <!-- Content -->
+            <div class="bg-[#141414]">
+                <div>
+                    <div class="px-4 border-b border-[#262626] md:px-20 md:grid md:grid-cols-3 md:items-stretch">
+                        <div
+                            class="border-b border-[#262626] py-10 md:border-b-0 md:pr-10 md:flex md:flex-col md:h-full">
+                            <div class="flex gap-[10px] justify-center items-center">
+                                <img class="w-[50px] h-[50px]" src="./assets/images/avatar/Sarah.png" alt="Sarah">
+                                <div class="">
+                                    <h4 class="font-['Inter'] font-medium text-[18px] leading-[150%] text-[#FFFFFF]">
+                                        Sarah
+                                        Thompson</h4>
+                                    <span
+                                        class="font-['Inter'] font-normal text-[16px] leading-[150%] text-[#666666]">San
+                                        Francisco, USA</span>
+                                </div>
+                            </div>
+                            <div class="relative w-full mt-[30px] md:flex md:flex-1">
+                                <div class="border border-[#262626] rounded-full w-[140px] h-[36px] bg-[#141414] flex gap-1 justify-center items-center 
+                                    absolute left-1/2 -translate-x-1/2 -top-[18px]">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+
+                                </div>
+                                <div class="font-['Inter'] font-normal text-[14px] leading-[150%] text-[#FFFFFF] border border-[#262626] rounded-[10px] px-5 pt-[30px] pb-5 bg-[#1A1A1A] text-center
+                                ">
+                                    The ebooks on AI in education have been a game-changer for my research. They provide
+                                    in-depth
+                                    insights and case studies
+                                    that are invaluable for staying updated.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="border-b border-[#262626] py-10 md:border-b-0 md:px-10 md:border-x md:flex md:flex-col md:h-full">
+                            <div class="flex gap-[10px] justify-center items-center">
+                                <img class="w-[50px] h-[50px]" src="./assets/images/avatar/Raj.png" alt="Raj">
+                                <div class="">
+                                    <h4 class="font-['Inter'] font-medium text-[18px] leading-[150%] text-[#FFFFFF]">Raj
+                                        Patel</h4>
+                                    <span
+                                        class="font-['Inter'] font-normal text-[16px] leading-[150%] text-[#666666]">Mumbai,
+                                        India</span>
+                                </div>
+                            </div>
+                            <div class="relative w-full mt-[30px] md:flex md:flex-1">
+                                <div class="border border-[#262626] rounded-full w-[140px] h-[36px] bg-[#141414] flex gap-1 justify-center items-center 
+                                                        absolute left-1/2 -translate-x-1/2 -top-[18px]">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+
+                                </div>
+                                <div
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] text-[#FFFFFF] border border-[#262626] rounded-[10px] px-5 pt-[30px] pb-5 bg-[#1A1A1A] text-center md:h-full">
+                                    The whitepapers on renewable energy strategies have greatly influenced my work. They
+                                    offer detailed data and analysis.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" py-10 md:border-b-0 md:pl-10 md:flex md:flex-col md:h-full">
+                            <div class="flex gap-[10px] justify-center items-center">
+                                <img class="w-[50px] h-[50px]" src="./assets/images/avatar/Emily.png" alt="Emily">
+                                <div class="">
+                                    <h4 class="font-['Inter'] font-medium text-[18px] leading-[150%] text-[#FFFFFF]">
+                                        Emily
+                                        Adams</h4>
+                                    <span
+                                        class="font-['Inter'] font-normal text-[16px] leading-[150%] text-[#666666]">London,
+                                        UK</span>
+                                </div>
+                            </div>
+                            <div class="relative w-full mt-[30px] md:flex md:flex-1">
+                                <div
+                                    class="border border-[#262626] rounded-full w-[140px] h-[36px] bg-[#141414] flex gap-1 justify-center items-center 
+                                                                            absolute left-1/2 -translate-x-1/2 -top-[18px]">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+
+                                </div>
+                                <div
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] text-[#FFFFFF] border border-[#262626] rounded-[10px] px-5 pt-[30px] pb-5 bg-[#1A1A1A] text-center">
+                                    The AI in healthcare reports have been an essential resource for our hospital. They
+                                    highlight the latest innovations and best practices, improving patient care.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-4 md:px-20 md:grid md:grid-cols-3 md:items-stretch ">
+                        <div
+                            class="border-b border-[#262626] py-10 md:border-b-0 hidden md:pr-10 md:flex md:flex-col md:h-full">
+                            <div class="flex gap-[10px] justify-center items-center">
+                                <img class="w-[50px] h-[50px]" src="./assets/images/avatar/Alan.png" alt="Alan">
+                                <div class="">
+                                    <h4 class="font-['Inter'] font-medium text-[18px] leading-[150%] text-[#FFFFFF]">
+                                        Alan
+                                        Jackson</h4>
+                                    <span
+                                        class="font-['Inter'] font-normal text-[16px] leading-[150%] text-[#666666]">Houston,
+                                        USA</span>
+                                </div>
+                            </div>
+                            <div class="relative w-full mt-[30px] md:flex md:flex-1">
+                                <div
+                                    class="border border-[#262626] rounded-full w-[140px] h-[36px] bg-[#141414] flex gap-1 justify-center items-center 
+                                                                                                                        absolute left-1/2 -translate-x-1/2 -top-[18px]">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+
+                                </div>
+                                <div
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] text-[#FFFFFF] border border-[#262626] rounded-[10px] px-5 pt-[30px] pb-5 bg-[#1A1A1A] text-center">
+                                    The reports on space mining prospects have fueled my passion for space exploration.
+                                    They
+                                    provide a comprehensive view.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="border-b border-[#262626] py-10 md:border-b-0 hidden md:px-10 md:border-x md:flex md:flex-col md:h-full">
+                            <div class="flex gap-[10px] justify-center items-center">
+                                <img class="w-[50px] h-[50px]" src="./assets/images/avatar/Jessica.png" alt="Jessica">
+                                <div class="">
+                                    <h4 class="font-['Inter'] font-medium text-[18px] leading-[150%] text-[#FFFFFF]">
+                                        Jessica
+                                        Miller</h4>
+                                    <span
+                                        class="font-['Inter'] font-normal text-[16px] leading-[150%] text-[#666666]">Boston,
+                                        USA</span>
+                                </div>
+                            </div>
+                            <div class="relative w-full mt-[30px] md:flex md:flex-1">
+                                <div
+                                    class="border border-[#262626] rounded-full w-[140px] h-[36px] bg-[#141414] flex gap-1 justify-center items-center 
+                                                                                                                                            absolute left-1/2 -translate-x-1/2 -top-[18px]">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+
+                                </div>
+                                <div
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] text-[#FFFFFF] border border-[#262626] rounded-[10px] px-5 pt-[30px] pb-5 bg-[#1A1A1A] text-center">
+                                    The research papers on genomic breakthroughs have been a goldmine of information.
+                                    They've shaped the direction of my
+                                    research in genomics.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="border-b border-[#262626] py-10 md:border-b-0 hidden md:pl-10 md:flex md:flex-col md:h-full">
+                            <div class="flex gap-[10px] justify-center items-center">
+                                <img class="w-[50px] h-[50px]" src="./assets/images/avatar/Diego.png" alt="Diego">
+                                <div class="">
+                                    <h4 class="font-['Inter'] font-medium text-[18px] leading-[150%] text-[#FFFFFF]">
+                                        Diego
+                                        Lopez</h4>
+                                    <span
+                                        class="font-['Inter'] font-normal text-[16px] leading-[150%] text-[#666666]">Barcelona,
+                                        Spain</span>
+                                </div>
+                            </div>
+                            <div class="relative w-full mt-[30px] md:flex md:flex-1">
+                                <div
+                                    class="border border-[#262626] rounded-full w-[140px] h-[36px] bg-[#141414] flex gap-1 justify-center items-center 
+                                                                                                                                                                absolute left-1/2 -translate-x-1/2 -top-[18px]">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+                                    <img class="w-5 h-5" src="./assets/icons/star.svg" alt="star">
+
+                                </div>
+                                <div
+                                    class="font-['Inter'] font-normal text-[14px] leading-[150%] text-[#FFFFFF] 
+                                                            border border-[#262626] rounded-[10px] px-5 pt-[30px] pb-5 bg-[#1A1A1A] text-center">
+                                    The ebooks on renewable energy strategies have given me the insights I needed to
+                                    pivot
+                                    our startup towardsustainability.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--  -->
+        <section class="">
+            <div class=" px-4  bg-[#1A1A1A] pb-10 md:px-20 ">
+                <div class="flex flex-col gap-5 py-10 md:flex-row md:items-center">
+                    <div class="flex items-center gap-5">
+                        <img class="w-15 h-auto md:w-30 md:h-auto object-contain " src="./assets/images/logo/Logo2.png"
+                            alt="logo">
+                        <button
+                            class="font-['Inter'] font-medium text-[14px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF] bg-[#333333] py-1 px-2 rounded-[8px] md:hidden">Learn,
+                            Connect, and Innovate</button>
+                    </div>
+                    <div>
+                        <h3
+                            class="font-['Kumbh_Sans'] font-medium text-[28px] leading-[130%] tracking-[-0.03em] text-[#FFFFFF]">
+                            Be Part of the Future Tech Revolution</h3>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#7E7E81]">
+                            Immerse yourself in the world of future technology. Explore our comprehensive resources,
+                            connect with fellow tech
+                            enthusiasts, and drive innovation in the industry. Join a dynamic community of
+                            forward-thinkers.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="border border-[#262626] p-[10px] rounded-[10px] bg-[#141414] flex flex-col justify-between gap-[10px] md:flex-row">
+                    <div class="border border-[#262626] p-6 rounded-[10px] bg-[#1A1A1A]">
+                        <div class="flex justify-between items-center">
+                            <h4
+                                class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                Resource Access
+                            </h4>
+                            <button class="w-10 h-10 bg-[#FFD11A] rounded-full p-[10px]">
+                                <img class="" src="./assets/icons/Icon-arrow-up-right.svg" alt="icon">
+                            </button>
+                        </div>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                            Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
+                    </div>
+                    <div class="border border-[#262626] p-6 rounded-[10px] bg-[#1A1A1A]">
+                        <div class="flex justify-between items-center">
+                            <h4
+                                class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                Community Forum</h4>
+                            <button class="w-10 h-10 bg-[#FFD11A] rounded-full p-[10px]">
+                                <img class="" src="./assets/icons/Icon-arrow-up-right.svg" alt="icon">
+                            </button>
+                        </div>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                            Join our active community forum to discuss industry trends and collaborate with peers.</p>
+                    </div>
+                    <div class="border border-[#262626] p-6 rounded-[10px] bg-[#1A1A1A]">
+                        <div class="flex justify-between items-center">
+                            <h4
+                                class="font-['Inter'] font-semibold text-[16px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">
+                                Tech Events</h4>
+                            <button class="w-10 h-10 bg-[#FFD11A] rounded-full p-[10px]">
+                                <img class="" src="./assets/icons/Icon-arrow-up-right.svg" alt="icon">
+                            </button>
+                        </div>
+                        <p
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A]">
+                            Stay updated on upcoming tech events, webinars and conferences to enhance your knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+    <footer class="footer">
+
+        <div class="bg-[#141414] border-t border-[#262626] px-4 md:px-20">
+            <div class="py-10 border-b border-[#262626] grid grid-cols-2 md:grid-cols-5">
+
+                <div class="footer__col">
+                    <h4 class="font-['Inter'] font-medium text-[16px] leading-[130%] tracking-[-0.03em] text-[#FFFFFF]">
+                        Home
+                    </h4>
+                    <ul class="flex flex-col gap-2 mt-4 mb-5 md:mt-9">
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Features</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Blogs</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666] ">
+                            Resources
+                            <button
+                                class="border border-[#262626] rounded-[4px] py-[2px] px-2 ml-2 font-['Inter'] font-normal text-[12px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">New</button>
+                        </li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Testimonials</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Contact Us</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Newsletter</li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="font-['Inter'] font-medium text-[16px] leading-[130%] tracking-[-0.03em] text-[#FFFFFF]">
+                        News
+                    </h4>
+                    <ul class="flex flex-col gap-2 mt-4 mb-5 md:mt-9">
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Trending Stories</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Featured Videos</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Technology</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Health</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Politics</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Environment </li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__col order-3">
+                    <h4 class="font-['Inter'] font-medium text-[16px] leading-[130%] tracking-[-0.03em] text-[#FFFFFF]">
+                        Blogs</h4>
+                    <ul class="flex flex-col gap-2 mt-4 mb-5 md:mt-9">
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Quantum Computing</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            AI Ethics</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Space Exploration</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Biotechnology
+                            <button
+                                class="border border-[#262626] rounded-[4px] py-[2px] px-2 ml-2 font-['Inter'] font-normal text-[12px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">New</button>
+                        </li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Renewable Energy</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            Biohacking </li>
+                    </ul>
+                </div>
+
+                <div class="footer__col order-2">
+                    <h4 class="font-['Inter'] font-medium text-[16px] leading-[130%] tracking-[-0.03em] text-[#FFFFFF]">
+                        Podcasts</h4>
+                    <ul class="flex flex-col gap-2 mt-4 mb-5 md:mt-9">
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            AI Revolution</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            AI Revolution
+                            <button
+                                class="border border-[#262626] rounded-[4px] py-[2px] px-2 ml-2 font-['Inter'] font-normal text-[12px] leading-[150%] tracking-[-0.03em] text-[#FFFFFF]">New</button>
+                        </li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            TechTalk AI</li>
+                        <li
+                            class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">
+                            AI Conversations</li>
+                    </ul>
+                </div>
+
+                <div class="footer__col col-span-2 order-4 md:col-span-1">
+                    <h4 class="font-['Inter'] font-medium text-[16px] leading-[130%] tracking-[-0.03em] text-[#FFFFFF]">
+                        Resources</h4>
+                    <div class="footer__actions flex gap-[12px] flex-wrap mt-4 md:mt-9">
+                        <button
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] border border-[#262626] rounded-[8px] py-2 px-[14px] flex gap-2 justify-center items-center">
+                            <span>Whitepapers</span>
+                            <img class="w-[18px] h-[18px]" src="./assets/icons/Icon.png" alt="icon">
+                        </button>
+                        <button
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] border border-[#262626] rounded-[8px] py-2 px-[14px] flex gap-2 justify-center items-center">
+                            <span>Ebooks</span>
+                            <img class="w-[18px] h-[18px]" src="./assets/icons/Icon.png" alt="icon">
+                        </button>
+                        <button
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] border border-[#262626] rounded-[8px] py-2 px-[14px] flex gap-2 justify-center items-center">
+                            <span>Reports</span>
+                            <img class="w-[18px] h-[18px]" src="./assets/icons/Icon.png" alt="icon">
+                        </button>
+                        <button
+                            class="font-['Inter'] font-normal text-[14px] leading-[150%] tracking-[-0.03em] text-[#98989A] border border-[#262626] rounded-[8px] py-2 px-[14px] flex gap-2 justify-center items-center">
+                            <span>Research Papers</span>
+                            <img class="w-[18px] h-[18px]" src="./assets/icons/Icon.png" alt="icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="bg-[#141414] px-4 py-6 flex flex-col items-center gap-5 md:px-20 md:flex-row md:justify-between">
+            <div class="footer__legal flex order-2 md:order-1">
+                <p
+                    class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666] border-r border-[#262626] pr-2">
+                    Terms
+                    & Conditions</p>
+                <p
+                    class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666] border-l border-[#262626] pl-2">
+                    Privacy Policy</p>
+            </div>
+
+            <div class="footer__social flex gap-1 items-center order-1 md:order-2">
+                <img class="w-5 h-5" src="./assets/icons/Twter.svg">
+                <img class="w-5 h-5" src="./assets/icons/sp.svg">
+                <img class="w-5 h-5" src="./assets/icons/linkin.svg">
+            </div>
+
+            <div class="footer__copyright order-3">
+                <p class="font-['Inter'] font-normal text-[14px] leading-[130%] tracking-[-0.03em] text-[#666666]">©
+                    2024 FutureTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
