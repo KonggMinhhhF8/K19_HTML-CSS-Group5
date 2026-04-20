@@ -347,13 +347,16 @@ body {
     width: 33.33%;
 }
 
+.info-container div p {
+    font-size: 2rem;
+}
+
 .info-container div p:first-child {
     color: #98989A;
 }
 
 .info-container div p:last-child {
     font-weight: 500;
-    font-size: 2rem;
 }
 
 .sidebar {
@@ -433,7 +436,12 @@ body {
 
 .cta-section .text-container {
     display: flex;
+    align-items: center;
     gap: 8rem;
+}
+
+.cta-section .text-container .text-block p:first-of-type {
+    margin-bottom: 1.4rem;
 }
 
 .cta-section .text-container .text-block {
@@ -471,7 +479,7 @@ body {
 .cta-section .cta-container .text-block {
     background-color: #1A1A1A;
     position: relative;
-    padding: 9.5px 0;
+    padding: 10px 0;
 }
 
 .cta-section .cta-container svg {
@@ -742,8 +750,174 @@ body {
         font-size: 1.6rem;
     }
 
-    .section-container .sub-container .download-container {
+    .section-container .download-container {
+        padding: 1.4rem;
+    }
+
+    .section-container .download-btn p {
         font-size: 1.4rem;
+    }
+
+    .section-container .download-container svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .section-container .sub-container .container {
+        gap: 1rem;
+    }
+
+    .section-container .sub-container .content {
+        gap: 2rem;
+    }
+
+    .info-container div {
+        padding: 24px;
+    }
+
+    .info-container div p {
+        font-size: 1.6rem;
+    }
+
+    .sidebar .container {
+        gap: 2.4rem;
+    }
+
+    .sidebar-container .container:nth-child(2) {
+        padding: 80px 30px;
+    }
+
+    .sidebar-container .container:first-child {
+        padding: 60px 30px 60px 0;
+    }
+
+    .sidebar-container .container:last-child {
+        padding: 60px 0 60px 30px;
+    }
+
+    .sidebar .text-block p:first-child {
+        font-size: 1.8rem;
+    }
+
+    .sidebar .text-block p:last-child {
+        font-size: 1.6rem;
+    }
+
+    .sidebar .btn-block {
+        gap: 1rem;
+    }
+
+    .sidebar .btn-block button {
+        font-size: 1.4rem;
+        padding: 14px 20px;
+    }
+
+    .cta-section>div {
+        gap: 5rem;
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    .cta-section .text-container {
+        gap: 6rem;
+    }
+
+
+    .cta-section .text-container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cta-section .text-container .text-block p:first-of-type {
+        margin-bottom: 1rem;
+        font-size: 4.4rem;
+    }
+
+    .cta-section .text-container .text-block p:last-of-type {
+        font-size: 1.6rem;
+    }
+
+    .cta-section .text-container .text-block {
+        gap: 1rem;
+    }
+
+    .cta-section .text-container .text-block>div {
+        padding: 4px 8px;
+        font-size: 1.6rem;
+    }
+
+    .cta-section .cta-container {
+        gap: 1rem;
+        padding: 10px;
+    }
+
+    .cta-section .sub-container {
+        padding: 30px;
+        gap: 1.6rem;
+        border-radius: 0.1rem;
+    }
+
+    .cta-section .cta-container .text-block {
+        padding: 8px 0;
+    }
+
+    .cta-section .sub-container>p {
+        font-size: 1.6rem;
+    }
+
+    .cta-section .sub-container .text-block>p {
+        font-size: 1.8rem;
+    }
+
+    .cta-container .text-block svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .footer-top {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 5rem;
+    }
+
+    .footer-colunm {
+        gap: 2.8rem;
+    }
+
+    .footer-colunm p {
+        font-size: 1.8rem;
+    }
+
+    .footer-colunm ul {
+        gap: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .footer-colunm:last-child ul li {
+        padding: 8px 14px;
+        gap: 0.4rem;
+        border-radius: 0.6rem;
+    }
+
+    .footer-colunm .new-tag {
+        padding: 2px 10px;
+        border-radius: 4px;
+    }
+
+    .footer-colunm svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-bottom {
+        padding-left: 24px;
+        padding-right: 24px;
+        font-size: 1.4rem;
+    }
+
+    .footer-bottom svg {
+        width: 20px;
+        height: 20px;
     }
 
 }
@@ -757,7 +931,218 @@ body {
 
 /* BREAKPOINT 4: MOBIE (NHỎ HƠN HOẶC BẰNG 768px) */
 @media screen and (max-width: 768px) {
-    body {
+    .align {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-web,
+    .body-web,
+    .footer {
+        width: 100vw;
+    }
+
+    .header-web {
+        /* display: none; */
+    }
+
+    .footer-top,
+    .sidebar-container,
+    .section-container,
+    .text-container,
+    .detail-container,
+    .cta-container,
+    .menu,
+    .info-container,
+    .sub-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .header-web .sub-header,
+    .header-container .menu,
+    .header-container button {
         display: none;
     }
+
+    .top-header-mobie {
+        padding-top: 41px;
+        padding-bottom: 15px;
+        font-size: 1.2rem;
+        line-height: 150%;
+        border-bottom: 0.1rem #262626 solid;
+        display: flex;
+        justify-content: space-between;
+        background-color: #141414;
+    }
+
+    .top-header-mobie img {
+        width: 13px;
+        height: 13px;
+    }
+
+    .header-container {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-direction: row;
+    }
+
+    .header-container .logo {
+        gap: 0.9rem;
+    }
+
+    .header-container .logo img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .header-container .logo svg {
+        height: 12px;
+        width: 79px;
+    }
+
+    .hero-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 0;
+    }
+
+    .hero-section .heading {
+        font-size: 2.8rem;
+    }
+
+    .hero-section .text-container {
+        align-items: flex-start;
+        gap: 1.4rem;
+    }
+
+    .hero-section .text-container .text-desktop {
+        display: none;
+    }
+
+
+    .hero-section .text-container .text-mobie {
+        padding: 0;
+        font-size: 1.4rem;
+    }
+
+    .reputation-container {
+        display: block;
+    }
+
+    .reputation-container .block {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        border: #262626 1px solid;
+        display: block;
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .reputation-container .block .number {
+        font-size: 2.4rem;
+    }
+
+    .reputation-container .block .text-desktop {
+        display: none;
+    }
+
+    .reputation-container .block .text-mobie {
+        font-size: 1.4rem;
+        line-height: 150%;
+        text-align: center;
+        color: #98989A;
+    }
+
+    .detail-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 16px;
+    }
+
+    .tittle-container {
+        gap: 1rem;
+    }
+
+    .tittle-container .text {
+        font-size: 1.4rem;
+        line-height: 150%;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+
+    .tittle-container .heading {
+        font-size: 2.8rem;
+        line-height: 130%;
+    }
+
+    .button-container {
+        border-radius: 1rem;
+        padding: 10px;
+    }
+
+    .button-container .sub-container {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .button-container .btn-block {
+        padding: 14px 24px;
+        font-size: 1.3rem
+    }
+
+    .button-container .btn-block:first-child {
+        color: #ffffff;
+    }
+
+    .section-container .description-container {
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .section-container .description-container svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .description-container {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .description-container .container {
+        gap: 1rem;
+    }
+
+    .description-container .container .heading {
+        font-size: 2.1rem;
+        color: #ffffff;
+    }
+
+    .description-container .container p {
+        font-size: 1.4rem;
+    }
+
+    .section-container .description-container {
+        width: 100%;
+        padding-right: 0;
+    }
+
+
+
+
 }
