@@ -12,68 +12,84 @@
 </head>
 <body class="m-0 overflow-x-hidden">
 <div class="container">
-    <div class="top-banner
+    <header class="sticky z-50 top-0 ">
+        <div class="top-banner
     flex gap-[10px] items-center bg-[#141414] border-b border-b-[#262626]
     md:flex md:items-center md:justify-center
     px-[24px] pt-[40px] pb-[14px]
     md:px-[40px] md:pt-[24px] md:pb-[24px]
     lg:px-[162px] lg:py-[24px]">
-        <p class="text-banner text-[12px] md:text-[14px] lg:text-[18px]">Subscribe to our Newsletter For New & latest Blogs and Resources</p>
-        <img src="icon/Icon%20(4).png" alt="" class="w-[20px] h-[20px] ">
-    </div>
-    <div class="header
-     px-[16px] py-[20px]
-     md:px-[80px] md:py-[20px]
-     lg:px-[162px] lg:py-[40px]
-     flex items-center justify-between
-     border-b border-b-[#454549] bg-[#1A1A1A]">
-        <div class="logo-group">
-            <img class="logo" src="icon/Group.png" alt="logo">
-            <p class="text-logo text-[#FFFFFF]">FutureTech</p>
+            <p class="text-banner text-[12px] md:text-[14px] lg:text-[18px]">Subscribe to our Newsletter For New & latest Blogs and Resources</p>
+            <img src="icon/Icon%20(4).png" alt="" class="w-[20px] h-[20px] ">
         </div>
-        <input type="checkbox" id="menu" class="peer hidden">
-        <label for="menu" class="mdi mdi-menu text-[#FFFFFF] text-[34px] cursor-pointer md:hidden"></label>
-        <nav class="  fixed top-0 right-0 h-full w-[70%]
-    bg-[#1A1A1A]
-    flex flex-col
-    transform translate-x-full
-    peer-checked:translate-x-0 z-2
-    transition-transform duration-300 ease-in-out
-    md:static md:translate-x-0 md:flex md:flex-row md:h-auto md:w-auto">
+        <div class="header
+     h-[75px] md:h-[81px] lg:h-[103px]
+            bg-[#1A1A1A]
+            py-5 px-4
+            md:px-20
+            lg:py-6 lg:px-[162px]
+            flex justify-between items-center
+            border-y border-[#262626]
+            relative">
+            <div class="logo-group">
+                <img class="logo" src="icon/Group.png" alt="logo">
+                <p class="text-logo text-[#FFFFFF]">FutureTech</p>
+            </div>
+            <input type="checkbox" id="menu" class="peer hidden">
             <label for="menu"
-                   class="mdi mdi-close md:hidden
-                           text-white text-[28px]
-                           absolute top-[20px] right-[20px]
-                           cursor-pointer">
+                   class="md:hidden cursor-pointer w-[30px] h-[24px]
+              flex flex-col justify-between
+              group peer-checked:[&>span:nth-child(1)]:rotate-45
+              peer-checked:[&>span:nth-child(1)]:translate-y-[10px]
+              peer-checked:[&>span:nth-child(2)]:opacity-0
+              peer-checked:[&>span:nth-child(3)]:-rotate-45
+              peer-checked:[&>span:nth-child(3)]:-translate-y-[10px]">
+
+                <span class="block h-[3px] w-full bg-white rounded transition-all duration-300"></span>
+                <span class="block h-[3px] w-[75%] ml-auto bg-white rounded transition-all duration-300"></span>
+                <span class="block h-[3px] w-full bg-white rounded transition-all duration-300"></span>
+
             </label>
-            <ul class="
+            <nav class="fixed top-[150px] right-0 w-full h-[calc(100vh-150px)]
+            bg-[#1A1A1A]
+            flex flex-col
+            transform translate-x-full
+            peer-checked:translate-x-0 z-2
+            transition-transform duration-300 ease-in-out
+            md:static md:translate-x-0 md:flex md:flex-row md:h-auto md:w-auto">
+                <ul class="
                  flex flex-col pt-[100px] px-[20px] md:flex-row gap-[16px] md:p-[20px] text-[#7E7E81] w-full ">
-                <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] hover:underline hover:decoration-[#7E7E81] hover:bg-[#141414] rounded-[12px] border border-[#333333]">
-                    <a href="../">Home</a>
-                </li>
-                <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] hover:underline hover:decoration-[#7E7E81] hover:bg-[#141414] rounded-[12px] border border-[#333333]">
-                    News
-                </li>
-                <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] hover:underline hover:decoration-[#7E7E81] hover:bg-[#141414] rounded-[12px] border border-[#333333]">
-                    Podcasts
-                </li>
-                <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] hover:underline hover:decoration-[#7E7E81] hover:bg-[#141414] rounded-[12px] border border-[#333333]">
-                    Resources
-                </li>
-                <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] hover:underline hover:decoration-[#7E7E81] hover:bg-[#141414] rounded-[12px] border border-[#333333]">
-                    Blog
-                </li>
-            </ul>
-        </nav>
-        <div class="btn-contact hidden md:flex">
-            <button class="btn
+                    <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] font-[400] hover:text-[#FFFFFF] hover:font-[500] hover:bg-[#141414] hover:text-[#FFFFFF] hover:border hover:border-[#333333] hover:rounded-[12px]">
+                        <a href="../index.html" class="text-[18px]">Home</a>
+                    </li>
+                    <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] font-[400] hover:text-[#FFFFFF] hover:font-[500] hover:bg-[#141414] hover:text-[#FFFFFF] hover:border hover:border-[#333333] hover:rounded-[12px]">
+                        <a href="../news/index.html">News</a>
+                    </li>
+                    <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] font-[400] hover:text-[#FFFFFF] hover:font-[500] hover:bg-[#141414] hover:text-[#FFFFFF] hover:border hover:border-[#333333] hover:rounded-[12px]">
+                        <a href="/index.html">Blogs</a>
+                    </li>
+                    <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] font-[400] hover:text-[#FFFFFF] hover:font-[500] hover:bg-[#141414] hover:text-[#FFFFFF] hover:border hover:border-[#333333] hover:rounded-[12px]">
+                        <a href="../podcasts/index.html">Podcasts</a>
+                    </li>
+                    <li class="pt-[10px] pr-[18px] pb-[10px] pl-[18px] font-[400] hover:text-[#FFFFFF] hover:font-[500] hover:bg-[#141414] hover:text-[#FFFFFF] hover:border hover:border-[#333333] hover:rounded-[12px]">
+                        <a href="../resources/index.html">Resources</a>
+                    </li>
+                </ul>
+                <button class="flex items-center justify-center
+                ml-4 mt-8 w-[calc(100%-32px)] flex md:hidden
+                hover:translate-x-[3px] hover:-translate-y-[3px] hover:bg-[#e6bc17]
+                bg-[#FFD11A] text-black py-3 rounded-md font-medium"> Contact Us </button>
+            </nav>
+            <div class="btn-contact hidden md:flex">
+                <button class="btn
                 px-[20px] py-[14px]
                 bg-[#FFD11A] text-[#141414] rounded-[10px] font-normal
                 hover:bg-[#FFE066]">
-                Contact Us
-            </button>
+                    Contact Us
+                </button>
+            </div>
         </div>
-    </div>
+    </header>
 
     <div class="img-container relative flex items-center justify-center ">
         <img src="icon/a7da2200f6c37edcb06722e854c1bd926a092148.png" alt="" class="image-main
