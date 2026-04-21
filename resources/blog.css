@@ -56,7 +56,6 @@ body {
 /* NÚT HAMBURGER */
 .hamburger {
     display: none;
-    /* Mặc định ẩn ở máy tính */
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -93,6 +92,10 @@ body {
     display: flex;
     gap: 1rem;
     justify-content: center;
+}
+
+.header-web a:hover {
+    color: #ffffff;
 }
 
 .header-container {
@@ -134,19 +137,9 @@ body {
     font-weight: 700;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li a {
-    text-decoration: none;
-    color: inherit; 
-}
-
 .header-web ul li {
     display: inline-block;
     color: #7E7E81;
- list-style: none
 }
 
 .header-container ul {
@@ -167,12 +160,10 @@ li a {
     padding: 14px 24px;
 }
 
-
 .header-web .menu {
     display: flex;
     gap: 4rem;
     align-items: center;
-    
 }
 
 .header-web button {
@@ -180,6 +171,7 @@ li a {
     border-radius: 10px;
     background-color: #FFD11A;
     color: #141414;
+    font-size: 1.4rem
 }
 
 .header-web button:hover {
@@ -498,6 +490,7 @@ li a {
     padding: 18px 24px;
     border: 0.1rem solid #262626;
     background-color: #141414;
+    color: #98989A;
 }
 
 .cta-section {
@@ -1314,12 +1307,6 @@ li a {
         flex-direction: column;
     }
 
-    .header-web,
-    .body-web,
-    .footer {
-        width: 100vw;
-    }
-
     .text-mobie {
         display: block;
     }
@@ -1904,5 +1891,9 @@ li a {
         gap: 4px;
         font-size: 1.4rem;
         line-height: 150%;
+    }
+
+    .header-web button {
+        font-size: 1.8rem;
     }
 }
