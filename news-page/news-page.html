@@ -8,8 +8,9 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
     <body>
-        <div class="w-full max-w-[1920px] h-full bg-[#141414]">
+        <div class="w-full max-w-[1920px] h-full bg-[#141414] sticky top-50 z-0">
             <!--header-->
+            <header class="sticky z-50 top-0">
             <!-- Top bar -->
             <div class="flex justify-center
             gap-1 min-[391px]:gap-[12px] py-5 bg-[#141414]">
@@ -57,25 +58,26 @@
                 transition-all duration-300 sm:max-h-none">
                     <ul class="flex flex-col sm:flex-row gap-[12px]
                     text-[#7E7E81]">
-                        <li class="px-4 py-2 border border-transparent cursor-pointer
-                        hover:bg-[#141414] hover:border-[#333333] hover:font-bold hover:text-[#ffffff]">
-                            Home
-                        </li>
-                        <li class="px-4 py-2 border border-transparent cursor-pointer
-                        hover:bg-[#141414] hover:border-[#333333] hover:font-bold hover:text-[#ffffff]">
-                            News
-                        </li>
-                        <li class="px-4 py-2 border border-transparent cursor-pointer
-                        hover:bg-[#141414] hover:border-[#333333] hover:font-bold hover:text-[#ffffff]">
-                            Podcasts
-                        </li>
-                        <li class="px-4 py-2 border border-transparent cursor-pointer
-                        hover:bg-[#141414] hover:border-[#333333] hover:font-bold hover:text-[#ffffff]">
-                            Resources
-                        </li>
-                    </ul>
+                    <li class="px-4 py-2 border border-transparent cursor-pointer
+                        hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff] rounded-none hover:rounded-md transition-all duration-300">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="px-4 py-2 border border-transparent cursor-pointer
+                        hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff] rounded-none hover:rounded-md transition-all duration-300">
+                        <a href="./index.html">News</a>
+                    </li>
+                    <li class="px-4 py-2 border border-transparent cursor-pointer
+                        hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff] rounded-none hover:rounded-md transition-all duration-300">
+                        <a href="../podcasts/index.html">Podcasts</a>
+                    </li>
+                    <li class="px-4 py-2 border border-transparent cursor-pointer
+                        hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff] rounded-none hover:rounded-md transition-all duration-300">
+                        <a href="../resources/index.html">Resources</a>
+                    </li>
+                </ul>
                 </nav>
             </div>
+                </header>
             <!--desktop-->
             <div>
                 <div class="m-[16px] min-[391px]:m-20 min-[1441px]:m-[162px]">
