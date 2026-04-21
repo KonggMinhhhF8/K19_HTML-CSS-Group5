@@ -1174,7 +1174,7 @@ body {
     }
 
     .sidebar .text-block p:last-child {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .sidebar .btn-block {
@@ -1208,7 +1208,7 @@ body {
     }
 
     .cta-section .text-container .text-block p:last-of-type {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .cta-section .text-container .text-block {
@@ -1236,7 +1236,7 @@ body {
     }
 
     .cta-section .sub-container>p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .cta-section .sub-container .text-block>p {
@@ -1356,11 +1356,11 @@ body {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        padding: 40px 5%;
+        padding: 30px 5%;
         transition: right 0.4s ease-in-out;
         z-index: 999;
         border-top: 1px solid #262626;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     /* kéo Menu trượt ra KHI CHECKBOX ĐƯỢC TÍCH */
