@@ -13,7 +13,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <header class="header sticky top-0 z-50">
         <!-- Top bar -->
         <div class="header__top-bar 
@@ -35,7 +35,7 @@
             </p>
             <img class="inline-block 
             w-5 lg:w-6
-            h-5 lg:h-6" src="/assets/icons/Icon.png" alt="icon-top-bar">
+            h-5 lg:h-6" src="./assets/icons/Icon.png" alt="icon-top-bar">
         </div>
 
         <!-- Main header -->
@@ -46,18 +46,35 @@
             md:px-20 
             lg:py-6 lg:px-[162px]
             flex justify-between items-center 
-            border-y border-[#262626]
+            border-y border-[#262626] 
+            relative
             ">
             <div class="header__logo cursor-pointer">
                 <img class="h-[35px] md:max-w-[144px] md:h-[40px] lg:max-w-[179px] lg:h-[50px]"
                     src="./assets/images/logo/Logo.png" alt="logo">
             </div>
+            <!-- Checkbox -->
+            <input type="checkbox" id="menu" class="peer hidden">
+            <!-- Icon mở menu -->
+            <label for="menu" class="md:hidden cursor-pointer block ">
+                <img class="inline-block w-[34px] h-[34px] " src="./assets/icons/Icon-menu.png" alt="icon-menu">
+            </label>
 
             <nav class="header__nav 
-            hidden md:block
+            absolute top-full left-0 w-full mt-[1px]
+            bg-[#1A1A1A] z-50
+            translate-x-full
+            transition-transform duration-300 ease-in-out
+            peer-checked:translate-x-0
+
+            md:static 
+            md:translate-x-0 
+            md:transition-none
+            md:w-auto 
+            md:bg-transparent
             ">
                 <ul class="md:flex md:gap-6">
-                    <li class=""><a href="./index.html" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81] 
+                    <li class=""><a href="./index.html" class="font-sans font-normal text-[14px] text-[18px] text-[#7E7E81] 
                             md:py-[10px] md:px-[18px] 
                             lg:py-[14px] lg:px-6 
                             md:hover:bg-[#141414]
@@ -78,6 +95,16 @@
                             md:hover:font-bold
                             md:hover:text-[#ffffff]
                             ">News</a></li>
+                    <li class=""><a href="./blog-open-page/blog.html" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81]
+                            md:py-[10px] md:px-[18px]
+                            lg:py-[14px] lg:px-6 
+                            md:hover:bg-[#141414]
+                            md:hover:border-[1px] 
+                            md:hover:border-[#333333]
+                            md:hover:rounded-[6px]
+                            md:hover:font-bold
+                            md:hover:text-[#ffffff]
+                            ">Blog</a></li>
                     <li class=""><a href="./podcasts/index.html" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81]
                             md:py-[10px] md:px-[18px]
                             lg:py-[14px] lg:px-6 
@@ -100,10 +127,11 @@
                             ">Resources</a></li>
                 </ul>
             </nav>
-            <img class="inline-block w-[34px] h-[34px] md:hidden" src="/assets/icons/Icon-menu.png" alt="icon-menu">
+
 
             <div class="header__button 
             hidden md:block
+
             ">
                 <button class="md:font-sans md:text-[14px] lg:text-[18px]
                 md:min-w-[103px] md:h-[41px]
