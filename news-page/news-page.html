@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="w-full max-w-[1920px] h-full bg-[#141414] sticky top-50 z-0">
+        <div class="w-full max-w-[1920px] h-full bg-[#141414]">
             <!--header-->
             <header class="sticky z-50 top-0 w-full max-w-[1920px]">
                 <!-- Top bar -->
@@ -18,29 +18,33 @@
                 hover:translate-x-[3px] hover:-translate-y-[3px]">
                     <p class="text-[#98989A] font-[Inter] hover:text-[#ffffff]
                     text-xs min-[391px]:text-sm min-[1441px]:text-lg
-                    leading-[150%] tracking-[-0.03em]"> Subscribe to our Newsletter For New & latest Blogs and Resources </p>
-                    <img class="w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="arrow">
+                    leading-[150%] tracking-[-0.03em]">
+                        Subscribe to our Newsletter For New & latest Blogs and Resources
+                    </p>
+                    <img class="w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                         src="icons/arrow-up-right.svg"
+                         alt="arrow">
                 </div>
                 <!-- Main header -->
-                <div class="px-[16px] min-[391px]:px-20 min-[1441px]:px-[162px]
+                <div class="relative h-[75px] min-[391px]:h-[81px] min-[1441px]:h-[103px]
+                px-[16px] min-[391px]:px-20 min-[1441px]:px-[162px]
                 py-5 min-[1441px]:py-6
                 bg-[#1A1A1A] flex items-center justify-between
                 border-y border-[#262626]">
-                    <img class="flex
+                    <img class="flex absolute
                 w-[125px] h-[35px]
                 min-[391px]:w-[143px] min-[391px]:h-10
                 min-[1441px]:w-[179px] min-[1441px]:h-[50px]" src="logos/futuretech-logo.svg" alt="logo">
                     <input type="checkbox" id="menu" hidden>
                     <!--nav bar-->
                     <nav class="nav-menu
-                    fixed top-[135px] right-0 w-full h-[calc(100vh-135px)] mr-auto
+                    fixed top-[135px] right-0 w-full h-[calc(100vh-135px)]
                     bg-[#1A1A1A] flex flex-col justify-start
                     min-[391px]:static
-                    min-[391px]:flex-row-1 min-[391px]:justify-center min-[391px]:items-center
+                    min-[391px]:flex-row min-[391px]:justify-center min-[391px]:items-center
                     min-[391px]:h-auto min-[391px]:w-auto
                      min-[391px]:bg-transparent">
 
-                        <!-- Nav bar -->
                         <ul class="flex flex-col gap-[12px] text-[#7E7E81]
             text-sm min-[1441px]:text-lg leading-[150%] tracking-[-0.03em] font-[Inter]
             min-[391px]:p-0 min-[391px]:flex-row">
@@ -53,6 +57,11 @@
             hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
             rounded-none hover:rounded-md transition-all duration-300">
                                 <a href="./index.html">News</a>
+                            </li>
+                            <li class="px-4 py-2 border border-transparent cursor-pointer
+            hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
+            rounded-none hover:rounded-md transition-all duration-300">
+                                <a href="../blog/index.html">Blog</a>
                             </li>
                             <li class="px-4 py-2 border border-transparent cursor-pointer
             hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
@@ -71,7 +80,7 @@
                 hover:translate-x-[3px] hover:-translate-y-[3px] hover:bg-[#e6bc17]
                 bg-[#FFD11A] text-black py-3 rounded-md font-medium"> Contact Us </button>
                     </nav>
-                    <button class="flex items-center justify-center
+                    <button class="flex items-center justify-center absolut right-0 top-0
                 hidden min-[391px]:flex w-[103px] min-[391px]:h-[41px] min-[1441px]:w-[137px] min-[1441px]:h-[55px]
                 hover:translate-x-[3px] hover:-translate-y-[3px] hover:bg-[#e6bc17]
                 bg-[#FFD11A] text-black py-3 rounded-md font-medium"> Contact Us </button>
