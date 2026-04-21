@@ -14,7 +14,8 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <header class="header sticky top-0 z-50">
+    <header class="header sticky top-0 z-50
+    shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
         <!-- Top bar -->
         <div class="header__top-bar 
         bg-[#141414] 
@@ -28,7 +29,7 @@
         ">
             <p class="text-[#98989A] 
             font-sans 
-            font-normal 
+            font-medium 
             text-[12px] md:text-[14px] lg:text-[18px]
             ">
                 Subscribe to our Newsletter For New & latest Blogs and Resources
@@ -66,64 +67,70 @@
             translate-x-full
             transition-transform duration-300 ease-in-out
             peer-checked:translate-x-0
-
+            h-[calc(100vh-75px)]
+            md:h-auto 
             md:static 
             md:translate-x-0 
             md:transition-none
             md:w-auto 
             md:bg-transparent
             ">
-                <ul class="md:flex md:gap-6">
-                    <li class=""><a href="./index.html" class="font-sans font-normal text-[14px] text-[18px] text-[#7E7E81] 
+                <ul class="flex flex-col gap-[30px] md:flex-row md:gap-6 px-[24px] py-[40px] md:px-0 md:py-0">
+                    <li class=""><a href="./index.html" class="font-sans font-medium text-[18px] md:text-[14px] lg:text-[18px] text-[#7E7E81] 
+                            py-[10px] px-[24px]
                             md:py-[10px] md:px-[18px] 
                             lg:py-[14px] lg:px-6 
-                            md:hover:bg-[#141414]
-                            md:hover:border-[1px] 
-                            md:hover:border-[#333333]
-                            md:hover:rounded-[6px]
-                            md:hover:font-bold
-                            md:hover:text-[#ffffff]
+                            hover:bg-[#141414]
+                            hover:border-[1px] 
+                            hover:border-[#333333]
+                            hover:rounded-[6px]
+                            hover:font-bold
+                            hover:text-[#ffffff]
                             ">Home</a>
                     </li>
-                    <li class=""><a href="./news/index.html" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81]
+                    <li class=""><a href="./news/index.html" class="font-sans font-medium text-[18px] md:text-[14px] lg:text-[18px] text-[#7E7E81]
+                            py-[10px] px-[24px]
                             md:py-[10px] md:px-[18px]
                             lg:py-[14px] lg:px-6 
-                            md:hover:bg-[#141414]
-                            md:hover:border-[1px] 
-                            md:hover:border-[#333333]
-                            md:hover:rounded-[6px]
-                            md:hover:font-bold
-                            md:hover:text-[#ffffff]
+                            hover:bg-[#141414]
+                            hover:border-[1px] 
+                            hover:border-[#333333]
+                            hover:rounded-[6px]
+                            hover:font-bold
+                            hover:text-[#ffffff]
                             ">News</a></li>
-                    <li class=""><a href="./blog-open-page/blog.html" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81]
+                    <li class=""><a href="./blog-open-page/blog.html" class="font-sans font-medium text-[18px] md:text-[14px] lg:text-[18px] text-[#7E7E81]
+                            py-[10px] px-[24px]
                             md:py-[10px] md:px-[18px]
                             lg:py-[14px] lg:px-6 
-                            md:hover:bg-[#141414]
-                            md:hover:border-[1px] 
-                            md:hover:border-[#333333]
-                            md:hover:rounded-[6px]
-                            md:hover:font-bold
-                            md:hover:text-[#ffffff]
+                            hover:bg-[#141414]
+                            hover:border-[1px] 
+                            hover:border-[#333333]
+                            hover:rounded-[6px]
+                            hover:font-bold
+                            hover:text-[#ffffff]
                             ">Blog</a></li>
-                    <li class=""><a href="./podcasts/index.html" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81]
+                    <li class=""><a href="./podcasts/index.html" class="font-sans font-medium text-[18px] md:text-[14px] lg:text-[18px] text-[#7E7E81]
+                            py-[10px] px-[24px]
                             md:py-[10px] md:px-[18px]
                             lg:py-[14px] lg:px-6 
-                            md:hover:bg-[#141414]
-                            md:hover:border-[1px] 
-                            md:hover:border-[#333333]
-                            md:hover:rounded-[6px]
-                            md:hover:font-bold
-                            md:hover:text-[#ffffff]
+                            hover:bg-[#141414]
+                            hover:border-[1px] 
+                            hover:border-[#333333]
+                            hover:rounded-[6px]
+                            hover:font-bold
+                            hover:text-[#ffffff]
                             ">Podcasts</a></li>
-                    <li class=""><a href="./resources/index.html" class="md:font-sans md:font-normal md:text-[14px] lg:text-[18px] md:text-[#7E7E81]
+                    <li class=""><a href="./resources/index.html" class="font-sans font-medium text-[18px] md:text-[14px] lg:text-[18px] text-[#7E7E81]
+                            py-[10px] px-[24px]
                             md:py-[10px] md:px-[18px]
                             lg:py-[14px] lg:px-6 
-                            md:hover:bg-[#141414]
-                            md:hover:border-[1px] 
-                            md:hover:border-[#333333]
-                            md:hover:rounded-[6px]
-                            md:hover:font-bold
-                            md:hover:text-[#ffffff]
+                            hover:bg-[#141414]
+                            hover:border-[1px] 
+                            hover:border-[#333333]
+                            hover:rounded-[6px]
+                            hover:font-bold
+                            hover:text-[#ffffff]
                             ">Resources</a></li>
                 </ul>
             </nav>
