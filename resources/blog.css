@@ -567,7 +567,7 @@ body {
     background-color: #1A1A1A;
     border: 0.1rem solid transparent;
     background-image: linear-gradient(#1A1A1A, #1A1A1A),
-    linear-gradient(70.33deg, #262626 61.2%, #FFD119 216.15%);
+        linear-gradient(70.33deg, #262626 61.2%, #FFD119 216.15%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
@@ -932,8 +932,8 @@ body {
 /* BREAKPOINT 4: MOBIE (NHỎ HƠN HOẶC BẰNG 768px) */
 @media screen and (max-width: 768px) {
     .align {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 4%;
+        padding-right: 4%;
     }
 
     .header-container {
@@ -960,7 +960,6 @@ body {
     .menu,
     .info-container,
     .sub-container {
-        display: flex;
         flex-direction: column;
     }
 
@@ -1142,6 +1141,55 @@ body {
         padding-right: 0;
     }
 
+    .section-container .img-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .section-container .img-container .content {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .img-container .sub-container {
+        gap: 2rem;
+    }
+
+    .img-container .content .container {
+        width: 100%;
+        gap: 0.6rem;
+    }
+
+
+    .img-container .content .heading {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 150%;
+    }
+
+    .img-container .content p:last-child {
+        font-size: 1.4rem;
+        line-height: 150%;
+    }
+
+    .img-container .content .download-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .img-container .content .download-btn {
+        justify-content: center;
+        padding: 14px 20px;
+        font-size: 1.4rem;
+        line-height: 150%;
+    }
+
+    .img-container .content .download-btn svg {
+        width: 20px;
+        height: 20px;
+    }
 
 
 
