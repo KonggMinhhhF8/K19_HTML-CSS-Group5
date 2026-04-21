@@ -45,38 +45,71 @@
                 min-[1441px]:w-[179px] min-[1441px]:h-[50px]"
                      src="logos/futuretech-logo.svg"
                      alt="logo">
-                <label
-                        for="menu"
-                        class="block sm:hidden absolute right-4 cursor-pointer">
-                    <img
-                            src="buttons/menu.svg"
-                            alt="menu">
-                </label>
+                <label for="menu"
+  class="block sm:hidden absolute right-4 cursor-pointer w-6 h-6">
+
+  <!-- icon menu -->
+  <img
+    src="buttons/menu.svg"
+    class="absolute inset-0 peer-checked:opacity-0 transition duration-300"
+    alt="menu">
+
+  <!-- icon close -->
+  <img
+    src="buttons/close.svg"
+    class="absolute inset-0 opacity-0 peer-checked:opacity-100 transition duration-300"
+    alt="close">
+
+</label>
                 <!--nav bar-->
-                <nav class="absolute sm:static top-full right-0 w-full sm:w-auto bg-[#1A1A1A]
-                max-h-0 overflow-hidden
-                peer-checked:max-h-96 peer-checked:p-4
-                transition-all duration-300 sm:max-h-none">
-                    <ul class="flex flex-col sm:flex-row gap-[12px]
-                    text-[#7E7E81]">
-                    <li class="px-4 py-2 border border-transparent cursor-pointer
-                        hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff] rounded-none hover:rounded-md transition-all duration-300">
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li class="px-4 py-2 border border-transparent cursor-pointer
-                        hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff] rounded-none hover:rounded-md transition-all duration-300">
-                        <a href="./index.html">News</a>
-                    </li>
-                    <li class="px-4 py-2 border border-transparent cursor-pointer
-                        hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff] rounded-none hover:rounded-md transition-all duration-300">
-                        <a href="../podcasts/index.html">Podcasts</a>
-                    </li>
-                    <li class="px-4 py-2 border border-transparent cursor-pointer
-                        hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff] rounded-none hover:rounded-md transition-all duration-300">
-                        <a href="../resources/index.html">Resources</a>
-                    </li>
-                </ul>
-                </nav>
+                <nav class="fixed top-[161px] right-0 w-fullh-[calc(100vh-161px)]
+bg-[#1A1A1A]
+
+transform translate-x-full
+peer-checked:translate-x-0
+transition-transform duration-300
+
+flex flex-col justify-between
+
+sm:static sm:translate-x-0 sm:h-auto sm:w-auto sm:flex sm:flex-row sm:bg-transparent
+">
+
+    <!-- Menu -->
+    <ul class="flex flex-col gap-[12px] text-[#7E7E81] p-6 sm:p-0 sm:flex-row">
+        <li class="px-4 py-2 border border-transparent cursor-pointer
+            hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
+            rounded-none hover:rounded-md transition-all duration-300">
+            <a href="../index.html">Home</a>
+        </li>
+
+        <li class="px-4 py-2 border border-transparent cursor-pointer
+            hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
+            rounded-none hover:rounded-md transition-all duration-300">
+            <a href="./index.html">News</a>
+        </li>
+
+        <li class="px-4 py-2 border border-transparent cursor-pointer
+            hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
+            rounded-none hover:rounded-md transition-all duration-300">
+            <a href="../podcasts/index.html">Podcasts</a>
+        </li>
+
+        <li class="px-4 py-2 border border-transparent cursor-pointer
+            hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
+            rounded-none hover:rounded-md transition-all duration-300">
+            <a href="../resources/index.html">Resources</a>
+        </li>
+    </ul>
+
+    <!-- Contact button (mobile only) -->
+    <div class="p-6 min-[491px]:hidden">
+        <button class="hover:translate-x-[3px] hover:-translate-y-[3px]
+        w-full bg-[#FFD11A] text-black py-3 rounded-md font-medium">
+            Contact Us
+        </button>
+    </div>
+
+</nav>
             </div>
                 </header>
             <!--desktop-->
