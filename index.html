@@ -57,8 +57,20 @@
             <!-- Checkbox -->
             <input type="checkbox" id="menu" class="peer hidden">
             <!-- Icon mở menu -->
-            <label for="menu" class="md:hidden cursor-pointer block ">
+            <!-- <label for="menu" class="md:hidden cursor-pointer block ">
                 <img class="inline-block w-[34px] h-[34px] " src="./assets/icons/Icon-menu.png" alt="icon-menu">
+            </label> -->
+            <label for="menu" class="md:hidden cursor-pointer w-[30px] h-[24px]
+                          flex flex-col justify-between
+                          group peer-checked:[&>span:nth-child(1)]:rotate-45
+                          peer-checked:[&>span:nth-child(1)]:translate-y-[10px]
+                          peer-checked:[&>span:nth-child(2)]:opacity-0
+                          peer-checked:[&>span:nth-child(3)]:-rotate-45
+                          peer-checked:[&>span:nth-child(3)]:-translate-y-[10px]">
+
+                <span class="block h-[3px] w-full bg-white rounded transition-all duration-300"></span>
+                <span class="block h-[3px] w-[75%] ml-auto bg-white rounded transition-all duration-300"></span>
+                <span class="block h-[3px] w-full bg-white rounded transition-all duration-300"></span>
             </label>
 
             <nav class="header__nav 
@@ -133,6 +145,22 @@
                             hover:text-[#ffffff]
                             ">Resources</a></li>
                 </ul>
+                <div class="header__button 
+                            block md:hidden
+                            px-6
+                            ">
+                    <button class="font-sans text-[18px] md:text-[14px] lg:text-[18px]
+                                md:min-w-[103px] w-full md:h-[41px]
+                                lg:min-w-[137px] lg:min-h-[55px]
+                                font-medium 
+                                text-[#141414] 
+                                bg-[#FFD11A] 
+                                py-[10px] md:px-[14px]
+                                lg:py-[14px] lg:px-5
+                                rounded-[6px]
+                                cursor-pointer
+                                ">Contact Us</button>
+                </div>
             </nav>
 
 
