@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>News Page</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="w-full max-w-[1920px] h-full bg-[#141414]">
-            <!--header-->
-            <header class="sticky z-50 top-0 w-full max-w-[1920px]">
-                <!-- Top bar -->
-                <div class="flex justify-center items-center
+
+<head>
+    <meta charset="UTF-8">
+    <title>News Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="w-full max-w-[1920px] h-full bg-[#141414]">
+        <!--header-->
+        <header class="sticky z-50 top-0 w-full max-w-[1920px]">
+            <!-- Top bar -->
+            <div class="flex justify-center items-center
                 gap-1 min-[391px]:gap-3 py-5 bg-[#141414]
                 hover:translate-x-[3px] hover:-translate-y-[3px]">
-                    <p class="text-[#98989A] font-[Inter] hover:text-[#ffffff]
+                <p class="text-[#98989A] font-[Inter] hover:text-[#ffffff]
                     text-xs min-[391px]:text-sm min-[1441px]:text-lg
                     leading-[150%] tracking-[-0.03em]">
-                        Subscribe to our Newsletter For New & latest Blogs and Resources
-                    </p>
-                    <img class="w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
-                         src="icons/arrow-up-right.svg"
-                         alt="arrow">
-                </div>
-                <!-- Main header -->
-                <div class="relative h-[75px] min-[391px]:h-[81px] min-[1441px]:h-[103px]
+                    Subscribe to our Newsletter For New & latest Blogs and Resources
+                </p>
+                <img class="w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                    src="icons/arrow-up-right.svg" alt="arrow">
+            </div>
+            <!-- Main header -->
+            <div class="relative h-[75px] min-[391px]:h-[81px] min-[1441px]:h-[103px]
                 px-[16px] min-[391px]:px-20 min-[1441px]:px-[162px]
                 py-5 min-[1441px]:py-6
                 bg-[#1A1A1A] flex items-center justify-between
                 border-y border-[#262626]">
-                    <img class="flex absolute
+                <img class="flex absolute
                 w-[125px] h-[35px]
                 min-[391px]:w-[143px] min-[391px]:h-10
                 min-[1441px]:w-[179px] min-[1441px]:h-[50px]" src="logos/futuretech-logo.svg" alt="logo">
-                    <input type="checkbox" id="menu" hidden>
-                    <!--nav bar-->
-                    <nav class="nav-menu
+                <input type="checkbox" id="menu" hidden>
+                <!--nav bar-->
+                <nav class="nav-menu
                     fixed top-[133px] right-0 w-full h-[calc(100vh-133px)]
                     bg-[#1A1A1A] flex flex-col justify-start
                     min-[391px]:static
@@ -45,232 +46,251 @@
                     min-[391px]:h-auto min-[391px]:w-auto
                      min-[391px]:bg-transparent">
 
-                        <ul class="flex flex-col gap-[12px] text-[#7E7E81]
+                    <ul class="flex flex-col gap-[12px] text-[#7E7E81]
             text-sm min-[1441px]:text-lg leading-[150%] tracking-[-0.03em] font-[Inter]
             min-[391px]:p-0 min-[391px]:flex-row">
-                            <li class="px-4 py-2 border border-transparent cursor-pointer
+                        <li class="px-4 py-2 border border-transparent cursor-pointer
             hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
             rounded-none hover:rounded-md transition-all duration-300">
-                                <a href="../index.html">Home</a>
-                            </li>
-                            <li class="px-4 py-2 border border-transparent cursor-pointer
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="px-4 py-2 border border-transparent cursor-pointer
             hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
             rounded-none hover:rounded-md transition-all duration-300">
-                                <a href="./index.html">News</a>
-                            </li>
-                            <li class="px-4 py-2 border border-transparent cursor-pointer
+                            <a href="./index.html">News</a>
+                        </li>
+                        <li class="px-4 py-2 border border-transparent cursor-pointer
             hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
             rounded-none hover:rounded-md transition-all duration-300">
-                                <a href="../blog/index.html">Blog</a>
-                            </li>
-                            <li class="px-4 py-2 border border-transparent cursor-pointer
+                            <a href="../Blogs/index.html">Blog</a>
+                        </li>
+                        <li class="px-4 py-2 border border-transparent cursor-pointer
             hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
             rounded-none hover:rounded-md transition-all duration-300">
-                                <a href="../podcasts/index.html">Podcasts</a>
-                            </li>
-                            <li class="px-4 py-2 border border-transparent cursor-pointer
+                            <a href="../podcasts/index.html">Podcasts</a>
+                        </li>
+                        <li class="px-4 py-2 border border-transparent cursor-pointer
             hover:bg-[#141414] hover:border-[#333333] hover:font-medium hover:text-[#ffffff]
             rounded-none hover:rounded-md transition-all duration-300">
-                                <a href="../resources/index.html">Resources</a>
-                            </li>
-                        </ul>
-                        <!-- Contact button (mobile only) -->
-                        <button class="flex items-center justify-center
+                            <a href="../resources/index.html">Resources</a>
+                        </li>
+                    </ul>
+                    <!-- Contact button (mobile only) -->
+                    <button class="flex items-center justify-center
                 ml-4 mt-8 w-[calc(100%-32px)] min-[391px]:hidden
                 hover:translate-x-[3px] hover:-translate-y-[3px] hover:bg-[#e6bc17]
                 bg-[#FFD11A] text-black py-3 rounded-md font-medium"> Contact Us </button>
-                    </nav>
-                    <button class="flex items-center justify-center absolut right-0 top-0
+                </nav>
+                <button class="flex items-center justify-center absolut right-0 top-0
                 hidden min-[391px]:flex w-[103px] min-[391px]:h-[41px] min-[1441px]:w-[137px] min-[1441px]:h-[55px]
                 hover:translate-x-[3px] hover:-translate-y-[3px] hover:bg-[#e6bc17]
                 bg-[#FFD11A] text-black py-3 rounded-md font-medium"> Contact Us </button>
-                    <label for="menu" class="block min-[391px]:hidden absolute right-4 cursor-pointer w-[34px] h-[34px]">
-                        <img src="buttons/menu.svg" class="menu-icon absolute inset-0" />
-                        <img src="buttons/close.svg" class="close-icon absolute inset-0 invert brightness-0" />
-                    </label>
-                </div>
-            </header>
-            <!--desktop-->
-            <div>
-                <div class="m-[16px] min-[391px]:m-20 min-[1441px]:m-[162px]">
-                    <h1 class="text-[#FFFFFF]
+                <label for="menu" class="block min-[391px]:hidden absolute right-4 cursor-pointer w-[34px] h-[34px]">
+                    <img src="buttons/menu.svg" class="menu-icon absolute inset-0" />
+                    <img src="buttons/close.svg" class="close-icon absolute inset-0 invert brightness-0" />
+                </label>
+            </div>
+        </header>
+        <!--desktop-->
+        <div>
+            <div class="m-[16px] min-[391px]:m-20 min-[1441px]:m-[162px]">
+                <h1 class="text-[#FFFFFF]
                     text-[28px] min-[391px]:text-[55px] min-[1441px]:text-[80px]
                     leading-[130%] tracking-[-0.03em] font-medium font-[Kumbh Sans]"> Today's Headlines: Stay </h1>
-                    <div class="inline-block min-[391px]:flex min-[391px]:gap-10 min-[1441px]:gap-20 items-center">
-                        <h1 class="flex text-[#FFFFFF]
+                <div class="inline-block min-[391px]:flex min-[391px]:gap-10 min-[1441px]:gap-20 items-center">
+                    <h1 class="flex text-[#FFFFFF]
                         text-[28px] min-[391px]:text-[55px] min-[1441px]:text-[80px]
                         leading-[130%] tracking-[-0.03em] font-medium font-[Kumbh Sans]"> Informed </h1>
-                        <p class="flex text-[#98989A]
+                    <p class="flex text-[#98989A]
                         text-sm min-[391px]:text-base min-[1441px]:text-lg
-                        leading-[150%] tracking-[-0.03em] font-normal font-[Inter]"> Explore the latest news from around the world. We bring you up-to-the-mimutes updates on the most significant events, trends, and stories. Discover the world through our news coverage. </p>
-                    </div>
+                        leading-[150%] tracking-[-0.03em] font-normal font-[Inter]"> Explore the latest news from
+                        around the world. We bring you up-to-the-mimutes updates on the most significant events, trends,
+                        and stories. Discover the world through our news coverage. </p>
                 </div>
-                <!--Trending Stories-->
-                <div class="flex flex-col items-center
+            </div>
+            <!--Trending Stories-->
+            <div class="flex flex-col items-center
                 w-full max-w-[1920px]
                 min-[391px]:flex-row gap-20 items-center justify-center
                 border-y border-[#262626]
                 py-10 min-[391px]:py-15 min-[1441px]:py-20">
-                    <img class="w-[358px] h-[213px] min-[391px]:w-[515px] min-[391px]:h-[325px] min-[1441px]:h-[427px] min-[1441px]:w-[515px] object-cover" src="pictures/global-climate.svg" alt="global-climate">
-                    <div class="w-[358px] min-[391px]:w-[725px] min-[1441px]:w-[1001px] inline-block">
-                        <h3 class="text-xl min-[391px]:text-2xl min-[1441px]:text-4xl
+                <img class="w-[358px] h-[213px] min-[391px]:w-[515px] min-[391px]:h-[325px] min-[1441px]:h-[427px] min-[1441px]:w-[515px] object-cover"
+                    src="pictures/global-climate.svg" alt="global-climate">
+                <div class="w-[358px] min-[391px]:w-[725px] min-[1441px]:w-[1001px] inline-block">
+                    <h3 class="text-xl min-[391px]:text-2xl min-[1441px]:text-4xl
                         leading-[150%] tracking-[-0.03em] text-[#FFFFFF] font-semibold
-                        pb-[6px] min-[391px]:pb-[14px] min-[1441px]:pb-[30px]"> Global Climate Summit Addresses Urgent Climate Action </h3>
-                        <p class="text-base min-[391px]:text-lg min-[1441px]:text-xl
+                        pb-[6px] min-[391px]:pb-[14px] min-[1441px]:pb-[30px]"> Global Climate Summit Addresses Urgent
+                        Climate Action </h3>
+                    <p class="text-base min-[391px]:text-lg min-[1441px]:text-xl
                         leading-[150%] tracking-[-0.03em]
-                        text-[#98989A] font-regular"> World leaders gathered at the Global Climate Summit to discuss urgent climate action, emissions reductions, and renewable energy targets. </p>
-                        <div class="text-base min-[391px]:text-lg min-[1441px]:text-xl
+                        text-[#98989A] font-regular"> World leaders gathered at the Global Climate Summit to discuss
+                        urgent climate action, emissions reductions, and renewable energy targets. </p>
+                    <div class="text-base min-[391px]:text-lg min-[1441px]:text-xl
                         leading-[150%] tracking-[-0.03em] font-regular
                         flex gap-8 py-5 min-[391px]:py-[30px] min-[1441px]:py-[50px]">
-                            <div>
-                                <p class="text-[#98989A]">Category</p>
-                                <p class="text-[#FFFFFF]">Environment</p>
-                            </div>
-                            <div>
-                                <p class="text-[#98989A]">Publication Date</p>
-                                <p class="text-[#FFFFFF]">October 10, 2023</p>
-                            </div>
-                            <div>
-                                <p class="text-[#98989A]">Author</p>
-                                <p class="text-[#FFFFFF]">Jane Smith</p>
-                            </div>
+                        <div>
+                            <p class="text-[#98989A]">Category</p>
+                            <p class="text-[#FFFFFF]">Environment</p>
                         </div>
+                        <div>
+                            <p class="text-[#98989A]">Publication Date</p>
+                            <p class="text-[#FFFFFF]">October 10, 2023</p>
+                        </div>
+                        <div>
+                            <p class="text-[#98989A]">Author</p>
+                            <p class="text-[#FFFFFF]">Jane Smith</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="text-[#98989A] flex gap-3 relative">
+                            <span class="hover:border-[#ffffff]
+                                flex justify-center border rounded-[25px] py-2 px-4">
+                                <img src="icons/like-icon.svg" alt="like">
+                                <span>14k</span>
+                            </span>
+                            <span class="hover:border-[#ffffff]
+                                flex justify-center border rounded-[25px] py-2 px-4">
+                                <img src="icons/message-icon.svg" alt="message">
+                                <span>204</span>
+                            </span>
+                        </div>
+                        <a href="https://youtube.com" class="hover:border-[#ffffff]
+                            text-[#98989A] flex justify-center border rounded-[15px] py-2 px-4"> Read more </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-[1920px] flex flex-col gap-10 items-center min-[391px]:flex-row items-center justify-center border-y border-[#262626] py-10 min-[391px]:py-15 min-[1441px]:py-20">
+                <div>
+                    <img class="w-[358px] h-[185px] min-[391px]:w-[406px] min-[391px]:h-[185px] min-[1441px]:h-[222px] min-[1441px]:w-[512px] object-cover rounded-[15px]"
+                        src="pictures/politics.svg" alt="">
+                    <div
+                        class="inline-block text-base min-[391px]:text-lg min-[1441px]:text-xl leading-[150%] tracking-[-0.03em] font-regular flex gap-8 pb-3 min-[391px]:pb-5 min-[1441px]:pb-7">
+                        <p class="text-[#FFFFFF]">A Decision Victory for Progressive Polices</p>
+                        <p class="text-[#98989A]">Politics</p>
+                    </div>
+                    <div>
                         <div class="flex justify-between">
                             <div class="text-[#98989A] flex gap-3 relative">
                                 <span class="hover:border-[#ffffff]
-                                flex justify-center border rounded-[25px] py-2 px-4">
-                                    <img src="icons/like-icon.svg" alt="like">
-                                    <span>14k</span>
+                                    flex justify-center border rounded-[25px] py-2 px-4">
+                                    <img src="icons/like-icon.svg" alt="">
+                                    <span>2.2k</span>
                                 </span>
                                 <span class="hover:border-[#ffffff]
-                                flex justify-center border rounded-[25px] py-2 px-4">
-                                    <img src="icons/message-icon.svg" alt="message">
-                                    <span>204</span>
+                                    flex justify-center border rounded-[25px] py-2 px-4">
+                                    <img src="icons/message-icon.svg" alt="">
+                                    <span>60</span>
                                 </span>
                             </div>
                             <a href="https://youtube.com" class="hover:border-[#ffffff]
-                            text-[#98989A] flex justify-center border rounded-[15px] py-2 px-4"> Read more </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full max-w-[1920px] flex flex-col gap-10 items-center min-[391px]:flex-row items-center justify-center border-y border-[#262626] py-10 min-[391px]:py-15 min-[1441px]:py-20">
-                    <div>
-                        <img class="w-[358px] h-[185px] min-[391px]:w-[406px] min-[391px]:h-[185px] min-[1441px]:h-[222px] min-[1441px]:w-[512px] object-cover rounded-[15px]" src="pictures/politics.svg" alt="">
-                        <div class="inline-block text-base min-[391px]:text-lg min-[1441px]:text-xl leading-[150%] tracking-[-0.03em] font-regular flex gap-8 pb-3 min-[391px]:pb-5 min-[1441px]:pb-7">
-                            <p class="text-[#FFFFFF]">A Decision Victory for Progressive Polices</p>
-                            <p class="text-[#98989A]">Politics</p>
-                        </div>
-                        <div>
-                            <div class="flex justify-between">
-                                <div class="text-[#98989A] flex gap-3 relative">
-                                    <span class="hover:border-[#ffffff]
-                                    flex justify-center border rounded-[25px] py-2 px-4">
-                                        <img src="icons/like-icon.svg" alt="">
-                                        <span>2.2k</span>
-                                    </span>
-                                    <span class="hover:border-[#ffffff]
-                                    flex justify-center border rounded-[25px] py-2 px-4">
-                                        <img src="icons/message-icon.svg" alt="">
-                                        <span>60</span>
-                                    </span>
-                                </div>
-                                <a href="https://youtube.com" class="hover:border-[#ffffff]
                                 text-[#98989A] flex justify-center
                                 border rounded-[5px]
                                 py-2 px-4
                                 w-[153px] min-[391px]:w-[201px] min-[1441px]:w-[277px]"> Read more <img class="ml-2 w-3
-                                    h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="w-[358px] h-[185px] min-[391px]:w-[406px] min-[391px]:h-[185px] min-[1441px]:h-[222px] min-[1441px]:w-[512px]
-                        object-cover rounded-[15px]" src="pictures/technology.svg" alt="">
-                        <div class="inline-block
-                        text-base min-[391px]:text-lg min-[1441px]:text-xl
-                        leading-[150%] tracking-[-0.03em] font-regular
-                        flex gap-8 pb-3 min-[391px]:pb-5 min-[1441px]:pb-7">
-                            <p class="text-[#FFFFFF]"> Tech Giants Unveil Cutting-Edge AI Innovation </p>
-                            <p class="text-[#98989A]"> Technology </p>
-                        </div>
-                        <div>
-                            <div class="flex justify-between">
-                                <div class="text-[#98989A] flex gap-3 relative">
-                                    <span class="hover:border-[#ffffff]
-                                    flex justify-center border rounded-[25px] py-2 px-4">
-                                        <img src="icons/like-icon.svg" alt="">
-                                        <span>6k</span>
-                                    </span>
-                                    <span class="hover:border-[#ffffff]
-                                    flex justify-center border rounded-[25px] py-2 px-4">
-                                        <img src="icons/message-icon.svg" alt="">
-                                        <span>92</span>
-                                    </span>
-                                </div>
-                                <a href="https://youtube.com" class="hover:border-[#ffffff]
-                                text-[#98989A] flex justify-center
-                                border rounded-[5px]
-                                py-2 px-4 w-[153px] min-[391px]:w-[201px] min-[1441px]:w-[277px]"> Read more <img class="ml-2 w-3 h-3
-                                    min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="w-[358px] h-[185px] min-[391px]:w-[406px] min-[391px]:h-[185px]
-                        min-[1441px]:h-[222px] min-[1441px]:w-[512px]
-                        object-cover rounded-[15px]" src="pictures/health.svg" alt="">
-                        <div class="inline-block
-                        text-base min-[391px]:text-lg min-[1441px]:text-xl
-                        leading-[150%] tracking-[-0.03em] font-regular
-                        flex gap-8 pb-3 min-[391px]:pb-5 min-[1441px]:pb-7">
-                            <p class="text-[#FFFFFF]"> COVID-19 Variants </p>
-                            <p class="text-[#98989A]"> Health </p>
-                        </div>
-                        <div>
-                            <div class="flex justify-between">
-                                <div class="text-[#98989A] flex gap-3 relative">
-                                    <span class="hover:border-[#ffffff]
-                                    flex justify-center border rounded-[25px] py-2 px-4">
-                                        <img src="icons/like-icon.svg" alt="like">
-                                        <span>10k</span>
-                                    </span>
-                                    <span class="hover:border-[#ffffff]
-                                    flex justify-center border rounded-[25px] py-2 px-4">
-                                        <img src="icons/message-icon.svg" alt="message">
-                                        <span>124</span>
-                                    </span>
-                                </div>
-                                <a href="https://youtube.com" class="hover:border-[#ffffff]
-                                text-[#98989A] flex justify-center
-                                border rounded-[5px]
-                                py-2 px-4 w-[153px] min-[391px]:w-[201px] min-[1441px]:w-[277px]"> Read more <img class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="read more">
-                                </a>
-                            </div>
+                                    h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                                    src="icons/arrow-up-right.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="w-full max-w-[1920px] bg-[#1A1A1A]
+                <div>
+                    <img class="w-[358px] h-[185px] min-[391px]:w-[406px] min-[391px]:h-[185px] min-[1441px]:h-[222px] min-[1441px]:w-[512px]
+                        object-cover rounded-[15px]" src="pictures/technology.svg" alt="">
+                    <div class="inline-block
+                        text-base min-[391px]:text-lg min-[1441px]:text-xl
+                        leading-[150%] tracking-[-0.03em] font-regular
+                        flex gap-8 pb-3 min-[391px]:pb-5 min-[1441px]:pb-7">
+                        <p class="text-[#FFFFFF]"> Tech Giants Unveil Cutting-Edge AI Innovation </p>
+                        <p class="text-[#98989A]"> Technology </p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between">
+                            <div class="text-[#98989A] flex gap-3 relative">
+                                <span class="hover:border-[#ffffff]
+                                    flex justify-center border rounded-[25px] py-2 px-4">
+                                    <img src="icons/like-icon.svg" alt="">
+                                    <span>6k</span>
+                                </span>
+                                <span class="hover:border-[#ffffff]
+                                    flex justify-center border rounded-[25px] py-2 px-4">
+                                    <img src="icons/message-icon.svg" alt="">
+                                    <span>92</span>
+                                </span>
+                            </div>
+                            <a href="https://youtube.com" class="hover:border-[#ffffff]
+                                text-[#98989A] flex justify-center
+                                border rounded-[5px]
+                                py-2 px-4 w-[153px] min-[391px]:w-[201px] min-[1441px]:w-[277px]"> Read more <img
+                                    class="ml-2 w-3 h-3
+                                    min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                                    src="icons/arrow-up-right.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-[358px] h-[185px] min-[391px]:w-[406px] min-[391px]:h-[185px]
+                        min-[1441px]:h-[222px] min-[1441px]:w-[512px]
+                        object-cover rounded-[15px]" src="pictures/health.svg" alt="">
+                    <div class="inline-block
+                        text-base min-[391px]:text-lg min-[1441px]:text-xl
+                        leading-[150%] tracking-[-0.03em] font-regular
+                        flex gap-8 pb-3 min-[391px]:pb-5 min-[1441px]:pb-7">
+                        <p class="text-[#FFFFFF]"> COVID-19 Variants </p>
+                        <p class="text-[#98989A]"> Health </p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between">
+                            <div class="text-[#98989A] flex gap-3 relative">
+                                <span class="hover:border-[#ffffff]
+                                    flex justify-center border rounded-[25px] py-2 px-4">
+                                    <img src="icons/like-icon.svg" alt="like">
+                                    <span>10k</span>
+                                </span>
+                                <span class="hover:border-[#ffffff]
+                                    flex justify-center border rounded-[25px] py-2 px-4">
+                                    <img src="icons/message-icon.svg" alt="message">
+                                    <span>124</span>
+                                </span>
+                            </div>
+                            <a href="https://youtube.com" class="hover:border-[#ffffff]
+                                text-[#98989A] flex justify-center
+                                border rounded-[5px]
+                                py-2 px-4 w-[153px] min-[391px]:w-[201px] min-[1441px]:w-[277px]"> Read more <img
+                                    class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                                    src="icons/arrow-up-right.svg" alt="read more">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full max-w-[1920px] bg-[#1A1A1A]
                 border-b border-[#262626]
             flex flex-col gap-10 items-center min-[391px]:flex-row items-center justify-between
             px-4 min-[391px]:px-20 min-[1441px]:px-[162px]
             py-10 min-[391px]:py-21 min-[1441px]:py-[126px]">
-                    <div class="block-flex text-[#FFFFFF]">
-                        <p class="inline-flex font-regular text-base min-[391px]:text-lg min-[1441px]:text-xl leading-[150%] tracking-[-0.03em] bg-[#333333] h-[30px] px-2"> Welcome to Our News Hub </p>
-                        <h2 class="font-regular leading-[130%] tracking-[-0.03em] text-[28px] min-[391px]:text-[44px] min-[1441px]:text-[58px]"> Discover the World of Headlines </h2>
-                    </div>
-                    <a href="https://youtube.com" class="
+                <div class="block-flex text-[#FFFFFF]">
+                    <p
+                        class="inline-flex font-regular text-base min-[391px]:text-lg min-[1441px]:text-xl leading-[150%] tracking-[-0.03em] bg-[#333333] h-[30px] px-2">
+                        Welcome to Our News Hub </p>
+                    <h2
+                        class="font-regular leading-[130%] tracking-[-0.03em] text-[28px] min-[391px]:text-[44px] min-[1441px]:text-[58px]">
+                        Discover the World of Headlines </h2>
+                </div>
+                <a href="https://youtube.com" class="
                     hover:border-[#ffffff]
                     text-[#98989A] bg-[#141414]
                     flex justify-center
                     border-[#262626] rounded-[5px]
                     py-[14px] min-[1441px]:py-[18px]
                     px-5 min-[1441px]:px-6
-                    w-[358px] min-[391px]:w-[170px] min-[1441px]:w-[196px]"> View All News <img class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                    </a>
-                </div>
-                <div class="w-full max-w-[1920px] grid grid-flow-col gap-6
+                    w-[358px] min-[391px]:w-[170px] min-[1441px]:w-[196px]"> View All News <img
+                        class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                        src="icons/arrow-up-right.svg" alt="">
+                </a>
+            </div>
+            <div class="w-full max-w-[1920px] grid grid-flow-col gap-6
             border-b border-[#262626]
             justify-start min-[391px]:justify-center
             overflow-x-auto min-[391px]:overflow-hidden
@@ -279,87 +299,90 @@
             text-[#98989A] leading-[150%] tracking-[-0.03em] font-regular
             gap-5
             text-sm min-[1441px]:text-lg">
-                    <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
+                <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
             w-[151px] min-[391px]:w-[201px] min-[1441px]:w-[250px]
             h-[57px] min-[391px]:h-[69px] min-[1441px]:h-[87px]
             flex items-center justify-center
             px-4 min-[391px]:px-5 min-[1441px]:px-6
             py-[18px] min-[391px]:py-6 min-[1441px]:py-[30px]"> All </div>
-                    <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
+                <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
             w-[151px] min-[391px]:w-[201px] min-[1441px]:w-[250px]
             h-[57px] min-[391px]:h-[69px] min-[1441px]:h-[87px]
             flex items-center justify-center
             px-4 min-[391px]:px-5 min-[1441px]:px-6
             py-[18px] min-[391px]:py-6 min-[1441px]:py-[30px]"> Technology </div>
-                    <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
+                <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
             w-[151px] min-[391px]:w-[201px] min-[1441px]:w-[250px]
             h-[57px] min-[391px]:h-[69px] min-[1441px]:h-[87px]
             flex items-center justify-center
             px-4 min-[391px]:px-5 min-[1441px]:px-6
             py-[18px] min-[391px]:py-6 min-[1441px]:py-[30px]"> Politics </div>
-                    <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
+                <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
             w-[151px] min-[391px]:w-[201px] min-[1441px]:w-[250px]
             h-[57px] min-[391px]:h-[69px] min-[1441px]:h-[87px]
             flex items-center justify-center
             px-4 min-[391px]:px-5 min-[1441px]:px-6
             py-[18px] min-[391px]:py-6 min-[1441px]:py-[30px]"> Health </div>
-                    <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
+                <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
             w-[151px] min-[391px]:w-[201px] min-[1441px]:w-[250px]
             h-[57px] min-[391px]:h-[69px] min-[1441px]:h-[87px]
             flex items-center justify-center
             px-4 min-[391px]:px-5 min-[1441px]:px-6
             py-[18px] min-[391px]:py-6 min-[1441px]:py-[30px]"> Environment </div>
-                    <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
+                <div class="border border-[#98989A] rounded-[8px] hover:border-[#ffffff]
             w-[151px] min-[391px]:w-[201px] min-[1441px]:w-[250px]
             h-[57px] min-[391px]:h-[69px] min-[1441px]:h-[87px]
             flex items-center justify-center
             px-4 min-[391px]:px-5 min-[1441px]:px-6
             py-[18px] min-[391px]:py-6 min-[1441px]:py-[30px]"> Sports </div>
-                </div>
-                <!--authors-->
-                <!--John Techson-->
-                <div class="grid grid-cols-1 min-[391px]:grid-cols-[305px_1fr_auto] min-[1441px]:grid-cols-[384px_1fr_auto] items-start
+            </div>
+            <!--authors-->
+            <!--John Techson-->
+            <div class="grid grid-cols-1 min-[391px]:grid-cols-[305px_1fr_auto] min-[1441px]:grid-cols-[384px_1fr_auto] items-start
             border-b border-[#262626]
             px-4 min-[391px]:px-20 min-[1441px]:px-[162px]
             py-5 min-[391px]:py-8 min-[1441px]:py-[50px]
             relative">
-                    <div class="flex">
-                        <img class="w-15 h-15 min-[1441px]:h-20 min-[1441px]:w-20 object-cover" src="authors/john-techson.svg" alt="">
-                        <div class="leading-[150%] tracking-[-0.03em]">
-                            <p class="font-semibold text-[#FFFFFF]
+                <div class="flex">
+                    <img class="w-15 h-15 min-[1441px]:h-20 min-[1441px]:w-20 object-cover"
+                        src="authors/john-techson.svg" alt="">
+                    <div class="leading-[150%] tracking-[-0.03em]">
+                        <p class="font-semibold text-[#FFFFFF]
                     text-base min-[391px]:text-lg min-[1441px]:text-xl"> John Techson </p>
-                            <p class="text-[#98989A]
+                        <p class="text-[#98989A]
                     text-sm min-[391px]:text-base min-[1441px]:text-lg"> Technology </p>
-                        </div>
                     </div>
-                    <div class="leading-[150%] tracking-[-0.03em]">
-                        <p class="font-semibold text-[#98989A]
+                </div>
+                <div class="leading-[150%] tracking-[-0.03em]">
+                    <p class="font-semibold text-[#98989A]
                 text-base min-[391px]:text-lg min-[1441px]:text-xl"> October 15, 2023 </p>
-                        <div class="py-5 min-[391px]:py-6 min-[1441px]:py-[30px]">
-                            <p class="font-semibold text-[#FFFFFF]
+                    <div class="py-5 min-[391px]:py-6 min-[1441px]:py-[30px]">
+                        <p class="font-semibold text-[#FFFFFF]
                 text-lg min-[391px]:text-[22px] min-[1441px]:text-[26px]"> Tech Giants Announce New Product Line </p>
-                            <p class="font-regular text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Explore the latest innovation from tech industry leaders, unveiling new products that promise to transform the digital landscape. </p>
-                        </div>
-                        <div class="text-[#98989A] flex gap-3">
-                            <span class="hover:border-[#ffffff]
-                            flex justify-center border rounded-[25px] py-2 px-4">
-                                <img src="icons/like-icon.svg" alt="">
-                                <span>24.5k</span>
-                            </span>
-                            <span class="hover:border-[#ffffff]
-                            flex justify-center border rounded-[25px] py-2 px-4">
-                                <img src="icons/comment.svg" alt="">
-                                <span>50</span>
-                            </span>
-                            <span class="hover:border-[#ffffff]
-                            flex justify-center border rounded-[25px] py-2 px-4">
-                                <img src="icons/message-icon.svg" alt="">
-                                <span>20</span>
-                            </span>
-                        </div>
+                        <p class="font-regular text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Explore the latest innovation from tech
+                            industry leaders, unveiling new products that promise to transform the digital landscape.
+                        </p>
                     </div>
-                    <div class="absolute top-4 right-4 hover:border-[#ffffff]
+                    <div class="text-[#98989A] flex gap-3">
+                        <span class="hover:border-[#ffffff]
+                            flex justify-center border rounded-[25px] py-2 px-4">
+                            <img src="icons/like-icon.svg" alt="">
+                            <span>24.5k</span>
+                        </span>
+                        <span class="hover:border-[#ffffff]
+                            flex justify-center border rounded-[25px] py-2 px-4">
+                            <img src="icons/comment.svg" alt="">
+                            <span>50</span>
+                        </span>
+                        <span class="hover:border-[#ffffff]
+                            flex justify-center border rounded-[25px] py-2 px-4">
+                            <img src="icons/message-icon.svg" alt="">
+                            <span>20</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="absolute top-4 right-4 hover:border-[#ffffff]
                 min-[391px]:relative
                 min-[391px]:top-0
                 min-[391px]:right-0
@@ -367,53 +390,59 @@
                 min-[391px]:flex
                 min-[391px]:items-center
                 min-[391px]:justify-center">
-                        <a href="https://youtube.com" class="text-[#98989A] flex justify-center border rounded-[5px] py-2 px-4 w-[143px] min-[1441px]:w-[170px]"> Read more <img class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                        </a>
-                    </div>
+                    <a href="https://youtube.com"
+                        class="text-[#98989A] flex justify-center border rounded-[5px] py-2 px-4 w-[143px] min-[1441px]:w-[170px]">
+                        Read more <img
+                            class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                            src="icons/arrow-up-right.svg" alt="">
+                    </a>
                 </div>
-                <!--Sarah Ethicist-->
-                <div class="grid grid-cols-1 min-[391px]:grid-cols-[305px_1fr_auto] min-[1441px]:grid-cols-[384px_1fr_auto] items-start
+            </div>
+            <!--Sarah Ethicist-->
+            <div class="grid grid-cols-1 min-[391px]:grid-cols-[305px_1fr_auto] min-[1441px]:grid-cols-[384px_1fr_auto] items-start
             border-b border-[#262626]
             px-4 min-[391px]:px-20 min-[1441px]:px-[162px]
             py-5 min-[391px]:py-8 min-[1441px]:py-[50px]
             relative">
-                    <div class="flex">
-                        <img class="w-15 h-15 min-[1441px]:h-20 min-[1441px]:w-20 object-cover" src="authors/sarah-ethicist.svg" alt="">
-                        <div class="leading-[150%] tracking-[-0.03em]">
-                            <p class="font-semibold text-[#FFFFFF]
+                <div class="flex">
+                    <img class="w-15 h-15 min-[1441px]:h-20 min-[1441px]:w-20 object-cover"
+                        src="authors/sarah-ethicist.svg" alt="">
+                    <div class="leading-[150%] tracking-[-0.03em]">
+                        <p class="font-semibold text-[#FFFFFF]
                     text-base min-[391px]:text-lg min-[1441px]:text-xl">Sarah Ethicist</p>
-                            <p class="font-regular text-[#98989A]
+                        <p class="font-regular text-[#98989A]
                     text-sm min-[391px]:text-base min-[1441px]:text-lg">Technology</p>
-                        </div>
                     </div>
-                    <div class="leading-[150%] tracking-[-0.03em]">
-                        <p class="font-semibold text-[#98989A]
+                </div>
+                <div class="leading-[150%] tracking-[-0.03em]">
+                    <p class="font-semibold text-[#98989A]
                 text-base min-[391px]:text-lg min-[1441px]:text-xl">October 11, 2023</p>
-                        <div class="py-5 min-[391px]:py-6 min-[1441px]:py-[30px]">
-                            <p class="font-semibold text-[#FFFFFF]
+                    <div class="py-5 min-[391px]:py-6 min-[1441px]:py-[30px]">
+                        <p class="font-semibold text-[#FFFFFF]
                 text-lg min-[391px]:text-[22px] min-[1441px]:text-[26px]"> The Future of Autonomous Vehicles </p>
-                            <p class="text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> An in-depth analysis of the rapid advancements in autonomous vehicle technology and their impact on transportation. </p>
-                        </div>
-                        <div class="text-[#98989A] flex gap-3">
-                            <span class="hover:border-[#ffffff]
-                            flex justify-center border rounded-[25px] py-2 px-4">
-                                <img src="icons/like-icon.svg" alt="">
-                                <span>32k</span>
-                            </span>
-                            <span class="hover:border-[#ffffff]
-                            flex justify-center border rounded-[25px] py-2 px-4">
-                                <img src="icons/comment.svg" alt="">
-                                <span>72</span>
-                            </span>
-                            <span class="hover:border-[#ffffff]
-                            flex justify-center border rounded-[25px] py-2 px-4">
-                                <img src="icons/message-icon.svg" alt="">
-                                <span>18</span>
-                            </span>
-                        </div>
+                        <p class="text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> An in-depth analysis of the rapid advancements
+                            in autonomous vehicle technology and their impact on transportation. </p>
                     </div>
-                    <div class="absolute top-4 right-4 hover:border-[#ffffff]
+                    <div class="text-[#98989A] flex gap-3">
+                        <span class="hover:border-[#ffffff]
+                            flex justify-center border rounded-[25px] py-2 px-4">
+                            <img src="icons/like-icon.svg" alt="">
+                            <span>32k</span>
+                        </span>
+                        <span class="hover:border-[#ffffff]
+                            flex justify-center border rounded-[25px] py-2 px-4">
+                            <img src="icons/comment.svg" alt="">
+                            <span>72</span>
+                        </span>
+                        <span class="hover:border-[#ffffff]
+                            flex justify-center border rounded-[25px] py-2 px-4">
+                            <img src="icons/message-icon.svg" alt="">
+                            <span>18</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="absolute top-4 right-4 hover:border-[#ffffff]
                 min-[391px]:relative
                 min-[391px]:top-0
                 min-[391px]:right-0
@@ -421,53 +450,58 @@
                 min-[391px]:flex
                 min-[391px]:items-center
                 min-[391px]:justify-center">
-                        <a href="https://youtube.com" class="text-[#98989A] flex justify-center border rounded-[5px] py-2 px-4 w-[143px] min-[1441px]:w-[170px]">Read more <img class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                        </a>
-                    </div>
+                    <a href="https://youtube.com"
+                        class="text-[#98989A] flex justify-center border rounded-[5px] py-2 px-4 w-[143px] min-[1441px]:w-[170px]">Read
+                        more <img class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                            src="icons/arrow-up-right.svg" alt="">
+                    </a>
                 </div>
-                <!--Astronomer X-->
-                <div class="grid grid-cols-1 min-[391px]:grid-cols-[305px_1fr_auto] min-[1441px]:grid-cols-[384px_1fr_auto] items-start
+            </div>
+            <!--Astronomer X-->
+            <div class="grid grid-cols-1 min-[391px]:grid-cols-[305px_1fr_auto] min-[1441px]:grid-cols-[384px_1fr_auto] items-start
             border-b border-[#262626]
             px-4 min-[391px]:px-20 min-[1441px]:px-[162px]
             py-5 min-[391px]:py-8 min-[1441px]:py-[50px]
             relative">
-                    <div class="flex justify-start">
-                        <img class="w-15 h-15 min-[1441px]:h-20 min-[1441px]:w-20 object-cover" src="authors/astronomer-x.svg" alt="">
-                        <div class="leading-[150%] tracking-[-0.03em]">
-                            <p class="font-semibold text-[#FFFFFF]
-                    text-base min-[391px]:text-lg min-[1441px]:text-xl">Astronomer X</p>
-                            <p class="font-regular text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg">Technology</p>
-                        </div>
-                    </div>
+                <div class="flex justify-start">
+                    <img class="w-15 h-15 min-[1441px]:h-20 min-[1441px]:w-20 object-cover"
+                        src="authors/astronomer-x.svg" alt="">
                     <div class="leading-[150%] tracking-[-0.03em]">
-                        <p class="font-semibold text-[#98989A]
-                text-base min-[391px]:text-lg min-[1441px]:text-xl">December 10, 2023</p>
-                        <div class="py-5 min-[391px]:py-6 min-[1441px]:py-[30px]">
-                            <p class="font-semibold text-[#FFFFFF]
-                text-lg min-[391px]:text-[22px] min-[1441px]:text-[26px]"> Tech Startups Secure Record Funding </p>
-                            <p class="text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> An overview of the recent surge in funding for tech startups, shaping the entrepreneurial landscape. </p>
-                        </div>
-                        <div class="text-[#98989A] flex gap-3">
-                            <span class="hover:border-[#ffffff]
-                            flex justify-center border rounded-[25px] py-2 px-4">
-                                <img src="icons/like-icon.svg" alt="">
-                                <span>20k</span>
-                            </span>
-                            <span class="hover:border-[#ffffff]
-                            flex justify-center border rounded-[25px] py-2 px-4">
-                                <img src="icons/comment.svg" alt="">
-                                <span>31</span>
-                            </span>
-                            <span class="hover:border-[#ffffff]
-                            flex justify-center border rounded-[25px] py-2 px-4">
-                                <img src="icons/message-icon.svg" alt="">
-                                <span>12</span>
-                            </span>
-                        </div>
+                        <p class="font-semibold text-[#FFFFFF]
+                    text-base min-[391px]:text-lg min-[1441px]:text-xl">Astronomer X</p>
+                        <p class="font-regular text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg">Technology</p>
                     </div>
-                    <div class="absolute top-4 right-4 hover:border-[#ffffff]
+                </div>
+                <div class="leading-[150%] tracking-[-0.03em]">
+                    <p class="font-semibold text-[#98989A]
+                text-base min-[391px]:text-lg min-[1441px]:text-xl">December 10, 2023</p>
+                    <div class="py-5 min-[391px]:py-6 min-[1441px]:py-[30px]">
+                        <p class="font-semibold text-[#FFFFFF]
+                text-lg min-[391px]:text-[22px] min-[1441px]:text-[26px]"> Tech Startups Secure Record Funding </p>
+                        <p class="text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> An overview of the recent surge in funding for
+                            tech startups, shaping the entrepreneurial landscape. </p>
+                    </div>
+                    <div class="text-[#98989A] flex gap-3">
+                        <span class="hover:border-[#ffffff]
+                            flex justify-center border rounded-[25px] py-2 px-4">
+                            <img src="icons/like-icon.svg" alt="">
+                            <span>20k</span>
+                        </span>
+                        <span class="hover:border-[#ffffff]
+                            flex justify-center border rounded-[25px] py-2 px-4">
+                            <img src="icons/comment.svg" alt="">
+                            <span>31</span>
+                        </span>
+                        <span class="hover:border-[#ffffff]
+                            flex justify-center border rounded-[25px] py-2 px-4">
+                            <img src="icons/message-icon.svg" alt="">
+                            <span>12</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="absolute top-4 right-4 hover:border-[#ffffff]
                 min-[391px]:relative
                 min-[391px]:top-0
                 min-[391px]:right-0
@@ -475,292 +509,333 @@
                 min-[391px]:flex
                 min-[391px]:items-center
                 min-[391px]:justify-center">
-                        <a href="https://youtube.com" class="text-[#98989A] flex justify-center border rounded-[5px] py-2 px-4 w-[143px] min-[1441px]:w-[170px]"> Read more <img class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                        </a>
-                    </div>
+                    <a href="https://youtube.com"
+                        class="text-[#98989A] flex justify-center border rounded-[5px] py-2 px-4 w-[143px] min-[1441px]:w-[170px]">
+                        Read more <img
+                            class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                            src="icons/arrow-up-right.svg" alt="">
+                    </a>
                 </div>
-                <!--Feature videos-->
-                <div class="w-full max-w-[1920px] bg-[#1A1A1A]
+            </div>
+            <!--Feature videos-->
+            <div class="w-full max-w-[1920px] bg-[#1A1A1A]
                 border-b border-[#262626]
                 flex flex-col gap-10 items-center min-[391px]:flex-row items-center justify-between
                 px-4 min-[391px]:px-20 min-[1441px]:px-[162px]
                 py-10 min-[391px]:py-21 min-[1441px]:py-[126px]">
-                    <div class="block-flex text-[#FFFFFF]">
-                        <p class="inline-flex font-regular text-base min-[391px]:text-lg min-[1441px]:text-xl leading-[150%] tracking-[-0.03em] bg-[#333333] h-[30px] px-2"> Featured Videos </p>
-                        <h2 class="font-regular leading-[130%] tracking-[-0.03em] text-[28px] min-[391px]:text-[44px] min-[1441px]:text-[58px]"> Visual Insight for the Modern Viewer </h2>
-                    </div>
-                    <a href="https://youtube.com" class="text-[#98989A] bg-[#141414]
+                <div class="block-flex text-[#FFFFFF]">
+                    <p
+                        class="inline-flex font-regular text-base min-[391px]:text-lg min-[1441px]:text-xl leading-[150%] tracking-[-0.03em] bg-[#333333] h-[30px] px-2">
+                        Featured Videos </p>
+                    <h2
+                        class="font-regular leading-[130%] tracking-[-0.03em] text-[28px] min-[391px]:text-[44px] min-[1441px]:text-[58px]">
+                        Visual Insight for the Modern Viewer </h2>
+                </div>
+                <a href="https://youtube.com" class="text-[#98989A] bg-[#141414]
                     flex justify-center
                     border-[#262626] rounded-[5px]
                     py-[14px] min-[1441px]:py-[18px]
                     px-5 min-[1441px]:px-6
-                    w-[358px] min-[391px]:w-[170px] min-[1441px]:w-[196px]"> View All News <img class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                    </a>
-                </div>
-                <!--News videos-->
-                <!--Mars exploration video-->
-                <div class="grid grid-cols-1 min-[391px]:grid-cols-2
+                    w-[358px] min-[391px]:w-[170px] min-[1441px]:w-[196px]"> View All News <img
+                        class="ml-2 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                        src="icons/arrow-up-right.svg" alt="">
+                </a>
+            </div>
+            <!--News videos-->
+            <!--Mars exploration video-->
+            <div class="grid grid-cols-1 min-[391px]:grid-cols-2
                 gap-10
                 min-[391px]:gap-25 min-[1441px]:gap-40
                 border-b border-[#262626]
                 px-4 min-[391px]:px-20 min-[1441px]:px-[162px]
                 py-10 min-[391px]:py-15 min-[1441px]:py-20">
-                    <div class="pb-10 border-b border-[#262626]">
-                        <img class="object-cover rounded-[15px]" src="pictures/video-mars-exploration.svg" alt="">
-                        <div class="leading-[150%] tracking-[-0.03em]
+                <div class="pb-10 border-b border-[#262626]">
+                    <img class="object-cover rounded-[15px]" src="pictures/video-mars-exploration.svg" alt="">
+                    <div class="leading-[150%] tracking-[-0.03em]
                         py-[4px] min-[391px]:py-[6px] min-[1441px]:py-[10px]
                         w-[358px] min-[391px]:w-[590px] min-[1441px]:w-[718px]">
-                            <p class="font-semibold text-[#FFFFFF]
-                text-lg min-[391px]:text-[20px] min-[1441px]:text-[24px]"> Mars Exploration: Unveiling Alien Landscapes </p>
-                            <p class="text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Embark on a journey through the Red Planet's breathtaking landscapes and uncover the mysteries of Mars. </p>
-                        </div>
-                    </div>
-                    <!--Blockchain explained video-->
-                    <div>
-                        <img class="object-cover rounded-[15px]" src="pictures/video-blockchain-explained.svg" alt="">
-                        <div class="leading-[150%] tracking-[-0.03em]
-                        py-[4px] min-[391px]:py-[6px] min-[1441px]:py-[10px]
-                        w-[358px] min-[391px]:w-[590px] min-[1441px]:w-[718px]">
-                            <p class="font-semibold text-[#FFFFFF]
-                text-lg min-[391px]:text-[20px] min-[1441px]:text-[24px]"> Blockchain Explained: A Revolution in Finance </p>
-                            <p class="text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Delve into world of blockchain technology and its transformative impact on the financial industry. </p>
-                        </div>
+                        <p class="font-semibold text-[#FFFFFF]
+                text-lg min-[391px]:text-[20px] min-[1441px]:text-[24px]"> Mars Exploration: Unveiling Alien Landscapes
+                        </p>
+                        <p class="text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Embark on a journey through the Red Planet's
+                            breathtaking landscapes and uncover the mysteries of Mars. </p>
                     </div>
                 </div>
-                <!--Breaking the silence video-->
-                <div class="grid grid-cols-1 min-[391px]:grid-cols-2
+                <!--Blockchain explained video-->
+                <div>
+                    <img class="object-cover rounded-[15px]" src="pictures/video-blockchain-explained.svg" alt="">
+                    <div class="leading-[150%] tracking-[-0.03em]
+                        py-[4px] min-[391px]:py-[6px] min-[1441px]:py-[10px]
+                        w-[358px] min-[391px]:w-[590px] min-[1441px]:w-[718px]">
+                        <p class="font-semibold text-[#FFFFFF]
+                text-lg min-[391px]:text-[20px] min-[1441px]:text-[24px]"> Blockchain Explained: A Revolution in
+                            Finance </p>
+                        <p class="text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Delve into world of blockchain technology and
+                            its transformative impact on the financial industry. </p>
+                    </div>
+                </div>
+            </div>
+            <!--Breaking the silence video-->
+            <div class="grid grid-cols-1 min-[391px]:grid-cols-2
                 gap-10
                 min-[391px]:gap-25 min-[1441px]:gap-40
                 border-b border-[#262626]
                 px-4 min-[391px]:px-20 min-[1441px]:px-[162px]
                 py-10 min-[391px]:py-15 min-[1441px]:py-20">
-                    <div class="pb-10 border-b border-[#262626]">
-                        <img class="object-cover rounded-[15px]" src="pictures/video-breaking-the-silience.svg" alt="">
-                        <div class="leading-[150%] tracking-[-0.03em]
+                <div class="pb-10 border-b border-[#262626]">
+                    <img class="object-cover rounded-[15px]" src="pictures/video-breaking-the-silience.svg" alt="">
+                    <div class="leading-[150%] tracking-[-0.03em]
                         py-[4px] min-[391px]:py-[6px] min-[1441px]:py-[10px]
                         w-[358px] min-[391px]:w-[590px] min-[1441px]:w-[718px]">
-                            <p class="font-semibold text-[#FFFFFF]
-                text-lg min-[391px]:text-[20px] min-[1441px]:text-[24px]"> Breaking the Silence: Mental Health Awareness in the Workplace </p>
-                            <p class="text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> An exploration of the importance of mental health awareness and the initiatives reshaping workplaces for employee well-being. </p>
-                        </div>
+                        <p class="font-semibold text-[#FFFFFF]
+                text-lg min-[391px]:text-[20px] min-[1441px]:text-[24px]"> Breaking the Silence: Mental Health
+                            Awareness in the Workplace </p>
+                        <p class="text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> An exploration of the importance of mental
+                            health awareness and the initiatives reshaping workplaces for employee well-being. </p>
                     </div>
-                    <!--Revolutionizing Investment Strategies-->
-                    <div>
-                        <img class="object-cover rounded-[15px]" src="pictures/video-revolutionizing-investment-strategies.svg" alt="">
-                        <div class="leading-[150%] tracking-[-0.03em]
+                </div>
+                <!--Revolutionizing Investment Strategies-->
+                <div>
+                    <img class="object-cover rounded-[15px]"
+                        src="pictures/video-revolutionizing-investment-strategies.svg" alt="">
+                    <div class="leading-[150%] tracking-[-0.03em]
                         py-[4px] min-[391px]:py-[6px] min-[1441px]:py-[10px]
                         w-[358px] min-[391px]:w-[590px] min-[1441px]:w-[718px]">
-                            <p class="font-semibold text-[#FFFFFF]
+                        <p class="font-semibold text-[#FFFFFF]
                 text-lg min-[391px]:text-[20px] min-[1441px]:text-[24px]"> Revolutionizing Investment Strategies </p>
-                            <p class="text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> An in-depth look at global efforts to conserve biodiversity and safeguard endangered species from extinction. </p>
-                        </div>
+                        <p class="text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> An in-depth look at global efforts to conserve
+                            biodiversity and safeguard endangered species from extinction. </p>
                     </div>
                 </div>
-                <div class="w-full max-w-[1920px] bg-[#1A1A1A]
+            </div>
+            <div class="w-full max-w-[1920px] bg-[#1A1A1A]
                 border-b border-[#262626]
                flex flex-col gap-10 items-center items-center justify-between
                px-4 min-[391px]:px-20 min-[1441px]:px-[162px]
                py-10 min-[391px]:py-21 min-[1441px]:py-[126px]">
-                    <div class="relative flex min-[391px]:gap-15 min-[1441px]:gap-20">
-                        <img class="flex items-center
+                <div class="relative flex min-[391px]:gap-15 min-[1441px]:gap-20">
+                    <img class="flex items-center
                             absolute top-0 left-0 w-15 min-[391px]:relative
-                            w-15 min-[391px]:w-30 min-[1441px]:w-[150px]" src="logos/futuretech-logo-only.svg" alt="logo">
-                        <div class="text-[#FFFFFF]">
-                            <p class="ml-19 mt-5
+                            w-15 min-[391px]:w-30 min-[1441px]:w-[150px]" src="logos/futuretech-logo-only.svg"
+                        alt="logo">
+                    <div class="text-[#FFFFFF]">
+                        <p class="ml-19 mt-5
                         inline-flex font-medium leading-[150%] tracking-[-0.03em]
-                        text-sm min-[391px]:text-base min-[1441px]:text-xl bg-[#333333] py[6px] px-[10px]"> Learn, Connect, and Innovate </p>
-                            <p class="font-medium leading-[130%] tracking-[-0.03em]
+                        text-sm min-[391px]:text-base min-[1441px]:text-xl bg-[#333333] py[6px] px-[10px]"> Learn,
+                            Connect, and Innovate </p>
+                        <p class="font-medium leading-[130%] tracking-[-0.03em]
                         py-5 min-[391px]:py-5 min-[1441px]:py-[30px]
                         mt-5
-                        text-[28px] min-[391px]:text-[44px] min-[1441px]:text-[58px]"> Be Part of the Future Tech Revolution </p>
-                            <p class="text-[#7E7E81] leading-[150%] tracking-[-0.03em]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers. </p>
-                        </div>
+                        text-[28px] min-[391px]:text-[44px] min-[1441px]:text-[58px]"> Be Part of the Future Tech
+                            Revolution </p>
+                        <p class="text-[#7E7E81] leading-[150%] tracking-[-0.03em]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Immerse yourself in the world of future
+                            technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and
+                            drive innovation in the industry. Join a dynamic community of forward-thinkers. </p>
                     </div>
-                    <div class="grid grid-cols-1 min-[391px]:grid-cols-3
+                </div>
+                <div class="grid grid-cols-1 min-[391px]:grid-cols-3
                     bg-[#141414] border border-[#141414] rounded-[15px]
                 gap-[10px] min-[1441px]:gap-5
                 border-b border-[#262626]
                 p-[10px] min-[1441px]:p-5">
-                        <div>
-                            <div class="flex-cols justify-between items-center bg-[#1A1A1A]
+                    <div>
+                        <div class="flex-cols justify-between items-center bg-[#1A1A1A]
                         p-6 min-[391px]:p-[30px] min-[1441px]:p-10
                         border border-[#262626] rounded-[15px]">
-                                <div class="leading-[150%] tracking-[-0.03em]
+                            <div class="leading-[150%] tracking-[-0.03em]
                             pb-[10px] min-[391px]:pb-4 min-[1441px]:pb-5
                             flex justify-between">
-                                    <p class="font-semibold text-[#FFFFFF]
+                                <p class="font-semibold text-[#FFFFFF]
                 text-base min-[391px]:text-lg min-[1441px]:text-[22px]"> Resource Access </p>
-                                    <img class="w-10 min-[391px]:w-11 min-[1441px]:w-13" src="icons/arrow-up-right-yellow.svg" alt="">
-                                </div>
-                                <p class="text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Visitors can access a wide range of resources, including ebooks, whitepapers, reports. </p>
+                                <img class="w-10 min-[391px]:w-11 min-[1441px]:w-13"
+                                    src="icons/arrow-up-right-yellow.svg" alt="">
                             </div>
+                            <p class="text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Visitors can access a wide range of resources,
+                                including ebooks, whitepapers, reports. </p>
                         </div>
-                        <div>
-                            <div class="flex-cols justify-between items-center bg-[#1A1A1A]
+                    </div>
+                    <div>
+                        <div class="flex-cols justify-between items-center bg-[#1A1A1A]
                         p-6 min-[391px]:p-[30px] min-[1441px]:p-10
                         border border-[#262626] rounded-[15px]">
-                                <div class="leading-[150%] tracking-[-0.03em]
+                            <div class="leading-[150%] tracking-[-0.03em]
                             pb-[10px] min-[391px]:pb-4 min-[1441px]:pb-5
                             flex justify-between">
-                                    <p class="font-semibold text-[#FFFFFF]
+                                <p class="font-semibold text-[#FFFFFF]
                 text-base min-[391px]:text-lg min-[1441px]:text-[22px]"> Community Forum </p>
-                                    <img class="w-10 min-[391px]:w-11 min-[1441px]:w-13" src="icons/arrow-up-right-yellow.svg" alt="">
-                                </div>
-                                <p class="text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Join our active community forum to discuss industry trends and collaborate with peers. </p>
+                                <img class="w-10 min-[391px]:w-11 min-[1441px]:w-13"
+                                    src="icons/arrow-up-right-yellow.svg" alt="">
                             </div>
+                            <p class="text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Join our active community forum to discuss
+                                industry trends and collaborate with peers. </p>
                         </div>
-                        <div>
-                            <div class="flex-cols justify-between items-center bg-[#1A1A1A]
+                    </div>
+                    <div>
+                        <div class="flex-cols justify-between items-center bg-[#1A1A1A]
                         p-6 min-[391px]:p-[30px] min-[1441px]:p-10
                         border border-[#262626] rounded-[15px]">
-                                <div class="leading-[150%] tracking-[-0.03em]
+                            <div class="leading-[150%] tracking-[-0.03em]
                             pb-[10px] min-[391px]:pb-4 min-[1441px]:pb-5
                             flex justify-between">
-                                    <p class="font-semibold text-[#FFFFFF]
+                                <p class="font-semibold text-[#FFFFFF]
                 text-base min-[391px]:text-lg min-[1441px]:text-[22px]"> Tech Events </p>
-                                    <img class="w-10 min-[391px]:w-11 min-[1441px]:w-13" src="icons/arrow-up-right-yellow.svg" alt="">
-                                </div>
-                                <p class="text-[#98989A]
-                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Stay updated on upcoming tech event, webinars and conferences to enhance your knowledge. </p>
+                                <img class="w-10 min-[391px]:w-11 min-[1441px]:w-13"
+                                    src="icons/arrow-up-right-yellow.svg" alt="">
                             </div>
+                            <p class="text-[#98989A]
+                    text-sm min-[391px]:text-base min-[1441px]:text-lg"> Stay updated on upcoming tech event, webinars
+                                and conferences to enhance your knowledge. </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer>
-                <div class="w-full max-w-[1920px] bg-[#141414]
+        </div>
+        <footer>
+            <div class="w-full max-w-[1920px] bg-[#141414]
             inline-block min-[391px]:flex
             gap-5 min-[391px]:gap-[50px] min-[1441px]:gap-20
             px-4 min-[391px]:px-20 min-[1441px]:px-[162px]
             py-10 min-[391px]:py-21 min-[1441px]:py-[126px]">
-                    <div class="gap-5 min-[391px]:gap-[50px] min-[1441px]:gap-20
+                <div class="gap-5 min-[391px]:gap-[50px] min-[1441px]:gap-20
                 grid grid-cols-2 min-[391px]:grid-cols-4 min-[391px]:w-4/5">
-                        <div class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
+                    <div class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
                 text-base min-[391px]:text-lg min-[1441px]:text-xl
                 grid gap-4 min-[391px]:gap-7 min-[1441px]:gap-9"> Home <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em]"> Features </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em]"> Blogs </span>
-                            <span class="text-sm min-[1441px]:text-lg
-                    text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Resources <img class="w-[46px] min-[1441px]:w-[58px]" src="icons/new-icon.svg" alt="">
-                            </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
+                    text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Resources <img
+                                class="w-[46px] min-[1441px]:w-[58px]" src="icons/new-icon.svg" alt="">
+                        </span>
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Testimonials </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Contact Us </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Newsletter </span>
-                        </div>
-                        <div class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
+                    </div>
+                    <div class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
                 text-base min-[391px]:text-lg min-[1441px]:text-xl
                 grid gap-4 min-[391px]:gap-7 min-[1441px]:gap-9"> News <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em]"> Trending Stories </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em]"> Featured Videos </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Technology </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Health </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Politics </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Environment </span>
-                        </div>
-                        <div class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
+                    </div>
+                    <div class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
                 text-base min-[391px]:text-lg min-[1441px]:text-xl
                 grid gap-4 min-[391px]:gap-7 min-[1441px]:gap-9 items-start"> Podcasts <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em]"> AI Revolution </span>
-                            <span class="text-sm min-[1441px]:text-lg flex items-center
-                    text-[#666666] leading-[130%] tracking-[-0.03em]"> AI Revolution <img class="flex w-[46px] min-[1441px]:w-[58px]" src="icons/new-icon.svg" alt="">
-                            </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg flex items-center
+                    text-[#666666] leading-[130%] tracking-[-0.03em]"> AI Revolution <img
+                                class="flex w-[46px] min-[1441px]:w-[58px]" src="icons/new-icon.svg" alt="">
+                        </span>
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> TechTalk AI </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> AI Conversations </span>
-                        </div>
-                        <div class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
+                    </div>
+                    <div class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
                 text-base min-[391px]:text-lg min-[1441px]:text-xl
                 grid gap-4 min-[391px]:gap-7 min-[1441px]:gap-9"> Blogs <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em]"> Quantum Computing </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em]"> AI Ethics </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Space Exploration </span>
-                            <span class="text-sm min-[1441px]:text-lg
-                    text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Biotechnology <img class="w-[46px] min-[1441px]:w-[58px]" src="icons/new-icon.svg" alt="">
-                            </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
+                    text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Biotechnology <img
+                                class="w-[46px] min-[1441px]:w-[58px]" src="icons/new-icon.svg" alt="">
+                        </span>
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Renewable Energy </span>
-                            <span class="text-sm min-[1441px]:text-lg
+                        <span class="text-sm min-[1441px]:text-lg
                     text-[#666666] leading-[130%] tracking-[-0.03em] flex gap-2"> Biohacking </span>
-                        </div>
                     </div>
-                    <div class="grid gap-4 min-[391px]:gap-7 min-[1441px]:gap-9">
-                        <p class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
+                </div>
+                <div class="grid gap-4 min-[391px]:gap-7 min-[1441px]:gap-9">
+                    <p class="font-medium text-[#FFFFFF] leading-[130%] tracking-[-0.03em]
                 text-base min-[391px]:text-lg min-[1441px]:text-xl"> Resources </p>
-                        <div class="flex flex-row flex-wrap min-[391px]:flex-col justify-start
+                    <div class="flex flex-row flex-wrap min-[391px]:flex-col justify-start
                         gap-3 min-[1441px]:gap-[18px]
                         py-2 min-[1441px]:py-[18px]
                         text-sm min-[1441px]:text-lg">
-                            <span class="flex justify-start
+                        <span class="flex justify-start
                         border border-[#262626] rounded-[5px]
                         py-2 min-[1441px]:py-[18px]
                         px-[14px] min-[1441px]:px-6">
-                                <a href="https://youtube.com" class="text-[#98989A] bg-[#141414] flex"> Whitepapers <img class="ml-1 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                                </a>
-                            </span>
-                            <span class="flex justify-start
+                            <a href="https://youtube.com" class="text-[#98989A] bg-[#141414] flex"> Whitepapers <img
+                                    class="ml-1 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                                    src="icons/arrow-up-right.svg" alt="">
+                            </a>
+                        </span>
+                        <span class="flex justify-start
                         border border-[#262626] rounded-[5px]
                         py-2 min-[1441px]:py-[18px]
                         px-[14px] min-[1441px]:px-6">
-                                <a href="https://youtube.com" class="text-[#98989A] bg-[#141414] flex"> Ebooks <img class="ml-1 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                                </a>
-                            </span>
-                            <span class="flex justify-start
+                            <a href="https://youtube.com" class="text-[#98989A] bg-[#141414] flex"> Ebooks <img
+                                    class="ml-1 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                                    src="icons/arrow-up-right.svg" alt="">
+                            </a>
+                        </span>
+                        <span class="flex justify-start
                         border border-[#262626] rounded-[5px]
                         py-2 min-[1441px]:py-[18px]
                         px-[14px] min-[1441px]:px-6">
-                                <a href="https://youtube.com" class="text-[#98989A] bg-[#141414] flex"> Reports <img class="ml-1 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                                </a>
-                            </span>
-                            <span class="flex justify-start
+                            <a href="https://youtube.com" class="text-[#98989A] bg-[#141414] flex"> Reports <img
+                                    class="ml-1 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                                    src="icons/arrow-up-right.svg" alt="">
+                            </a>
+                        </span>
+                        <span class="flex justify-start
                         border border-[#262626] rounded-[5px]
                         py-2 min-[1441px]:py-[18px]
                         px-[14px] min-[1441px]:px-6">
-                                <a href="https://youtube.com" class="text-[#98989A] bg-[#141414] flex"> Research Papers <img class="ml-1 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6" src="icons/arrow-up-right.svg" alt="">
-                                </a>
-                            </span>
-                        </div>
+                            <a href="https://youtube.com" class="text-[#98989A] bg-[#141414] flex"> Research Papers <img
+                                    class="ml-1 w-3 h-3 min-[391px]:w-5 min-[391px]:h-5 min-[1441px]:w-6 min-[1441px]:h-6"
+                                    src="icons/arrow-up-right.svg" alt="">
+                            </a>
+                        </span>
                     </div>
                 </div>
-                <div class="w-[358px] min-[391px]:w-320 min-[1441px]:w-[1596px] bg-[#141414]
+            </div>
+            <div class="w-[358px] min-[391px]:w-320 min-[1441px]:w-[1596px] bg-[#141414]
             border-t border-[#262626]
             flex flex-col gap-5 min-[391px]:flex-row justify-between items-center
             ml-4 min-[391px]:ml-20 min-[1441px]:ml-[162px]
             py-6 min-[1441px]:py-10">
-                    <div class="flex
+                <div class="flex
                 text-sm min-[1441px]:text-lg
                 text-[#666666] leading-[130%] tracking-[-0.03em]">
-                        <p>Terms & Conditions</p>
-                        <p>Privacy Policy</p>
-                    </div>
-                    <div class="flex">
-                        <img class="w-22 min-[1441px]:w-30" src="pictures/socials.svg" alt="">
-                    </div>
-                    <div class="flex
-                text-sm min-[1441px]:text-lg
-                text-[#666666] leading-[130%] tracking-[-0.03em]">
-                        <p> © 2024 FutureTech. All rights reserved. </p>
-                    </div>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
                 </div>
-            </footer>
-        </div>
-    </body>
+                <div class="flex">
+                    <img class="w-22 min-[1441px]:w-30" src="pictures/socials.svg" alt="">
+                </div>
+                <div class="flex
+                text-sm min-[1441px]:text-lg
+                text-[#666666] leading-[130%] tracking-[-0.03em]">
+                    <p> © 2024 FutureTech. All rights reserved. </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
