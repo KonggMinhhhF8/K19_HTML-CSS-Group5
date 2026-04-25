@@ -1,499 +1,493 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/resources/blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Resources Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="/resources/blog.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <title>Resources Page</title>
-</head>
-
-<body>
-  <div class="header-web">
-    <div class="top-header-mobie align">
-      <span class="inter-font">Subscribe to our Newsletter For Blogs and Resources</span>
-      <img src="/resources/img/icon-arow.png" alt="icon-arow" />
-    </div>
-    <div class="sub-header">
-      <span href="#!" class="inter-font">Subscribe to our Newsletter For New & latest Blogs and
-        Resources</span>
-      <img src="/resources/img/icon-arow.png" alt="icon-arow" />
-    </div>
-    <div class="header-container align">
-      <div class="logo">
-        <img src="/resources/img/image.png" alt="logo" />
-        <svg width="113" height="18" viewBox="0 0 113 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M101.902 0H104.973V4.71094L104.785 6.79688H104.973C105.301 6.25 105.77 5.80469 106.379 5.46094C107.004 5.10156 107.699 4.92187 108.465 4.92187C109.949 4.92187 111.043 5.35937 111.746 6.23437C112.465 7.10937 112.824 8.30469 112.824 9.82031V16.7812H109.754V10.1953C109.754 9.39844 109.566 8.79688 109.191 8.39063C108.816 7.96875 108.293 7.75781 107.621 7.75781C107.199 7.75781 106.824 7.85156 106.496 8.03906C106.168 8.21094 105.887 8.45312 105.652 8.76562C105.434 9.07812 105.262 9.44531 105.137 9.86719C105.027 10.2734 104.973 10.7109 104.973 11.1797V16.7812H101.902V0Z"
-            fill="white" />
-          <path
-            d="M100.73 13.8516C100.23 14.8203 99.5274 15.6172 98.6211 16.2422C97.7305 16.8516 96.6133 17.1563 95.2695 17.1563C94.3789 17.1563 93.5586 17.0078 92.8086 16.7109C92.0742 16.3984 91.4336 15.9688 90.8867 15.4219C90.3555 14.875 89.9336 14.2344 89.6211 13.5C89.3242 12.75 89.1758 11.9297 89.1758 11.0391C89.1758 10.1484 89.3242 9.32813 89.6211 8.57813C89.9336 7.82813 90.3555 7.1875 90.8867 6.65625C91.4336 6.10938 92.0742 5.6875 92.8086 5.39063C93.5586 5.07813 94.3789 4.92188 95.2695 4.92188C96.5977 4.92188 97.7149 5.22656 98.6211 5.83594C99.5274 6.44531 100.191 7.23437 100.613 8.20312L97.8008 9.375C97.5352 8.84375 97.1914 8.44531 96.7695 8.17969C96.3633 7.89844 95.8477 7.75781 95.2227 7.75781C94.8164 7.75781 94.4336 7.83594 94.0742 7.99219C93.7148 8.14844 93.3945 8.36719 93.1133 8.64844C92.8477 8.92969 92.6367 9.27344 92.4805 9.67969C92.3242 10.0859 92.2461 10.5391 92.2461 11.0391C92.2461 11.5391 92.3242 11.9922 92.4805 12.3984C92.6367 12.8047 92.8477 13.1484 93.1133 13.4297C93.3945 13.7109 93.7148 13.9297 94.0742 14.0859C94.4336 14.2422 94.8164 14.3203 95.2227 14.3203C95.8633 14.3203 96.4023 14.1797 96.8398 13.8984C97.293 13.6016 97.6523 13.1797 97.918 12.6328L100.73 13.8516Z"
-            fill="white" />
-          <path
-            d="M88.2734 14.0156C87.7422 14.9531 87.0234 15.7109 86.1172 16.2891C85.2266 16.8672 84.1328 17.1563 82.8359 17.1563C81.9609 17.1563 81.1484 17.0078 80.3984 16.7109C79.6641 16.3984 79.0234 15.9688 78.4766 15.4219C77.9297 14.875 77.5 14.2344 77.1875 13.5C76.8906 12.75 76.7422 11.9297 76.7422 11.0391C76.7422 10.2109 76.8906 9.42969 77.1875 8.69531C77.4844 7.94531 77.8984 7.29688 78.4297 6.75C78.9609 6.1875 79.5859 5.74219 80.3047 5.41406C81.0391 5.08594 81.8438 4.92188 82.7188 4.92188C83.6406 4.92188 84.4609 5.07813 85.1797 5.39063C85.8984 5.6875 86.5 6.10938 86.9844 6.65625C87.4688 7.1875 87.8359 7.82031 88.0859 8.55469C88.3359 9.28906 88.4609 10.0859 88.4609 10.9453C88.4609 11.0547 88.4609 11.1484 88.4609 11.2266C88.4453 11.3203 88.4375 11.4063 88.4375 11.4844C88.4219 11.5625 88.4141 11.6484 88.4141 11.7422H79.7656C79.8281 12.2109 79.9531 12.6172 80.1406 12.9609C80.3438 13.2891 80.5859 13.5703 80.8672 13.8047C81.1641 14.0234 81.4844 14.1875 81.8281 14.2969C82.1719 14.3906 82.5234 14.4375 82.8828 14.4375C83.5859 14.4375 84.1641 14.2813 84.6172 13.9688C85.0859 13.6406 85.4531 13.2344 85.7188 12.75L88.2734 14.0156ZM85.4844 9.5625C85.4688 9.35938 85.3984 9.13281 85.2734 8.88281C85.1641 8.63281 84.9922 8.39844 84.7578 8.17969C84.5391 7.96094 84.2578 7.78125 83.9141 7.64063C83.5859 7.5 83.1875 7.42969 82.7188 7.42969C82.0625 7.42969 81.4844 7.61719 80.9844 7.99219C80.4844 8.36719 80.1328 8.89062 79.9297 9.5625H85.4844Z"
-            fill="white" />
-          <path d="M70.25 16.7812V3H65.5625V0H78.1016V3H73.4141V16.7812H70.25Z" fill="white" />
-          <path
-            d="M64.8672 14.0156C64.3359 14.9531 63.6172 15.7109 62.7109 16.2891C61.8203 16.8672 60.7266 17.1563 59.4297 17.1563C58.5547 17.1563 57.7422 17.0078 56.9922 16.7109C56.2578 16.3984 55.6172 15.9688 55.0703 15.4219C54.5234 14.875 54.0938 14.2344 53.7813 13.5C53.4844 12.75 53.3359 11.9297 53.3359 11.0391C53.3359 10.2109 53.4844 9.42969 53.7813 8.69531C54.0781 7.94531 54.4922 7.29688 55.0234 6.75C55.5547 6.1875 56.1797 5.74219 56.8984 5.41406C57.6328 5.08594 58.4375 4.92188 59.3125 4.92188C60.2344 4.92188 61.0547 5.07813 61.7734 5.39063C62.4922 5.6875 63.0938 6.10938 63.5781 6.65625C64.0625 7.1875 64.4297 7.82031 64.6797 8.55469C64.9297 9.28906 65.0547 10.0859 65.0547 10.9453C65.0547 11.0547 65.0547 11.1484 65.0547 11.2266C65.0391 11.3203 65.0313 11.4063 65.0313 11.4844C65.0156 11.5625 65.0078 11.6484 65.0078 11.7422H56.3594C56.4219 12.2109 56.5469 12.6172 56.7344 12.9609C56.9375 13.2891 57.1797 13.5703 57.4609 13.8047C57.7578 14.0234 58.0781 14.1875 58.4219 14.2969C58.7656 14.3906 59.1172 14.4375 59.4766 14.4375C60.1797 14.4375 60.7578 14.2813 61.2109 13.9688C61.6797 13.6406 62.0469 13.2344 62.3125 12.75L64.8672 14.0156ZM62.0781 9.5625C62.0625 9.35938 61.9922 9.13281 61.8672 8.88281C61.7578 8.63281 61.5859 8.39844 61.3516 8.17969C61.1328 7.96094 60.8516 7.78125 60.5078 7.64063C60.1797 7.5 59.7813 7.42969 59.3125 7.42969C58.6563 7.42969 58.0781 7.61719 57.5781 7.99219C57.0781 8.36719 56.7266 8.89062 56.5234 9.5625H62.0781Z"
-            fill="white" />
-          <path
-            d="M45.8633 5.29687H48.7461V6.89062H48.9336C49.0742 6.60937 49.2617 6.35156 49.4961 6.11719C49.7305 5.88281 49.9883 5.67969 50.2695 5.50781C50.5664 5.33594 50.8789 5.20312 51.207 5.10937C51.5508 5.01562 51.8867 4.96875 52.2148 4.96875C52.6211 4.96875 52.9648 5.00781 53.2461 5.08594C53.543 5.16406 53.793 5.26562 53.9961 5.39062L53.1758 8.17969C52.9883 8.08594 52.7773 8.01562 52.543 7.96875C52.3242 7.90625 52.0508 7.875 51.7227 7.875C51.3008 7.875 50.918 7.96094 50.5742 8.13281C50.2305 8.28906 49.9336 8.51562 49.6836 8.8125C49.4492 9.10937 49.2617 9.46094 49.1211 9.86719C48.9961 10.2578 48.9336 10.6875 48.9336 11.1562V16.7812H45.8633V5.29687Z"
-            fill="white" />
-          <path
-            d="M41.0508 15.2813H40.8633C40.5039 15.8594 40.0195 16.3203 39.4102 16.6641C38.8008 16.9922 38.1055 17.1562 37.3242 17.1562C35.8711 17.1562 34.7852 16.7109 34.0664 15.8203C33.3633 14.9297 33.0117 13.7422 33.0117 12.2578V5.29688H36.082V11.8828C36.082 12.7109 36.2617 13.3281 36.6211 13.7344C36.9961 14.125 37.5352 14.3203 38.2383 14.3203C38.6602 14.3203 39.0273 14.2344 39.3398 14.0625C39.668 13.875 39.9414 13.6328 40.1602 13.3359C40.3945 13.0234 40.5664 12.6641 40.6758 12.2578C40.8008 11.8359 40.8633 11.3906 40.8633 10.9219V5.29688H43.9336V16.7813H41.0508V15.2813Z"
-            fill="white" />
-          <path
-            d="M25.668 7.92188H23.6523V5.29688H25.668V1.78125H28.7383V5.29688H31.5508V7.92188H28.7383V12.375C28.7383 12.6406 28.7617 12.8906 28.8086 13.125C28.8711 13.3438 28.9805 13.5313 29.1367 13.6875C29.3555 13.9375 29.668 14.0625 30.0742 14.0625C30.3398 14.0625 30.5508 14.0391 30.707 13.9922C30.8633 13.9297 31.0117 13.8516 31.1523 13.7578L32.0195 16.4531C31.6602 16.625 31.2695 16.75 30.8477 16.8281C30.4414 16.9219 29.9883 16.9688 29.4883 16.9688C28.9102 16.9688 28.3867 16.8828 27.918 16.7109C27.4648 16.5234 27.082 16.2734 26.7695 15.9609C26.0352 15.2578 25.668 14.2578 25.668 12.9609V7.92188Z"
-            fill="white" />
-          <path
-            d="M19.4805 15.2813H19.293C18.9336 15.8594 18.4492 16.3203 17.8398 16.6641C17.2305 16.9922 16.5352 17.1562 15.7539 17.1562C14.3008 17.1562 13.2148 16.7109 12.4961 15.8203C11.793 14.9297 11.4414 13.7422 11.4414 12.2578V5.29688H14.5117V11.8828C14.5117 12.7109 14.6914 13.3281 15.0508 13.7344C15.4258 14.125 15.9648 14.3203 16.668 14.3203C17.0898 14.3203 17.457 14.2344 17.7695 14.0625C18.0977 13.875 18.3711 13.6328 18.5898 13.3359C18.8242 13.0234 18.9961 12.6641 19.1055 12.2578C19.2305 11.8359 19.293 11.3906 19.293 10.9219V5.29688H22.3633V16.7813H19.4805V15.2813Z"
-            fill="white" />
-          <path d="M0 0H10.6406V3H3.16406V7.07812H9.89063V10.0781H3.16406V16.7812H0V0Z" fill="white" />
-        </svg>
+  <body>
+    <div class="header-web">
+      <div class="top-header-mobie align">
+        <span class="inter-font"
+          >Subscribe to our Newsletter For Blogs and Resources</span
+        >
+        <img src="/resources/img/icon-arow.png" alt="icon-arow" />
       </div>
-
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-      <label for="menu-toggle" class="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </label>
-      <div class="menu" id="nav-menu">
-        <ul>
-          <li><a href="../index.html" class="inter-font">Home</a></li>
-          <li><a href="../news/index.html" class="inter-font">News</a></li>
-          <li><a href="../Blogs/index.html" class="inter-font">Blog</a></li>
-          <li><a href="../podcasts/index.html" class="inter-font">Podcasts</a></li>
-          <li><a href="./index.html" class="inter-font">Resources</a></li>
-        </ul>
-        <button class="inter-font">Contact Us</button>
+      <div class="sub-header">
+        <span href="#!" class="inter-font"
+          >Subscribe to our Newsletter For New & latest Blogs and
+          Resources</span
+        >
+        <img src="/resources/img/icon-arow.png" alt="icon-arow" />
       </div>
-    </div>
-  </div>
-  <div class="body-web">
-    <div class="hero-section align">
-      <div class="heading kumbh-font">Unlock a World of</div>
-
-      <div class="text-container">
-        <div class="heading kumbh-font">Knowledge</div>
-        <p class="inter-font text-desktop">
-          Dive deep into the AI universe with our collection of insightful
-          podcasts. Explore the latest trends, breakthroughs, and discussions
-          on artificial intelligence. Whether you're an enthusiast or a
-          professional, our AI podcasts offer a gateway to knowledge and
-          innovation.
-        </p>
-
-        <p class="inter-font text-mobie">
-          Dive deep into the AI universe with our collection of insightful podcasts. Explore the latest trends,
-          breakthroughs, and discussions on artificial intelligence.
-        </p>
-      </div>
-    </div>
-
-    <div class="reputation-container">
-      <div class="block">
-        <p class="number inter-font">300<span>+</span></p>
-        <p class="text inter-font">Resources available</p>
-      </div>
-      <div class="block">
-        <p class="number inter-font">12k<span>+</span></p>
-        <p class="text inter-font">Total Downloads</p>
-      </div>
-      <div class="block">
-        <p class="number inter-font">10k<span>+</span></p>
-        <p class="text inter-font">Active Users</p>
-      </div>
-      <div class="block">
-        <p class="number inter-font">100<span>+</span></p>
-        <p class="text-desktop inter-font">Countries Accesses Our Content</p>
-        <p class="text-mobie inter-font">Countries Accesses</p>
-      </div>
-    </div>
-
-    <div class="detail">
-      <div class="detail-container align">
-        <div class="tittle-container">
-          <div class="text inter-font">Dive into the Details</div>
-
-          <div class="heading kumbh-font">In-Depth Reports and Analysis</div>
+      <div class="header-container align">
+        <div class="logo">
+          <img src="/resources/img/image.png" alt="logo" />
+          <svg
+            width="113"
+            height="18"
+            viewBox="0 0 113 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M101.902 0H104.973V4.71094L104.785 6.79688H104.973C105.301 6.25 105.77 5.80469 106.379 5.46094C107.004 5.10156 107.699 4.92187 108.465 4.92187C109.949 4.92187 111.043 5.35937 111.746 6.23437C112.465 7.10937 112.824 8.30469 112.824 9.82031V16.7812H109.754V10.1953C109.754 9.39844 109.566 8.79688 109.191 8.39063C108.816 7.96875 108.293 7.75781 107.621 7.75781C107.199 7.75781 106.824 7.85156 106.496 8.03906C106.168 8.21094 105.887 8.45312 105.652 8.76562C105.434 9.07812 105.262 9.44531 105.137 9.86719C105.027 10.2734 104.973 10.7109 104.973 11.1797V16.7812H101.902V0Z"
+              fill="white"
+            />
+            <path
+              d="M100.73 13.8516C100.23 14.8203 99.5274 15.6172 98.6211 16.2422C97.7305 16.8516 96.6133 17.1563 95.2695 17.1563C94.3789 17.1563 93.5586 17.0078 92.8086 16.7109C92.0742 16.3984 91.4336 15.9688 90.8867 15.4219C90.3555 14.875 89.9336 14.2344 89.6211 13.5C89.3242 12.75 89.1758 11.9297 89.1758 11.0391C89.1758 10.1484 89.3242 9.32813 89.6211 8.57813C89.9336 7.82813 90.3555 7.1875 90.8867 6.65625C91.4336 6.10938 92.0742 5.6875 92.8086 5.39063C93.5586 5.07813 94.3789 4.92188 95.2695 4.92188C96.5977 4.92188 97.7149 5.22656 98.6211 5.83594C99.5274 6.44531 100.191 7.23437 100.613 8.20312L97.8008 9.375C97.5352 8.84375 97.1914 8.44531 96.7695 8.17969C96.3633 7.89844 95.8477 7.75781 95.2227 7.75781C94.8164 7.75781 94.4336 7.83594 94.0742 7.99219C93.7148 8.14844 93.3945 8.36719 93.1133 8.64844C92.8477 8.92969 92.6367 9.27344 92.4805 9.67969C92.3242 10.0859 92.2461 10.5391 92.2461 11.0391C92.2461 11.5391 92.3242 11.9922 92.4805 12.3984C92.6367 12.8047 92.8477 13.1484 93.1133 13.4297C93.3945 13.7109 93.7148 13.9297 94.0742 14.0859C94.4336 14.2422 94.8164 14.3203 95.2227 14.3203C95.8633 14.3203 96.4023 14.1797 96.8398 13.8984C97.293 13.6016 97.6523 13.1797 97.918 12.6328L100.73 13.8516Z"
+              fill="white"
+            />
+            <path
+              d="M88.2734 14.0156C87.7422 14.9531 87.0234 15.7109 86.1172 16.2891C85.2266 16.8672 84.1328 17.1563 82.8359 17.1563C81.9609 17.1563 81.1484 17.0078 80.3984 16.7109C79.6641 16.3984 79.0234 15.9688 78.4766 15.4219C77.9297 14.875 77.5 14.2344 77.1875 13.5C76.8906 12.75 76.7422 11.9297 76.7422 11.0391C76.7422 10.2109 76.8906 9.42969 77.1875 8.69531C77.4844 7.94531 77.8984 7.29688 78.4297 6.75C78.9609 6.1875 79.5859 5.74219 80.3047 5.41406C81.0391 5.08594 81.8438 4.92188 82.7188 4.92188C83.6406 4.92188 84.4609 5.07813 85.1797 5.39063C85.8984 5.6875 86.5 6.10938 86.9844 6.65625C87.4688 7.1875 87.8359 7.82031 88.0859 8.55469C88.3359 9.28906 88.4609 10.0859 88.4609 10.9453C88.4609 11.0547 88.4609 11.1484 88.4609 11.2266C88.4453 11.3203 88.4375 11.4063 88.4375 11.4844C88.4219 11.5625 88.4141 11.6484 88.4141 11.7422H79.7656C79.8281 12.2109 79.9531 12.6172 80.1406 12.9609C80.3438 13.2891 80.5859 13.5703 80.8672 13.8047C81.1641 14.0234 81.4844 14.1875 81.8281 14.2969C82.1719 14.3906 82.5234 14.4375 82.8828 14.4375C83.5859 14.4375 84.1641 14.2813 84.6172 13.9688C85.0859 13.6406 85.4531 13.2344 85.7188 12.75L88.2734 14.0156ZM85.4844 9.5625C85.4688 9.35938 85.3984 9.13281 85.2734 8.88281C85.1641 8.63281 84.9922 8.39844 84.7578 8.17969C84.5391 7.96094 84.2578 7.78125 83.9141 7.64063C83.5859 7.5 83.1875 7.42969 82.7188 7.42969C82.0625 7.42969 81.4844 7.61719 80.9844 7.99219C80.4844 8.36719 80.1328 8.89062 79.9297 9.5625H85.4844Z"
+              fill="white"
+            />
+            <path
+              d="M70.25 16.7812V3H65.5625V0H78.1016V3H73.4141V16.7812H70.25Z"
+              fill="white"
+            />
+            <path
+              d="M64.8672 14.0156C64.3359 14.9531 63.6172 15.7109 62.7109 16.2891C61.8203 16.8672 60.7266 17.1563 59.4297 17.1563C58.5547 17.1563 57.7422 17.0078 56.9922 16.7109C56.2578 16.3984 55.6172 15.9688 55.0703 15.4219C54.5234 14.875 54.0938 14.2344 53.7813 13.5C53.4844 12.75 53.3359 11.9297 53.3359 11.0391C53.3359 10.2109 53.4844 9.42969 53.7813 8.69531C54.0781 7.94531 54.4922 7.29688 55.0234 6.75C55.5547 6.1875 56.1797 5.74219 56.8984 5.41406C57.6328 5.08594 58.4375 4.92188 59.3125 4.92188C60.2344 4.92188 61.0547 5.07813 61.7734 5.39063C62.4922 5.6875 63.0938 6.10938 63.5781 6.65625C64.0625 7.1875 64.4297 7.82031 64.6797 8.55469C64.9297 9.28906 65.0547 10.0859 65.0547 10.9453C65.0547 11.0547 65.0547 11.1484 65.0547 11.2266C65.0391 11.3203 65.0313 11.4063 65.0313 11.4844C65.0156 11.5625 65.0078 11.6484 65.0078 11.7422H56.3594C56.4219 12.2109 56.5469 12.6172 56.7344 12.9609C56.9375 13.2891 57.1797 13.5703 57.4609 13.8047C57.7578 14.0234 58.0781 14.1875 58.4219 14.2969C58.7656 14.3906 59.1172 14.4375 59.4766 14.4375C60.1797 14.4375 60.7578 14.2813 61.2109 13.9688C61.6797 13.6406 62.0469 13.2344 62.3125 12.75L64.8672 14.0156ZM62.0781 9.5625C62.0625 9.35938 61.9922 9.13281 61.8672 8.88281C61.7578 8.63281 61.5859 8.39844 61.3516 8.17969C61.1328 7.96094 60.8516 7.78125 60.5078 7.64063C60.1797 7.5 59.7813 7.42969 59.3125 7.42969C58.6563 7.42969 58.0781 7.61719 57.5781 7.99219C57.0781 8.36719 56.7266 8.89062 56.5234 9.5625H62.0781Z"
+              fill="white"
+            />
+            <path
+              d="M45.8633 5.29687H48.7461V6.89062H48.9336C49.0742 6.60937 49.2617 6.35156 49.4961 6.11719C49.7305 5.88281 49.9883 5.67969 50.2695 5.50781C50.5664 5.33594 50.8789 5.20312 51.207 5.10937C51.5508 5.01562 51.8867 4.96875 52.2148 4.96875C52.6211 4.96875 52.9648 5.00781 53.2461 5.08594C53.543 5.16406 53.793 5.26562 53.9961 5.39062L53.1758 8.17969C52.9883 8.08594 52.7773 8.01562 52.543 7.96875C52.3242 7.90625 52.0508 7.875 51.7227 7.875C51.3008 7.875 50.918 7.96094 50.5742 8.13281C50.2305 8.28906 49.9336 8.51562 49.6836 8.8125C49.4492 9.10937 49.2617 9.46094 49.1211 9.86719C48.9961 10.2578 48.9336 10.6875 48.9336 11.1562V16.7812H45.8633V5.29687Z"
+              fill="white"
+            />
+            <path
+              d="M41.0508 15.2813H40.8633C40.5039 15.8594 40.0195 16.3203 39.4102 16.6641C38.8008 16.9922 38.1055 17.1562 37.3242 17.1562C35.8711 17.1562 34.7852 16.7109 34.0664 15.8203C33.3633 14.9297 33.0117 13.7422 33.0117 12.2578V5.29688H36.082V11.8828C36.082 12.7109 36.2617 13.3281 36.6211 13.7344C36.9961 14.125 37.5352 14.3203 38.2383 14.3203C38.6602 14.3203 39.0273 14.2344 39.3398 14.0625C39.668 13.875 39.9414 13.6328 40.1602 13.3359C40.3945 13.0234 40.5664 12.6641 40.6758 12.2578C40.8008 11.8359 40.8633 11.3906 40.8633 10.9219V5.29688H43.9336V16.7813H41.0508V15.2813Z"
+              fill="white"
+            />
+            <path
+              d="M25.668 7.92188H23.6523V5.29688H25.668V1.78125H28.7383V5.29688H31.5508V7.92188H28.7383V12.375C28.7383 12.6406 28.7617 12.8906 28.8086 13.125C28.8711 13.3438 28.9805 13.5313 29.1367 13.6875C29.3555 13.9375 29.668 14.0625 30.0742 14.0625C30.3398 14.0625 30.5508 14.0391 30.707 13.9922C30.8633 13.9297 31.0117 13.8516 31.1523 13.7578L32.0195 16.4531C31.6602 16.625 31.2695 16.75 30.8477 16.8281C30.4414 16.9219 29.9883 16.9688 29.4883 16.9688C28.9102 16.9688 28.3867 16.8828 27.918 16.7109C27.4648 16.5234 27.082 16.2734 26.7695 15.9609C26.0352 15.2578 25.668 14.2578 25.668 12.9609V7.92188Z"
+              fill="white"
+            />
+            <path
+              d="M19.4805 15.2813H19.293C18.9336 15.8594 18.4492 16.3203 17.8398 16.6641C17.2305 16.9922 16.5352 17.1562 15.7539 17.1562C14.3008 17.1562 13.2148 16.7109 12.4961 15.8203C11.793 14.9297 11.4414 13.7422 11.4414 12.2578V5.29688H14.5117V11.8828C14.5117 12.7109 14.6914 13.3281 15.0508 13.7344C15.4258 14.125 15.9648 14.3203 16.668 14.3203C17.0898 14.3203 17.457 14.2344 17.7695 14.0625C18.0977 13.875 18.3711 13.6328 18.5898 13.3359C18.8242 13.0234 18.9961 12.6641 19.1055 12.2578C19.2305 11.8359 19.293 11.3906 19.293 10.9219V5.29688H22.3633V16.7813H19.4805V15.2813Z"
+              fill="white"
+            />
+            <path
+              d="M0 0H10.6406V3H3.16406V7.07812H9.89063V10.0781H3.16406V16.7812H0V0Z"
+              fill="white"
+            />
+          </svg>
         </div>
 
-        <div class="button-container">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+        <label for="menu-toggle" class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </label>
+        <div class="menu" id="nav-menu">
+          <ul>
+            <li><a href="../index.html" class="inter-font">Home</a></li>
+            <li><a href="../news/index.html" class="inter-font">News</a></li>
+            <li><a href="../Blogs/index.html" class="inter-font">Blog</a></li>
+            <li>
+              <a href="../podcasts/index.html" class="inter-font">Podcasts</a>
+            </li>
+            <li><a href="./index.html" class="inter-font">Resources</a></li>
+          </ul>
+          <button class="inter-font">Contact Us</button>
+        </div>
+      </div>
+    </div>
+    <div class="body-web">
+      <div class="hero-section align">
+        <div class="heading kumbh-font">Unlock a World of</div>
+
+        <div class="text-container">
+          <div class="heading kumbh-font">Knowledge</div>
+          <p class="inter-font text-desktop">
+            Dive deep into the AI universe with our collection of insightful
+            podcasts. Explore the latest trends, breakthroughs, and discussions
+            on artificial intelligence. Whether you're an enthusiast or a
+            professional, our AI podcasts offer a gateway to knowledge and
+            innovation.
+          </p>
+
+          <p class="inter-font text-mobie">
+            Dive deep into the AI universe with our collection of insightful
+            podcasts. Explore the latest trends, breakthroughs, and discussions
+            on artificial intelligence.
+          </p>
+        </div>
+      </div>
+
+      <div class="reputation-container">
+        <div class="block">
+          <p class="number inter-font">300<span>+</span></p>
+          <p class="text inter-font">Resources available</p>
+        </div>
+        <div class="block">
+          <p class="number inter-font">12k<span>+</span></p>
+          <p class="text inter-font">Total Downloads</p>
+        </div>
+        <div class="block">
+          <p class="number inter-font">10k<span>+</span></p>
+          <p class="text inter-font">Active Users</p>
+        </div>
+        <div class="block">
+          <p class="number inter-font">100<span>+</span></p>
+          <p class="text-desktop inter-font">Countries Accesses Our Content</p>
+          <p class="text-mobie inter-font">Countries Accesses</p>
+        </div>
+      </div>
+
+      <div class="detail">
+        <div class="detail-container align">
+          <div class="tittle-container">
+            <div class="text inter-font">Dive into the Details</div>
+
+            <div class="heading kumbh-font">In-Depth Reports and Analysis</div>
+          </div>
+
+          <div class="button-container">
+            <div class="sub-container">
+              <div class="btn-block inter-font">Whitepapers</div>
+              <div class="btn-block inter-font">Ebooks</div>
+              <div class="btn-block inter-font">Reports</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-container align">
+        <div class="description-container">
+          <svg
+            width="80"
+            height="80"
+            viewBox="0 0 80 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M56 56H24V24L56 56Z" fill="#404040" />
+            <path d="M72 8H8L24 24L56 24L56 56L72 72V8Z" fill="#FFD11A" />
+          </svg>
+          <div class="container">
+            <p class="heading kumbh-font">Quantum Computing Whitepaper</p>
+            <p class="inter-font">
+              Provides technical specifications and requirements for
+              implementing quantum computing systems.
+            </p>
+          </div>
+        </div>
+
+        <div class="img-container">
           <div class="sub-container">
-            <div class="btn-block inter-font">Whitepapers</div>
-            <div class="btn-block inter-font">Ebooks</div>
-            <div class="btn-block inter-font">Reports</div>
-          </div>
-        </div>
-      </div>
-    </div>
+            <img
+              src="/resources/img/img-section1.png"
+              alt="Quantum Computing Whitepaper"
+            />
+            <div class="content">
+              <div class="container">
+                <p class="heading inter-font">Quantum Computing Whitepaper</p>
+                <p class="inter-font">
+                  An in-depth whitepaper exploring the principles, applications,
+                  and potential impact of quantum computing.
+                </p>
+              </div>
 
-    <div class="section-container align">
-      <div class="description-container">
-        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M56 56H24V24L56 56Z" fill="#404040" />
-          <path d="M72 8H8L24 24L56 24L56 56L72 72V8Z" fill="#FFD11A" />
-        </svg>
-        <div class="container">
-          <p class="heading kumbh-font">Quantum Computing Whitepaper</p>
-          <p class="inter-font">
-            Provides technical specifications and requirements for
-            implementing quantum computing systems.
-          </p>
-        </div>
-      </div>
-
-      <div class="img-container">
-        <div class="sub-container">
-          <img src="/resources/img/img-section1.png" alt="Quantum Computing Whitepaper" />
-          <div class="content">
-            <div class="container">
-              <p class="heading inter-font">Quantum Computing Whitepaper</p>
-              <p class="inter-font">
-                An in-depth whitepaper exploring the principles, applications,
-                and potential impact of quantum computing.
-              </p>
-            </div>
-
-            <div class="download-container">
-              <div class="download-btn inter-font">
-                <p>Download PDF Now</p>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M8.25 3.75L19.5 3.75C19.6989 3.75 19.8897 3.82902 20.0303 3.96967C20.171 4.11032 20.25 4.30109 20.25 4.5V15.75C20.25 16.1642 19.9142 16.5 19.5 16.5C19.0858 16.5 18.75 16.1642 18.75 15.75V6.31066L5.03033 20.0303C4.73744 20.3232 4.26256 20.3232 3.96967 20.0303C3.67678 19.7374 3.67678 19.2626 3.96967 18.9697L17.6893 5.25L8.25 5.25C7.83579 5.25 7.5 4.91421 7.5 4.5C7.5 4.08579 7.83579 3.75 8.25 3.75Z"
-                    fill="#FFD11A" />
-                </svg>
+              <div class="download-container">
+                <div class="download-btn inter-font">
+                  <p>Download PDF Now</p>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.25 3.75L19.5 3.75C19.6989 3.75 19.8897 3.82902 20.0303 3.96967C20.171 4.11032 20.25 4.30109 20.25 4.5V15.75C20.25 16.1642 19.9142 16.5 19.5 16.5C19.0858 16.5 18.75 16.1642 18.75 15.75V6.31066L5.03033 20.0303C4.73744 20.3232 4.26256 20.3232 3.96967 20.0303C3.67678 19.7374 3.67678 19.2626 3.96967 18.9697L17.6893 5.25L8.25 5.25C7.83579 5.25 7.5 4.91421 7.5 4.5C7.5 4.08579 7.83579 3.75 8.25 3.75Z"
+                      fill="#FFD11A"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="info-container">
-          <div class="inter-font">
-            <p>Publication Date</p>
-            <p>July 2023</p>
-          </div>
-
-          <div class="inter-font">
-            <p>Category</p>
-            <p>Quantum Computing</p>
-          </div>
-
-          <div class="inter-font">
-            <p>Author</p>
-            <p>Dr. Quantum</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-container align">
-      <div class="description-container">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M58.8045 5.1956C66.2991 12.6902 65.5896 25.551 57.2967 33.8439L42.2186 48.9219L15.0781 21.7815L30.1562 6.70341C38.4491 -1.58952 51.3099 -2.29904 58.8045 5.1956Z"
-            fill="#FFD11A" />
-          <path
-            d="M27.1405 63.9999L0 36.8594C8.32738 28.532 21.1537 27.857 28.6483 35.3516C36.143 42.8463 35.4679 55.6725 27.1405 63.9999Z"
-            fill="#404040" />
-          <path
-            d="M55.7889 62.4921L28.6484 35.3516C36.9758 27.0242 49.8021 26.3492 57.2968 33.8438C64.7914 41.3384 64.1163 54.1647 55.7889 62.4921Z"
-            fill="#FFD11A" />
-          <path
-            d="M28.6483 35.3515L1.50781 8.21098C9.8352 -0.116402 22.6615 -0.791467 30.1561 6.70317C37.6508 14.1978 36.9757 27.0241 28.6483 35.3515Z"
-            fill="#FFD11A" />
-        </svg>
-        <div class="container">
-          <p class="heading kumbh-font">Space Exploration Whitepaper</p>
-          <p class="inter-font">
-            Explores Mars colonization, asteroid resource potential, and space
-            tourism.
-          </p>
-        </div>
-      </div>
-
-      <div class="img-container">
-        <div class="sub-container">
-          <img src="/resources/img/img-section2.png" alt="Space Exploration Whitepaper" />
-          <div class="content">
-            <div class="container">
-              <p class="heading inter-font">Space Exploration Whitepaper</p>
-              <p class="inter-font">
-                An in-depth whitepaper covering the latest advancements in
-                space exploration, including Mars missions and asteroid
-                mining.
-              </p>
+          <div class="info-container">
+            <div class="inter-font">
+              <p>Publication Date</p>
+              <p>July 2023</p>
             </div>
 
-            <div class="download-container">
-              <div class="download-btn inter-font">
-                <p>Download PDF Now</p>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M8.25 3.75L19.5 3.75C19.6989 3.75 19.8897 3.82902 20.0303 3.96967C20.171 4.11032 20.25 4.30109 20.25 4.5V15.75C20.25 16.1642 19.9142 16.5 19.5 16.5C19.0858 16.5 18.75 16.1642 18.75 15.75V6.31066L5.03033 20.0303C4.73744 20.3232 4.26256 20.3232 3.96967 20.0303C3.67678 19.7374 3.67678 19.2626 3.96967 18.9697L17.6893 5.25L8.25 5.25C7.83579 5.25 7.5 4.91421 7.5 4.5C7.5 4.08579 7.83579 3.75 8.25 3.75Z"
-                    fill="#FFD11A" />
-                </svg>
+            <div class="inter-font">
+              <p>Category</p>
+              <p>Quantum Computing</p>
+            </div>
+
+            <div class="inter-font">
+              <p>Author</p>
+              <p>Dr. Quantum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-container align">
+        <div class="description-container">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M58.8045 5.1956C66.2991 12.6902 65.5896 25.551 57.2967 33.8439L42.2186 48.9219L15.0781 21.7815L30.1562 6.70341C38.4491 -1.58952 51.3099 -2.29904 58.8045 5.1956Z"
+              fill="#FFD11A"
+            />
+            <path
+              d="M27.1405 63.9999L0 36.8594C8.32738 28.532 21.1537 27.857 28.6483 35.3516C36.143 42.8463 35.4679 55.6725 27.1405 63.9999Z"
+              fill="#404040"
+            />
+            <path
+              d="M55.7889 62.4921L28.6484 35.3516C36.9758 27.0242 49.8021 26.3492 57.2968 33.8438C64.7914 41.3384 64.1163 54.1647 55.7889 62.4921Z"
+              fill="#FFD11A"
+            />
+            <path
+              d="M28.6483 35.3515L1.50781 8.21098C9.8352 -0.116402 22.6615 -0.791467 30.1561 6.70317C37.6508 14.1978 36.9757 27.0241 28.6483 35.3515Z"
+              fill="#FFD11A"
+            />
+          </svg>
+          <div class="container">
+            <p class="heading kumbh-font">Space Exploration Whitepaper</p>
+            <p class="inter-font">
+              Explores Mars colonization, asteroid resource potential, and space
+              tourism.
+            </p>
+          </div>
+        </div>
+
+        <div class="img-container">
+          <div class="sub-container">
+            <img
+              src="/resources/img/img-section2.png"
+              alt="Space Exploration Whitepaper"
+            />
+            <div class="content">
+              <div class="container">
+                <p class="heading inter-font">Space Exploration Whitepaper</p>
+                <p class="inter-font">
+                  An in-depth whitepaper covering the latest advancements in
+                  space exploration, including Mars missions and asteroid
+                  mining.
+                </p>
+              </div>
+
+              <div class="download-container">
+                <div class="download-btn inter-font">
+                  <p>Download PDF Now</p>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.25 3.75L19.5 3.75C19.6989 3.75 19.8897 3.82902 20.0303 3.96967C20.171 4.11032 20.25 4.30109 20.25 4.5V15.75C20.25 16.1642 19.9142 16.5 19.5 16.5C19.0858 16.5 18.75 16.1642 18.75 15.75V6.31066L5.03033 20.0303C4.73744 20.3232 4.26256 20.3232 3.96967 20.0303C3.67678 19.7374 3.67678 19.2626 3.96967 18.9697L17.6893 5.25L8.25 5.25C7.83579 5.25 7.5 4.91421 7.5 4.5C7.5 4.08579 7.83579 3.75 8.25 3.75Z"
+                      fill="#FFD11A"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="info-container">
-          <div class="inter-font">
-            <p>Publication Date</p>
-            <p>September 2023</p>
-          </div>
-
-          <div class="inter-font">
-            <p>Category</p>
-            <p>Space Exploration</p>
-          </div>
-
-          <div class="inter-font">
-            <p>Author</p>
-            <p>FutureTech Space Division</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="sidebar">
-      <div class="sidebar-container align">
-        <div class="container">
-          <img src="/resources/img/sidebar-img1.png" alt="sidebar-img1" />
-          <div class="text-block inter-font">
-            <p>FutureTech Trends 2024</p>
-            <p>
-              An ebook that predicts upcoming technology trends for the next
-              year, including AI developments
-            </p>
-          </div>
-
-          <div class="btn-block inter-font">
-            <button>View Details</button>
-            <button>Download PDF Now</button>
-          </div>
-        </div>
-
-        <div class="container">
-          <img src="/resources/img/sidebar-img2.png" alt="sidebar-img2" />
-          <div class="text-block inter-font">
-            <p>Space Exploration Ebook</p>
-            <p>
-              An ebook that predicts upcoming technology trends for the next
-              year, including AI developments
-            </p>
-          </div>
-
-          <div class="btn-block inter-font">
-            <button>View Details</button>
-            <button>Download PDF Now</button>
-          </div>
-        </div>
-
-        <div class="container">
-          <img src="/resources/img/sidebar-img3.png" alt="sidebar-img3" />
-          <div class="text-block inter-font">
-            <p>Quantum Computing Whitepaper</p>
-            <p>
-              An in-depth whitepaper exploring the principles, applications.
-            </p>
-          </div>
-
-          <div class="btn-block inter-font">
-            <button>View Details</button>
-            <button>Download PDF Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cta-section">
-      <div class="pad-120 align">
-        <div class="text-container text-container-desktop">
-          <img src="/resources/img/cta-section-img.png" alt="Logo" />
-          <div class="text-block inter-font">
-            <div>Learn, Connect, and Innovate</div>
-            <p class="kumbh-font">Be Part of the Future Tech Revolution</p>
-            <p>
-              Immerse yourself in the world of future technology. Explore our
-              comprehensive resources, connect with fellow tech enthusiasts,
-              and drive innovation in the industry. Join a dynamic community
-              of forward-thinkers.
-            </p>
-          </div>
-        </div>
-
-
-
-        <div class="cta-container">
-          <div class="sub-container inter-font">
-            <div class="text-block">
-              <p>Resource Access</p>
-              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="52" height="52" rx="26" fill="#FFD11A" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M22.25 17.75L33.5 17.75C33.6989 17.75 33.8897 17.829 34.0303 17.9697C34.171 18.1103 34.25 18.3011 34.25 18.5V29.75C34.25 30.1642 33.9142 30.5 33.5 30.5C33.0858 30.5 32.75 30.1642 32.75 29.75V20.3107L19.0303 34.0303C18.7374 34.3232 18.2626 34.3232 17.9697 34.0303C17.6768 33.7374 17.6768 33.2626 17.9697 32.9697L31.6893 19.25L22.25 19.25C21.8358 19.25 21.5 18.9142 21.5 18.5C21.5 18.0858 21.8358 17.75 22.25 17.75Z"
-                  fill="#141414" />
-              </svg>
+          <div class="info-container">
+            <div class="inter-font">
+              <p>Publication Date</p>
+              <p>September 2023</p>
             </div>
 
-            <p>
-              Visitors can access a wide range of resources, including ebooks,
-              whitepapers, reports.
-            </p>
-          </div>
-          <div class="sub-container inter-font">
-            <div class="text-block">
-              <p>Community Forum</p>
-              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="52" height="52" rx="26" fill="#FFD11A" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M22.25 17.75L33.5 17.75C33.6989 17.75 33.8897 17.829 34.0303 17.9697C34.171 18.1103 34.25 18.3011 34.25 18.5V29.75C34.25 30.1642 33.9142 30.5 33.5 30.5C33.0858 30.5 32.75 30.1642 32.75 29.75V20.3107L19.0303 34.0303C18.7374 34.3232 18.2626 34.3232 17.9697 34.0303C17.6768 33.7374 17.6768 33.2626 17.9697 32.9697L31.6893 19.25L22.25 19.25C21.8358 19.25 21.5 18.9142 21.5 18.5C21.5 18.0858 21.8358 17.75 22.25 17.75Z"
-                  fill="#141414" />
-              </svg>
+            <div class="inter-font">
+              <p>Category</p>
+              <p>Space Exploration</p>
             </div>
 
-            <p>
-              Join our active community forum to discuss industry trends,
-              share insights, and collaborate with peers.
-            </p>
+            <div class="inter-font">
+              <p>Author</p>
+              <p>FutureTech Space Division</p>
+            </div>
           </div>
-          <div class="sub-container inter-font">
-            <div class="text-block">
-              <p>Tech Events</p>
-              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="52" height="52" rx="26" fill="#FFD11A" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M22.25 17.75L33.5 17.75C33.6989 17.75 33.8897 17.829 34.0303 17.9697C34.171 18.1103 34.25 18.3011 34.25 18.5V29.75C34.25 30.1642 33.9142 30.5 33.5 30.5C33.0858 30.5 32.75 30.1642 32.75 29.75V20.3107L19.0303 34.0303C18.7374 34.3232 18.2626 34.3232 17.9697 34.0303C17.6768 33.7374 17.6768 33.2626 17.9697 32.9697L31.6893 19.25L22.25 19.25C21.8358 19.25 21.5 18.9142 21.5 18.5C21.5 18.0858 21.8358 17.75 22.25 17.75Z"
-                  fill="#141414" />
-              </svg>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar-container align">
+          <div class="container">
+            <img src="/resources/img/sidebar-img1.png" alt="sidebar-img1" />
+            <div class="text-block inter-font">
+              <p>FutureTech Trends 2024</p>
+              <p>
+                An ebook that predicts upcoming technology trends for the next
+                year, including AI developments
+              </p>
             </div>
 
-            <p>
-              Stay updated on upcoming tech events, webinars, and conferences
-              to enhance your knowledge.
-            </p>
+            <div class="btn-block inter-font">
+              <button>View Details</button>
+              <button>Download PDF Now</button>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="/resources/img/sidebar-img2.png" alt="sidebar-img2" />
+            <div class="text-block inter-font">
+              <p>Space Exploration Ebook</p>
+              <p>
+                An ebook that predicts upcoming technology trends for the next
+                year, including AI developments
+              </p>
+            </div>
+
+            <div class="btn-block inter-font">
+              <button>View Details</button>
+              <button>Download PDF Now</button>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="/resources/img/sidebar-img3.png" alt="sidebar-img3" />
+            <div class="text-block inter-font">
+              <p>Quantum Computing Whitepaper</p>
+              <p>
+                An in-depth whitepaper exploring the principles, applications.
+              </p>
+            </div>
+
+            <div class="btn-block inter-font">
+              <button>View Details</button>
+              <button>Download PDF Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section">
+        <div class="pad-120 align">
+          <div class="text-container text-container-desktop">
+            <img src="/resources/img/cta-section-img.png" alt="Logo" />
+            <div class="text-block inter-font">
+              <div>Learn, Connect, and Innovate</div>
+              <p class="kumbh-font">Be Part of the Future Tech Revolution</p>
+              <p>
+                Immerse yourself in the world of future technology. Explore our
+                comprehensive resources, connect with fellow tech enthusiasts,
+                and drive innovation in the industry. Join a dynamic community
+                of forward-thinkers.
+              </p>
+            </div>
+          </div>
+
+          <div class="cta-container">
+            <div class="sub-container inter-font">
+              <div class="text-block">
+                <p>Resource Access</p>
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="52" height="52" rx="26" fill="#FFD11A" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.25 17.75L33.5 17.75C33.6989 17.75 33.8897 17.829 34.0303 17.9697C34.171 18.1103 34.25 18.3011 34.25 18.5V29.75C34.25 30.1642 33.9142 30.5 33.5 30.5C33.0858 30.5 32.75 30.1642 32.75 29.75V20.3107L19.0303 34.0303C18.7374 34.3232 18.2626 34.3232 17.9697 34.0303C17.6768 33.7374 17.6768 33.2626 17.9697 32.9697L31.6893 19.25L22.25 19.25C21.8358 19.25 21.5 18.9142 21.5 18.5C21.5 18.0858 21.8358 17.75 22.25 17.75Z"
+                    fill="#141414"
+                  />
+                </svg>
+              </div>
+
+              <p>
+                Visitors can access a wide range of resources, including ebooks,
+                whitepapers, reports.
+              </p>
+            </div>
+            <div class="sub-container inter-font">
+              <div class="text-block">
+                <p>Community Forum</p>
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="52" height="52" rx="26" fill="#FFD11A" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.25 17.75L33.5 17.75C33.6989 17.75 33.8897 17.829 34.0303 17.9697C34.171 18.1103 34.25 18.3011 34.25 18.5V29.75C34.25 30.1642 33.9142 30.5 33.5 30.5C33.0858 30.5 32.75 30.1642 32.75 29.75V20.3107L19.0303 34.0303C18.7374 34.3232 18.2626 34.3232 17.9697 34.0303C17.6768 33.7374 17.6768 33.2626 17.9697 32.9697L31.6893 19.25L22.25 19.25C21.8358 19.25 21.5 18.9142 21.5 18.5C21.5 18.0858 21.8358 17.75 22.25 17.75Z"
+                    fill="#141414"
+                  />
+                </svg>
+              </div>
+
+              <p>
+                Join our active community forum to discuss industry trends,
+                share insights, and collaborate with peers.
+              </p>
+            </div>
+            <div class="sub-container inter-font">
+              <div class="text-block">
+                <p>Tech Events</p>
+                <svg
+                  width="52"
+                  height="52"
+                  viewBox="0 0 52 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="52" height="52" rx="26" fill="#FFD11A" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22.25 17.75L33.5 17.75C33.6989 17.75 33.8897 17.829 34.0303 17.9697C34.171 18.1103 34.25 18.3011 34.25 18.5V29.75C34.25 30.1642 33.9142 30.5 33.5 30.5C33.0858 30.5 32.75 30.1642 32.75 29.75V20.3107L19.0303 34.0303C18.7374 34.3232 18.2626 34.3232 17.9697 34.0303C17.6768 33.7374 17.6768 33.2626 17.9697 32.9697L31.6893 19.25L22.25 19.25C21.8358 19.25 21.5 18.9142 21.5 18.5C21.5 18.0858 21.8358 17.75 22.25 17.75Z"
+                    fill="#141414"
+                  />
+                </svg>
+              </div>
+
+              <p>
+                Stay updated on upcoming tech events, webinars, and conferences
+                to enhance your knowledge.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <div class="footer-top footer-top-desktop inter-font align">
-      <div class="footer-colunm">
-        <p>Home</p>
-        <ul>
-          <li><a href="#!">Features</a></li>
-          <li><a href="#!">Blogs</a></li>
-          <li class="tag-container">
-            <a href="#!">Resources</a>
-            <div class="new-tag">New</div>
-          </li>
-          <li><a href="#!">Testimonials</a></li>
-          <li><a href="#!">Contact </a> Us</li>
-          <li><a href="#!">Newsletter</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-colunm">
-        <p>News</p>
-        <ul>
-          <li><a href="#!">Trending Stories</a></li>
-          <li><a href="#!">Featured Videos</a></li>
-          <li><a href="#!">Technology</a></li>
-          <li><a href="#!">Health</a></li>
-          <li><a href="#!">Politics</a></li>
-          <li><a href="#!">Environment</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-colunm">
-        <p>Blogs</p>
-        <ul>
-          <li><a href="#!">Quantum Computing</a></li>
-          <li><a href="#!">AI Ethics</a></li>
-          <li><a href="#!">Space Exploration</a></li>
-          <li class="tag-container">
-            <a href="#!">Biotechnology</a>
-            <div class="new-tag">New</div>
-          </li>
-          <li><a href="#!">Renewable Energy</a></li>
-          <li><a href="#!">Biohacking</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-colunm">
-        <p>Podcasts</p>
-        <ul>
-          <li><a href="#!">AI Revolution</a></li>
-          <li class="tag-container">
-            <a href="#!">AI Revolution</a>
-            <div class="new-tag">New</div>
-          </li>
-          <li><a href="#!">TechTalk AI</a></li>
-          <li><a href="#!">AI Conversations</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-colunm">
-        <p>Resources</p>
-        <ul>
-          <li>
-            <a href="#!">Whitepapers</a>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
-                fill="#FFD11A" />
-            </svg>
-          </li>
-
-          <li>
-            <a href="#!">Ebooks</a>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
-                fill="#FFD11A" />
-            </svg>
-          </li>
-
-          <li>
-            <a href="#!">Reports</a>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
-                fill="#FFD11A" />
-            </svg>
-          </li>
-
-          <li>
-            <a href="#!">Research Papers</a>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
-                fill="#FFD11A" />
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="top-footer-mobie inter-font align">
-      <div class="row">
+    <div class="footer">
+      <div class="footer-top footer-top-desktop inter-font align">
         <div class="footer-colunm">
           <p>Home</p>
           <ul>
@@ -520,9 +514,7 @@
             <li><a href="#!">Environment</a></li>
           </ul>
         </div>
-      </div>
 
-      <div class="row">
         <div class="footer-colunm">
           <p>Blogs</p>
           <ul>
@@ -550,135 +542,352 @@
             <li><a href="#!">AI Conversations</a></li>
           </ul>
         </div>
+
+        <div class="footer-colunm">
+          <p>Resources</p>
+          <ul>
+            <li>
+              <a href="#!">Whitepapers</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                  fill="#FFD11A"
+                />
+              </svg>
+            </li>
+
+            <li>
+              <a href="#!">Ebooks</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                  fill="#FFD11A"
+                />
+              </svg>
+            </li>
+
+            <li>
+              <a href="#!">Reports</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                  fill="#FFD11A"
+                />
+              </svg>
+            </li>
+
+            <li>
+              <a href="#!">Research Papers</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                  fill="#FFD11A"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-colunm">
-        <p>Resources</p>
-        <ul>
-          <li>
-            <a href="#!">Whitepapers</a>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
-                fill="#FFD11A" />
-            </svg>
-          </li>
+      <div class="top-footer-mobie inter-font align">
+        <div class="row">
+          <div class="footer-colunm">
+            <p>Home</p>
+            <ul>
+              <li><a href="#!">Features</a></li>
+              <li><a href="#!">Blogs</a></li>
+              <li class="tag-container">
+                <a href="#!">Resources</a>
+                <div class="new-tag">New</div>
+              </li>
+              <li><a href="#!">Testimonials</a></li>
+              <li><a href="#!">Contact </a> Us</li>
+              <li><a href="#!">Newsletter</a></li>
+            </ul>
+          </div>
 
-          <li>
-            <a href="#!">Ebooks</a>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
-                fill="#FFD11A" />
-            </svg>
-          </li>
+          <div class="footer-colunm">
+            <p>News</p>
+            <ul>
+              <li><a href="#!">Trending Stories</a></li>
+              <li><a href="#!">Featured Videos</a></li>
+              <li><a href="#!">Technology</a></li>
+              <li><a href="#!">Health</a></li>
+              <li><a href="#!">Politics</a></li>
+              <li><a href="#!">Environment</a></li>
+            </ul>
+          </div>
+        </div>
 
-          <li>
-            <a href="#!">Reports</a>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
-                fill="#FFD11A" />
-            </svg>
-          </li>
+        <div class="row">
+          <div class="footer-colunm">
+            <p>Blogs</p>
+            <ul>
+              <li><a href="#!">Quantum Computing</a></li>
+              <li><a href="#!">AI Ethics</a></li>
+              <li><a href="#!">Space Exploration</a></li>
+              <li class="tag-container">
+                <a href="#!">Biotechnology</a>
+                <div class="new-tag">New</div>
+              </li>
+              <li><a href="#!">Renewable Energy</a></li>
+              <li><a href="#!">Biohacking</a></li>
+            </ul>
+          </div>
 
-          <li>
-            <a href="#!">Research Papers</a>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
-                fill="#FFD11A" />
-            </svg>
-          </li>
-        </ul>
+          <div class="footer-colunm">
+            <p>Podcasts</p>
+            <ul>
+              <li><a href="#!">AI Revolution</a></li>
+              <li class="tag-container">
+                <a href="#!">AI Revolution</a>
+                <div class="new-tag">New</div>
+              </li>
+              <li><a href="#!">TechTalk AI</a></li>
+              <li><a href="#!">AI Conversations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-colunm">
+          <p>Resources</p>
+          <ul>
+            <li>
+              <a href="#!">Whitepapers</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                  fill="#FFD11A"
+                />
+              </svg>
+            </li>
+
+            <li>
+              <a href="#!">Ebooks</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                  fill="#FFD11A"
+                />
+              </svg>
+            </li>
+
+            <li>
+              <a href="#!">Reports</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                  fill="#FFD11A"
+                />
+              </svg>
+            </li>
+
+            <li>
+              <a href="#!">Research Papers</a>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                  fill="#FFD11A"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom footer-bottom-desktop inter-font align">
+        <div class="container">
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="container">
+          <svg
+            width="23"
+            height="20"
+            viewBox="0 0 23 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.457 4.78075C20.4663 4.99195 20.4663 5.19356 20.4663 5.40476C20.4755 11.808 15.7711 19.2 7.16783 19.2C4.63038 19.2 2.13924 18.4416 0 17.0208C0.370431 17.0688 0.740861 17.088 1.11129 17.088C3.21349 17.088 5.26011 16.3584 6.91779 15.0048C4.91746 14.9664 3.15792 13.6128 2.54671 11.6352C3.25053 11.7792 3.97287 11.7504 4.65816 11.5488C2.48188 11.1072 0.916816 9.11997 0.907555 6.80636C0.907555 6.78716 0.907555 6.76796 0.907555 6.74876C1.55581 7.12316 2.28741 7.33436 3.02827 7.35356C0.981641 5.93276 0.342648 3.10075 1.58359 0.883141C3.96361 3.91675 7.46418 5.75036 11.224 5.95196C10.8444 4.27195 11.363 2.50555 12.5761 1.31514C14.4561 -0.518463 17.4195 -0.422463 19.1976 1.52634C20.244 1.31514 21.2535 0.911941 22.1703 0.34554C21.8184 1.46874 21.0868 2.41915 20.1144 3.02395C21.0405 2.90875 21.948 2.64955 22.8 2.26555C22.1703 3.24475 21.3738 4.08955 20.457 4.78075Z"
+              fill="white"
+            />
+          </svg>
+
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_34578)">
+              <path
+                d="M13.5374 12.2276C13.5374 15.9983 10.5069 19.0551 6.76883 19.0551C3.03073 19.0551 0 15.9976 0 12.2276C0 8.45758 3.0305 5.3999 6.76883 5.3999C10.5072 5.3999 13.5374 8.45688 13.5374 12.2276Z"
+                fill="white"
+              />
+              <path
+                d="M20.9642 12.2276C20.9642 15.7769 19.4489 18.6553 17.5797 18.6553C15.7106 18.6553 14.1953 15.7769 14.1953 12.2276C14.1953 8.67824 15.7103 5.7998 17.5795 5.7998C19.4487 5.7998 20.9639 8.67732 20.9639 12.2276"
+                fill="white"
+              />
+              <path
+                d="M24.0015 12.2275C24.0015 15.4068 23.4686 17.9857 22.8112 17.9857C22.1537 17.9857 21.6211 15.4075 21.6211 12.2275C21.6211 9.04748 22.1539 6.46924 22.8112 6.46924C23.4684 6.46924 24.0015 9.04725 24.0015 12.2275Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_34578">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.8661 1.6001H3.13701C2.72978 1.6001 2.33924 1.76187 2.05128 2.04982C1.76333 2.33777 1.60156 2.72832 1.60156 3.13554V20.8647C1.60156 21.2719 1.76333 21.6624 2.05128 21.9504C2.33924 22.2383 2.72978 22.4001 3.13701 22.4001H20.8661C21.2733 22.4001 21.6639 22.2383 21.9518 21.9504C22.2398 21.6624 22.4016 21.2719 22.4016 20.8647V3.13554C22.4016 2.72832 22.2398 2.33777 21.9518 2.04982C21.6639 1.76187 21.2733 1.6001 20.8661 1.6001ZM7.80112 19.3191H4.6739V9.38565H7.80112V19.3191ZM6.23534 8.0091C5.88061 8.0071 5.53442 7.90007 5.24047 7.70151C4.94651 7.50295 4.71796 7.22176 4.58366 6.89343C4.44936 6.5651 4.41532 6.20434 4.48586 5.85669C4.55639 5.50904 4.72832 5.19007 4.97996 4.94004C5.2316 4.69001 5.55167 4.52013 5.89977 4.45183C6.24786 4.38353 6.60839 4.41988 6.93585 4.55628C7.26331 4.69269 7.54303 4.92304 7.7397 5.21827C7.93637 5.51349 8.04118 5.86036 8.0409 6.2151C8.04424 6.45259 7.99974 6.68833 7.91004 6.90826C7.82034 7.12819 7.68728 7.32781 7.51879 7.49522C7.3503 7.66263 7.14983 7.79441 6.92933 7.8827C6.70883 7.97098 6.47281 8.01397 6.23534 8.0091ZM19.3278 19.3278H16.202V13.901C16.202 12.3005 15.5217 11.8065 14.6435 11.8065C13.7161 11.8065 12.8061 12.5057 12.8061 13.9414V19.3278H9.67889V9.39288H12.6862V10.7694H12.7267C13.0286 10.1584 14.0859 9.1141 15.6993 9.1141C17.4442 9.1141 19.3292 10.1498 19.3292 13.1831L19.3278 19.3278Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="container">
+          <span>© 2024 FutureTech. All rights reserved.</span>
+        </div>
+      </div>
+
+      <div class="bottom-footer-mobie inter-font align">
+        <div class="container">
+          <svg
+            width="23"
+            height="20"
+            viewBox="0 0 23 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.457 4.78075C20.4663 4.99195 20.4663 5.19356 20.4663 5.40476C20.4755 11.808 15.7711 19.2 7.16783 19.2C4.63038 19.2 2.13924 18.4416 0 17.0208C0.370431 17.0688 0.740861 17.088 1.11129 17.088C3.21349 17.088 5.26011 16.3584 6.91779 15.0048C4.91746 14.9664 3.15792 13.6128 2.54671 11.6352C3.25053 11.7792 3.97287 11.7504 4.65816 11.5488C2.48188 11.1072 0.916816 9.11997 0.907555 6.80636C0.907555 6.78716 0.907555 6.76796 0.907555 6.74876C1.55581 7.12316 2.28741 7.33436 3.02827 7.35356C0.981641 5.93276 0.342648 3.10075 1.58359 0.883141C3.96361 3.91675 7.46418 5.75036 11.224 5.95196C10.8444 4.27195 11.363 2.50555 12.5761 1.31514C14.4561 -0.518463 17.4195 -0.422463 19.1976 1.52634C20.244 1.31514 21.2535 0.911941 22.1703 0.34554C21.8184 1.46874 21.0868 2.41915 20.1144 3.02395C21.0405 2.90875 21.948 2.64955 22.8 2.26555C22.1703 3.24475 21.3738 4.08955 20.457 4.78075Z"
+              fill="white"
+            />
+          </svg>
+
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_4_34578)">
+              <path
+                d="M13.5374 12.2276C13.5374 15.9983 10.5069 19.0551 6.76883 19.0551C3.03073 19.0551 0 15.9976 0 12.2276C0 8.45758 3.0305 5.3999 6.76883 5.3999C10.5072 5.3999 13.5374 8.45688 13.5374 12.2276Z"
+                fill="white"
+              />
+              <path
+                d="M20.9642 12.2276C20.9642 15.7769 19.4489 18.6553 17.5797 18.6553C15.7106 18.6553 14.1953 15.7769 14.1953 12.2276C14.1953 8.67824 15.7103 5.7998 17.5795 5.7998C19.4487 5.7998 20.9639 8.67732 20.9639 12.2276"
+                fill="white"
+              />
+              <path
+                d="M24.0015 12.2275C24.0015 15.4068 23.4686 17.9857 22.8112 17.9857C22.1537 17.9857 21.6211 15.4075 21.6211 12.2275C21.6211 9.04748 22.1539 6.46924 22.8112 6.46924C23.4684 6.46924 24.0015 9.04725 24.0015 12.2275Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_4_34578">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.8661 1.6001H3.13701C2.72978 1.6001 2.33924 1.76187 2.05128 2.04982C1.76333 2.33777 1.60156 2.72832 1.60156 3.13554V20.8647C1.60156 21.2719 1.76333 21.6624 2.05128 21.9504C2.33924 22.2383 2.72978 22.4001 3.13701 22.4001H20.8661C21.2733 22.4001 21.6639 22.2383 21.9518 21.9504C22.2398 21.6624 22.4016 21.2719 22.4016 20.8647V3.13554C22.4016 2.72832 22.2398 2.33777 21.9518 2.04982C21.6639 1.76187 21.2733 1.6001 20.8661 1.6001ZM7.80112 19.3191H4.6739V9.38565H7.80112V19.3191ZM6.23534 8.0091C5.88061 8.0071 5.53442 7.90007 5.24047 7.70151C4.94651 7.50295 4.71796 7.22176 4.58366 6.89343C4.44936 6.5651 4.41532 6.20434 4.48586 5.85669C4.55639 5.50904 4.72832 5.19007 4.97996 4.94004C5.2316 4.69001 5.55167 4.52013 5.89977 4.45183C6.24786 4.38353 6.60839 4.41988 6.93585 4.55628C7.26331 4.69269 7.54303 4.92304 7.7397 5.21827C7.93637 5.51349 8.04118 5.86036 8.0409 6.2151C8.04424 6.45259 7.99974 6.68833 7.91004 6.90826C7.82034 7.12819 7.68728 7.32781 7.51879 7.49522C7.3503 7.66263 7.14983 7.79441 6.92933 7.8827C6.70883 7.97098 6.47281 8.01397 6.23534 8.0091ZM19.3278 19.3278H16.202V13.901C16.202 12.3005 15.5217 11.8065 14.6435 11.8065C13.7161 11.8065 12.8061 12.5057 12.8061 13.9414V19.3278H9.67889V9.39288H12.6862V10.7694H12.7267C13.0286 10.1584 14.0859 9.1141 15.6993 9.1141C17.4442 9.1141 19.3292 10.1498 19.3292 13.1831L19.3278 19.3278Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="container">
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="container">
+          <span>© 2024 FutureTech. All rights reserved.</span>
+        </div>
       </div>
     </div>
-
-    <div class="footer-bottom footer-bottom-desktop inter-font align">
-      <div class="container">
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
-      </div>
-      <div class="container">
-        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M20.457 4.78075C20.4663 4.99195 20.4663 5.19356 20.4663 5.40476C20.4755 11.808 15.7711 19.2 7.16783 19.2C4.63038 19.2 2.13924 18.4416 0 17.0208C0.370431 17.0688 0.740861 17.088 1.11129 17.088C3.21349 17.088 5.26011 16.3584 6.91779 15.0048C4.91746 14.9664 3.15792 13.6128 2.54671 11.6352C3.25053 11.7792 3.97287 11.7504 4.65816 11.5488C2.48188 11.1072 0.916816 9.11997 0.907555 6.80636C0.907555 6.78716 0.907555 6.76796 0.907555 6.74876C1.55581 7.12316 2.28741 7.33436 3.02827 7.35356C0.981641 5.93276 0.342648 3.10075 1.58359 0.883141C3.96361 3.91675 7.46418 5.75036 11.224 5.95196C10.8444 4.27195 11.363 2.50555 12.5761 1.31514C14.4561 -0.518463 17.4195 -0.422463 19.1976 1.52634C20.244 1.31514 21.2535 0.911941 22.1703 0.34554C21.8184 1.46874 21.0868 2.41915 20.1144 3.02395C21.0405 2.90875 21.948 2.64955 22.8 2.26555C22.1703 3.24475 21.3738 4.08955 20.457 4.78075Z"
-            fill="white" />
-        </svg>
-
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_4_34578)">
-            <path
-              d="M13.5374 12.2276C13.5374 15.9983 10.5069 19.0551 6.76883 19.0551C3.03073 19.0551 0 15.9976 0 12.2276C0 8.45758 3.0305 5.3999 6.76883 5.3999C10.5072 5.3999 13.5374 8.45688 13.5374 12.2276Z"
-              fill="white" />
-            <path
-              d="M20.9642 12.2276C20.9642 15.7769 19.4489 18.6553 17.5797 18.6553C15.7106 18.6553 14.1953 15.7769 14.1953 12.2276C14.1953 8.67824 15.7103 5.7998 17.5795 5.7998C19.4487 5.7998 20.9639 8.67732 20.9639 12.2276"
-              fill="white" />
-            <path
-              d="M24.0015 12.2275C24.0015 15.4068 23.4686 17.9857 22.8112 17.9857C22.1537 17.9857 21.6211 15.4075 21.6211 12.2275C21.6211 9.04748 22.1539 6.46924 22.8112 6.46924C23.4684 6.46924 24.0015 9.04725 24.0015 12.2275Z"
-              fill="white" />
-          </g>
-          <defs>
-            <clipPath id="clip0_4_34578">
-              <rect width="24" height="24" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M20.8661 1.6001H3.13701C2.72978 1.6001 2.33924 1.76187 2.05128 2.04982C1.76333 2.33777 1.60156 2.72832 1.60156 3.13554V20.8647C1.60156 21.2719 1.76333 21.6624 2.05128 21.9504C2.33924 22.2383 2.72978 22.4001 3.13701 22.4001H20.8661C21.2733 22.4001 21.6639 22.2383 21.9518 21.9504C22.2398 21.6624 22.4016 21.2719 22.4016 20.8647V3.13554C22.4016 2.72832 22.2398 2.33777 21.9518 2.04982C21.6639 1.76187 21.2733 1.6001 20.8661 1.6001ZM7.80112 19.3191H4.6739V9.38565H7.80112V19.3191ZM6.23534 8.0091C5.88061 8.0071 5.53442 7.90007 5.24047 7.70151C4.94651 7.50295 4.71796 7.22176 4.58366 6.89343C4.44936 6.5651 4.41532 6.20434 4.48586 5.85669C4.55639 5.50904 4.72832 5.19007 4.97996 4.94004C5.2316 4.69001 5.55167 4.52013 5.89977 4.45183C6.24786 4.38353 6.60839 4.41988 6.93585 4.55628C7.26331 4.69269 7.54303 4.92304 7.7397 5.21827C7.93637 5.51349 8.04118 5.86036 8.0409 6.2151C8.04424 6.45259 7.99974 6.68833 7.91004 6.90826C7.82034 7.12819 7.68728 7.32781 7.51879 7.49522C7.3503 7.66263 7.14983 7.79441 6.92933 7.8827C6.70883 7.97098 6.47281 8.01397 6.23534 8.0091ZM19.3278 19.3278H16.202V13.901C16.202 12.3005 15.5217 11.8065 14.6435 11.8065C13.7161 11.8065 12.8061 12.5057 12.8061 13.9414V19.3278H9.67889V9.39288H12.6862V10.7694H12.7267C13.0286 10.1584 14.0859 9.1141 15.6993 9.1141C17.4442 9.1141 19.3292 10.1498 19.3292 13.1831L19.3278 19.3278Z"
-            fill="white" />
-        </svg>
-
-      </div>
-      <div class="container">
-        <span>© 2024 FutureTech. All rights reserved.</span>
-      </div>
-    </div>
-
-    <div class="bottom-footer-mobie inter-font align">
-      <div class="container">
-        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M20.457 4.78075C20.4663 4.99195 20.4663 5.19356 20.4663 5.40476C20.4755 11.808 15.7711 19.2 7.16783 19.2C4.63038 19.2 2.13924 18.4416 0 17.0208C0.370431 17.0688 0.740861 17.088 1.11129 17.088C3.21349 17.088 5.26011 16.3584 6.91779 15.0048C4.91746 14.9664 3.15792 13.6128 2.54671 11.6352C3.25053 11.7792 3.97287 11.7504 4.65816 11.5488C2.48188 11.1072 0.916816 9.11997 0.907555 6.80636C0.907555 6.78716 0.907555 6.76796 0.907555 6.74876C1.55581 7.12316 2.28741 7.33436 3.02827 7.35356C0.981641 5.93276 0.342648 3.10075 1.58359 0.883141C3.96361 3.91675 7.46418 5.75036 11.224 5.95196C10.8444 4.27195 11.363 2.50555 12.5761 1.31514C14.4561 -0.518463 17.4195 -0.422463 19.1976 1.52634C20.244 1.31514 21.2535 0.911941 22.1703 0.34554C21.8184 1.46874 21.0868 2.41915 20.1144 3.02395C21.0405 2.90875 21.948 2.64955 22.8 2.26555C22.1703 3.24475 21.3738 4.08955 20.457 4.78075Z"
-            fill="white" />
-        </svg>
-
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_4_34578)">
-            <path
-              d="M13.5374 12.2276C13.5374 15.9983 10.5069 19.0551 6.76883 19.0551C3.03073 19.0551 0 15.9976 0 12.2276C0 8.45758 3.0305 5.3999 6.76883 5.3999C10.5072 5.3999 13.5374 8.45688 13.5374 12.2276Z"
-              fill="white" />
-            <path
-              d="M20.9642 12.2276C20.9642 15.7769 19.4489 18.6553 17.5797 18.6553C15.7106 18.6553 14.1953 15.7769 14.1953 12.2276C14.1953 8.67824 15.7103 5.7998 17.5795 5.7998C19.4487 5.7998 20.9639 8.67732 20.9639 12.2276"
-              fill="white" />
-            <path
-              d="M24.0015 12.2275C24.0015 15.4068 23.4686 17.9857 22.8112 17.9857C22.1537 17.9857 21.6211 15.4075 21.6211 12.2275C21.6211 9.04748 22.1539 6.46924 22.8112 6.46924C23.4684 6.46924 24.0015 9.04725 24.0015 12.2275Z"
-              fill="white" />
-          </g>
-          <defs>
-            <clipPath id="clip0_4_34578">
-              <rect width="24" height="24" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M20.8661 1.6001H3.13701C2.72978 1.6001 2.33924 1.76187 2.05128 2.04982C1.76333 2.33777 1.60156 2.72832 1.60156 3.13554V20.8647C1.60156 21.2719 1.76333 21.6624 2.05128 21.9504C2.33924 22.2383 2.72978 22.4001 3.13701 22.4001H20.8661C21.2733 22.4001 21.6639 22.2383 21.9518 21.9504C22.2398 21.6624 22.4016 21.2719 22.4016 20.8647V3.13554C22.4016 2.72832 22.2398 2.33777 21.9518 2.04982C21.6639 1.76187 21.2733 1.6001 20.8661 1.6001ZM7.80112 19.3191H4.6739V9.38565H7.80112V19.3191ZM6.23534 8.0091C5.88061 8.0071 5.53442 7.90007 5.24047 7.70151C4.94651 7.50295 4.71796 7.22176 4.58366 6.89343C4.44936 6.5651 4.41532 6.20434 4.48586 5.85669C4.55639 5.50904 4.72832 5.19007 4.97996 4.94004C5.2316 4.69001 5.55167 4.52013 5.89977 4.45183C6.24786 4.38353 6.60839 4.41988 6.93585 4.55628C7.26331 4.69269 7.54303 4.92304 7.7397 5.21827C7.93637 5.51349 8.04118 5.86036 8.0409 6.2151C8.04424 6.45259 7.99974 6.68833 7.91004 6.90826C7.82034 7.12819 7.68728 7.32781 7.51879 7.49522C7.3503 7.66263 7.14983 7.79441 6.92933 7.8827C6.70883 7.97098 6.47281 8.01397 6.23534 8.0091ZM19.3278 19.3278H16.202V13.901C16.202 12.3005 15.5217 11.8065 14.6435 11.8065C13.7161 11.8065 12.8061 12.5057 12.8061 13.9414V19.3278H9.67889V9.39288H12.6862V10.7694H12.7267C13.0286 10.1584 14.0859 9.1141 15.6993 9.1141C17.4442 9.1141 19.3292 10.1498 19.3292 13.1831L19.3278 19.3278Z"
-            fill="white" />
-        </svg>
-      </div>
-      <div class="container">
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
-      </div>
-      <div class="container">
-        <span>© 2024 FutureTech. All rights reserved.</span>
-      </div>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
